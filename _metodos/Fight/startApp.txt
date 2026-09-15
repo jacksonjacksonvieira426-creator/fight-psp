@@ -1,0 +1,15 @@
+// Classe: Fight
+// Metodo: startApp
+// Descritor: ()V
+// Instrucoes: 10
+
+[   0] aload_0
+[   1] getfield Fight.theCanvas
+[   2] aload_0
+[   3] invokevirtual javax/microedition/lcdui/Displayable.setCommandListener
+[   4] aload_0
+[   5] getfield Fight.display
+[   6] aload_0
+[   7] getfield Fight.theCanvas
+[   8] invokevirtual javax/microedition/lcdui/Display.setCurrent
+[   9] return

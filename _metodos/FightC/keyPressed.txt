@@ -1,0 +1,103 @@
+// Classe: FightC
+// Metodo: keyPressed
+// Descritor: (I)V
+// Instrucoes: 98
+
+[   0] aload_0
+[   1] getfield FightC.gameState
+[   2] aload_0
+[   3] getfield FightC.GAME
+[   4] if_icmpeq 4
+[   5] return
+[   6] aload_0
+[   7] iload_1
+[   8] invokevirtual javax/microedition/lcdui/Canvas.getGameAction
+[   9] istore_2
+[  10] iload_1
+[  11] bipush 53
+[  12] if_icmpne 14
+[  13] aload_0
+[  14] aload_0
+[  15] getfield FightC.BLOCK
+[  16] putfield FightC.commandPlayer
+[  17] goto 149
+[  18] iload_2
+[  19] iconst_2
+[  20] if_icmpeq 9
+[  21] iload_1
+[  22] bipush 52
+[  23] if_icmpne 14
+[  24] aload_0
+[  25] aload_0
+[  26] getfield FightC.MOVELEFT
+[  27] putfield FightC.commandPlayer
+[  28] goto 127
+[  29] iload_2
+[  30] iconst_5
+[  31] if_icmpeq 9
+[  32] iload_1
+[  33] bipush 54
+[  34] if_icmpne 14
+[  35] aload_0
+[  36] aload_0
+[  37] getfield FightC.MOVERIGHT
+[  38] putfield FightC.commandPlayer
+[  39] goto 105
+[  40] iload_2
+[  41] iconst_1
+[  42] if_icmpeq 9
+[  43] iload_1
+[  44] bipush 50
+[  45] if_icmpne 44
+[  46] aload_0
+[  47] getfield FightC.blockCounter
+[  48] bipush 60
+[  49] if_icmpge 24
+[  50] aload_0
+[  51] dup
+[  52] getfield FightC.blockCounter
+[  53] bipush 10
+[  54] aload_0
+[  55] getfield FightC.level
+[  56] imul
+[  57] aload_0
+[  58] getfield FightC.lastLevel
+[  59] idiv
+[  60] iadd
+[  61] putfield FightC.blockCounter
+[  62] aload_0
+[  63] aload_0
+[  64] getfield FightC.PUNCH
+[  65] putfield FightC.commandPlayer
+[  66] goto 53
+[  67] iload_2
+[  68] bipush 6
+[  69] if_icmpeq 9
+[  70] iload_1
+[  71] bipush 56
+[  72] if_icmpne 41
+[  73] aload_0
+[  74] getfield FightC.blockCounter
+[  75] bipush 60
+[  76] if_icmpge 24
+[  77] aload_0
+[  78] dup
+[  79] getfield FightC.blockCounter
+[  80] bipush 10
+[  81] aload_0
+[  82] getfield FightC.level
+[  83] imul
+[  84] aload_0
+[  85] getfield FightC.lastLevel
+[  86] idiv
+[  87] iadd
+[  88] putfield FightC.blockCounter
+[  89] aload_0
+[  90] aload_0
+[  91] getfield FightC.KICK
+[  92] putfield FightC.commandPlayer
+[  93] aload_0
+[  94] aload_0
+[  95] getfield FightC.commandPlayer
+[  96] putfield FightC.rememberCommand
+[  97] return

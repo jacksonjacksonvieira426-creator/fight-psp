@@ -1,0 +1,27 @@
+// Classe: FightC
+// Metodo: run
+// Descritor: ()V
+// Instrucoes: 22
+
+[   0] goto 40
+[   1] ldc2_w 119
+[   2] invokestatic java/lang/Thread.sleep
+[   3] aload_0
+[   4] getfield FightC.finishedpainting
+[   5] iconst_1
+[   6] if_icmpne 22
+[   7] aload_0
+[   8] getfield FightC.gameOff
+[   9] ifne 15
+[  10] aload_0
+[  11] invokevirtual FightC.drawScreen
+[  12] aload_0
+[  13] invokevirtual javax/microedition/lcdui/Canvas.repaint
+[  14] aload_0
+[  15] invokevirtual javax/microedition/lcdui/Canvas.serviceRepaints
+[  16] goto 4
+[  17] astore_1
+[  18] aload_0
+[  19] getfield FightC.thread
+[  20] ifnonnull -41
+[  21] return

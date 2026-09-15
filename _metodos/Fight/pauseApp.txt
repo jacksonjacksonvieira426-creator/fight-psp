@@ -1,0 +1,106 @@
+// Classe: Fight
+// Metodo: pauseApp
+// Descritor: ()V
+// Instrucoes: 101
+
+[   0] aload_0
+[   1] getfield Fight.theCanvas
+[   2] iconst_1
+[   3] putfield FightC.gameOff
+[   4] aload_0
+[   5] new 13
+[   6] dup
+[   7] ldc 14
+[   8] iconst_3
+[   9] invokespecial javax/microedition/lcdui/List.<init>
+[  10] putfield Fight.menuScreen
+[  11] aload_0
+[  12] getfield Fight.theCanvas
+[  13] getfield FightC.gameState
+[  14] aload_0
+[  15] getfield Fight.theCanvas
+[  16] getfield FightC.DEMOMODE
+[  17] if_icmpeq 13
+[  18] aload_0
+[  19] getfield Fight.theCanvas
+[  20] getfield FightC.continueGame
+[  21] ifeq 24
+[  22] aload_0
+[  23] getfield Fight.theCanvas
+[  24] getfield FightC.logo
+[  25] ifnull 14
+[  26] aload_0
+[  27] getfield Fight.menuScreen
+[  28] ldc 21
+[  29] aconst_null
+[  30] invokevirtual javax/microedition/lcdui/List.append
+[  31] pop
+[  32] aload_0
+[  33] getfield Fight.menuScreen
+[  34] ldc 23
+[  35] aconst_null
+[  36] invokevirtual javax/microedition/lcdui/List.append
+[  37] pop
+[  38] aload_0
+[  39] getfield Fight.menuScreen
+[  40] ldc 24
+[  41] aconst_null
+[  42] invokevirtual javax/microedition/lcdui/List.append
+[  43] pop
+[  44] aload_0
+[  45] getfield Fight.menuScreen
+[  46] ldc 25
+[  47] aconst_null
+[  48] invokevirtual javax/microedition/lcdui/List.append
+[  49] pop
+[  50] aload_0
+[  51] new 26
+[  52] dup
+[  53] ldc 27
+[  54] bipush 7
+[  55] iconst_1
+[  56] invokespecial javax/microedition/lcdui/Command.<init>
+[  57] putfield Fight.backInstructionsCommand
+[  58] aload_0
+[  59] new 26
+[  60] dup
+[  61] ldc 27
+[  62] bipush 7
+[  63] iconst_1
+[  64] invokespecial javax/microedition/lcdui/Command.<init>
+[  65] putfield Fight.retInstructionsAboutCommand
+[  66] aload_0
+[  67] getfield Fight.theCanvas
+[  68] getfield FightC.gameState
+[  69] aload_0
+[  70] getfield Fight.theCanvas
+[  71] getfield FightC.DEMOMODE
+[  72] if_icmpne 13
+[  73] aload_0
+[  74] getfield Fight.theCanvas
+[  75] getfield FightC.logo
+[  76] ifnonnull 17
+[  77] aload_0
+[  78] getfield Fight.menuScreen
+[  79] aload_0
+[  80] getfield Fight.backInstructionsCommand
+[  81] invokevirtual javax/microedition/lcdui/Displayable.addCommand
+[  82] goto 17
+[  83] aload_0
+[  84] getfield Fight.menuScreen
+[  85] aload_0
+[  86] getfield Fight.theCanvas
+[  87] getfield FightC.exitCommand
+[  88] invokevirtual javax/microedition/lcdui/Displayable.addCommand
+[  89] aload_0
+[  90] getfield Fight.menuScreen
+[  91] aload_0
+[  92] invokevirtual javax/microedition/lcdui/Displayable.setCommandListener
+[  93] aload_0
+[  94] getfield Fight.display
+[  95] aload_0
+[  96] getfield Fight.menuScreen
+[  97] invokevirtual javax/microedition/lcdui/Display.setCurrent
+[  98] goto 4
+[  99] astore_1
+[ 100] return

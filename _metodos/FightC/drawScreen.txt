@@ -1,0 +1,187 @@
+// Classe: FightC
+// Metodo: drawScreen
+// Descritor: ()V
+// Instrucoes: 182
+
+[   0] aload_0
+[   1] iconst_0
+[   2] putfield FightC.finishedpainting
+[   3] aload_0
+[   4] getfield FightC.logo
+[   5] ifnonnull 309
+[   6] aload_0
+[   7] getfield FightC.offGraphics
+[   8] aload_0
+[   9] getfield FightC.blue_col
+[  10] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[  11] aload_0
+[  12] getfield FightC.offGraphics
+[  13] iconst_0
+[  14] iconst_0
+[  15] aload_0
+[  16] getfield FightC.width
+[  17] aload_0
+[  18] getfield FightC.height
+[  19] invokevirtual javax/microedition/lcdui/Graphics.fillRect
+[  20] aload_0
+[  21] getfield FightC.offGraphics
+[  22] aload_0
+[  23] getfield FightC.black_col
+[  24] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[  25] aload_0
+[  26] getfield FightC.offGraphics
+[  27] ldc 143
+[  28] aload_0
+[  29] getfield FightC.width2
+[  30] iconst_2
+[  31] iadd
+[  32] bipush 32
+[  33] aload_0
+[  34] pop
+[  35] iconst_1
+[  36] aload_0
+[  37] pop
+[  38] bipush 64
+[  39] ior
+[  40] invokevirtual javax/microedition/lcdui/Graphics.drawString
+[  41] aload_0
+[  42] getfield FightC.offGraphics
+[  43] ldc 144
+[  44] aload_0
+[  45] getfield FightC.width2
+[  46] iconst_2
+[  47] iadd
+[  48] bipush 82
+[  49] aload_0
+[  50] pop
+[  51] iconst_1
+[  52] aload_0
+[  53] pop
+[  54] bipush 64
+[  55] ior
+[  56] invokevirtual javax/microedition/lcdui/Graphics.drawString
+[  57] aload_0
+[  58] getfield FightC.offGraphics
+[  59] aload_0
+[  60] getfield FightC.white_col
+[  61] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[  62] aload_0
+[  63] getfield FightC.offGraphics
+[  64] ldc 143
+[  65] aload_0
+[  66] getfield FightC.width2
+[  67] bipush 30
+[  68] aload_0
+[  69] pop
+[  70] iconst_1
+[  71] aload_0
+[  72] pop
+[  73] bipush 64
+[  74] ior
+[  75] invokevirtual javax/microedition/lcdui/Graphics.drawString
+[  76] aload_0
+[  77] getfield FightC.offGraphics
+[  78] ldc 144
+[  79] aload_0
+[  80] getfield FightC.width2
+[  81] bipush 80
+[  82] aload_0
+[  83] pop
+[  84] iconst_1
+[  85] aload_0
+[  86] pop
+[  87] bipush 64
+[  88] ior
+[  89] invokevirtual javax/microedition/lcdui/Graphics.drawString
+[  90] aload_0
+[  91] aload_0
+[  92] getfield FightC.loadedPic
+[  93] iconst_1
+[  94] iadd
+[  95] bipush 100
+[  96] imul
+[  97] aload_0
+[  98] getfield FightC.numImgs
+[  99] idiv
+[ 100] invokespecial FightC.incPerc
+[ 101] aload_0
+[ 102] aload_0
+[ 103] getfield FightC.exitCommand
+[ 104] invokevirtual javax/microedition/lcdui/Displayable.addCommand
+[ 105] aload_0
+[ 106] aload_0
+[ 107] getfield FightC.helpCommand
+[ 108] invokevirtual javax/microedition/lcdui/Displayable.addCommand
+[ 109] aload_0
+[ 110] invokevirtual javax/microedition/lcdui/Canvas.repaint
+[ 111] aload_0
+[ 112] invokevirtual javax/microedition/lcdui/Canvas.serviceRepaints
+[ 113] aload_0
+[ 114] getfield FightC.loadedPic
+[ 115] bipush 6
+[ 116] if_icmpge 45
+[ 117] aload_0
+[ 118] getfield FightC.picFighters
+[ 119] aload_0
+[ 120] getfield FightC.loadedPic
+[ 121] new 135
+[ 122] dup
+[ 123] invokespecial java/lang/StringBuffer.<init>
+[ 124] ldc 147
+[ 125] invokevirtual java/lang/StringBuffer.append
+[ 126] aload_0
+[ 127] getfield FightC.loadedPic
+[ 128] invokevirtual java/lang/StringBuffer.append
+[ 129] ldc 149
+[ 130] invokevirtual java/lang/StringBuffer.append
+[ 131] invokevirtual java/lang/StringBuffer.toString
+[ 132] invokestatic javax/microedition/lcdui/Image.createImage
+[ 133] aastore
+[ 134] goto 45
+[ 135] aload_0
+[ 136] getfield FightC.loadedPic
+[ 137] bipush 6
+[ 138] if_icmpne 6
+[ 139] goto 33
+[ 140] aload_0
+[ 141] getfield FightC.loadedPic
+[ 142] bipush 7
+[ 143] if_icmpne 15
+[ 144] aload_0
+[ 145] ldc 151
+[ 146] invokestatic javax/microedition/lcdui/Image.createImage
+[ 147] putfield FightC.picBackgroundLevels
+[ 148] goto 12
+[ 149] aload_0
+[ 150] ldc 153
+[ 151] invokestatic javax/microedition/lcdui/Image.createImage
+[ 152] putfield FightC.logo
+[ 153] aload_0
+[ 154] dup
+[ 155] getfield FightC.loadedPic
+[ 156] iconst_1
+[ 157] iadd
+[ 158] putfield FightC.loadedPic
+[ 159] goto 44
+[ 160] astore_1
+[ 161] getstatic System.out
+[ 162] ldc 156
+[ 163] invokevirtual java/io/PrintStream.println
+[ 164] goto 32
+[ 165] aload_0
+[ 166] getfield FightC.logoOffScreen
+[ 167] ifne 21
+[ 168] aload_0
+[ 169] getfield FightC.gameState
+[ 170] aload_0
+[ 171] getfield FightC.GAME
+[ 172] if_icmpeq 10
+[ 173] aload_0
+[ 174] invokevirtual FightC.startGame
+[ 175] goto 7
+[ 176] aload_0
+[ 177] invokevirtual FightC.game
+[ 178] aload_0
+[ 179] iconst_1
+[ 180] putfield FightC.finishedpainting
+[ 181] return

@@ -1,0 +1,25 @@
+// Classe: Fight
+// Metodo: <init>
+// Descritor: ()V
+// Instrucoes: 20
+
+[   0] aload_0
+[   1] invokespecial javax/microedition/midlet/MIDlet.<init>
+[   2] aload_0
+[   3] aload_0
+[   4] invokestatic javax/microedition/lcdui/Display.getDisplay
+[   5] putfield Fight.display
+[   6] aload_0
+[   7] new 4
+[   8] dup
+[   9] aload_0
+[  10] getfield Fight.display
+[  11] invokespecial OEM.<init>
+[  12] putfield Fight.oemClass
+[  13] aload_0
+[  14] new 7
+[  15] dup
+[  16] aload_0
+[  17] invokespecial FightC.<init>
+[  18] putfield Fight.theCanvas
+[  19] return

@@ -1,0 +1,575 @@
+// Classe: FightC
+// Metodo: paintBackground
+// Descritor: ()V
+// Instrucoes: 570
+
+[   0] aload_0
+[   1] getfield FightC.gameState
+[   2] aload_0
+[   3] getfield FightC.DEMOMODE
+[   4] if_icmpne 4
+[   5] return
+[   6] aload_0
+[   7] getfield FightC.offGraphics
+[   8] iconst_0
+[   9] bipush 31
+[  10] aload_0
+[  11] getfield FightC.width
+[  12] bipush 30
+[  13] invokevirtual javax/microedition/lcdui/Graphics.clipRect
+[  14] aload_0
+[  15] getfield FightC.offGraphics
+[  16] aload_0
+[  17] getfield FightC.picBackgroundLevels
+[  18] iconst_0
+[  19] bipush 31
+[  20] bipush 30
+[  21] aload_0
+[  22] getfield FightC.level
+[  23] imul
+[  24] isub
+[  25] aload_0
+[  26] pop
+[  27] bipush 16
+[  28] aload_0
+[  29] pop
+[  30] iconst_4
+[  31] ior
+[  32] invokevirtual javax/microedition/lcdui/Graphics.drawImage
+[  33] aload_0
+[  34] getfield FightC.offGraphics
+[  35] iconst_0
+[  36] iconst_0
+[  37] aload_0
+[  38] getfield FightC.width
+[  39] aload_0
+[  40] getfield FightC.remClipY
+[  41] invokevirtual javax/microedition/lcdui/Graphics.setClip
+[  42] aload_0
+[  43] getfield FightC.offGraphics
+[  44] ldc 242
+[  45] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[  46] aload_0
+[  47] getfield FightC.offGraphics
+[  48] iconst_0
+[  49] bipush 61
+[  50] aload_0
+[  51] getfield FightC.width
+[  52] bipush 20
+[  53] invokevirtual javax/microedition/lcdui/Graphics.fillRect
+[  54] aload_0
+[  55] getfield FightC.offGraphics
+[  56] ldc 243
+[  57] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[  58] aload_0
+[  59] getfield FightC.offGraphics
+[  60] iconst_0
+[  61] bipush 81
+[  62] aload_0
+[  63] getfield FightC.width
+[  64] bipush 12
+[  65] invokevirtual javax/microedition/lcdui/Graphics.fillRect
+[  66] aload_0
+[  67] getfield FightC.offGraphics
+[  68] ldc 244
+[  69] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[  70] aload_0
+[  71] getfield FightC.offGraphics
+[  72] iconst_0
+[  73] bipush 93
+[  74] aload_0
+[  75] getfield FightC.width
+[  76] iconst_3
+[  77] invokevirtual javax/microedition/lcdui/Graphics.fillRect
+[  78] aload_0
+[  79] getfield FightC.offGraphics
+[  80] aload_0
+[  81] getfield FightC.black_col
+[  82] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[  83] aload_0
+[  84] getfield FightC.offGraphics
+[  85] iconst_0
+[  86] bipush 61
+[  87] aload_0
+[  88] getfield FightC.width
+[  89] bipush 61
+[  90] invokevirtual javax/microedition/lcdui/Graphics.drawLine
+[  91] aload_0
+[  92] getfield FightC.offGraphics
+[  93] iconst_0
+[  94] bipush 81
+[  95] aload_0
+[  96] getfield FightC.width
+[  97] bipush 81
+[  98] invokevirtual javax/microedition/lcdui/Graphics.drawLine
+[  99] aload_0
+[ 100] getfield FightC.offGraphics
+[ 101] iconst_0
+[ 102] bipush 93
+[ 103] aload_0
+[ 104] getfield FightC.width
+[ 105] bipush 93
+[ 106] invokevirtual javax/microedition/lcdui/Graphics.drawLine
+[ 107] aload_0
+[ 108] getfield FightC.repaintBackground
+[ 109] ifeq 436
+[ 110] aload_0
+[ 111] getfield FightC.offGraphics
+[ 112] aload_0
+[ 113] getfield FightC.white_col
+[ 114] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[ 115] aload_0
+[ 116] getfield FightC.offGraphics
+[ 117] iconst_0
+[ 118] iconst_0
+[ 119] aload_0
+[ 120] getfield FightC.width
+[ 121] bipush 30
+[ 122] invokevirtual javax/microedition/lcdui/Graphics.fillRect
+[ 123] aload_0
+[ 124] getfield FightC.offGraphics
+[ 125] aload_0
+[ 126] getfield FightC.black_col
+[ 127] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[ 128] aload_0
+[ 129] getfield FightC.offGraphics
+[ 130] iconst_2
+[ 131] iconst_2
+[ 132] aload_0
+[ 133] getfield FightC.width
+[ 134] iconst_3
+[ 135] isub
+[ 136] bipush 27
+[ 137] invokevirtual javax/microedition/lcdui/Graphics.fillRect
+[ 138] aload_0
+[ 139] getfield FightC.offGraphics
+[ 140] iconst_0
+[ 141] bipush 30
+[ 142] aload_0
+[ 143] getfield FightC.width
+[ 144] bipush 30
+[ 145] invokevirtual javax/microedition/lcdui/Graphics.drawLine
+[ 146] aload_0
+[ 147] getfield FightC.offGraphics
+[ 148] aload_0
+[ 149] getfield FightC.white_col
+[ 150] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[ 151] aload_0
+[ 152] getfield FightC.offGraphics
+[ 153] new 135
+[ 154] dup
+[ 155] invokespecial java/lang/StringBuffer.<init>
+[ 156] ldc 245
+[ 157] invokevirtual java/lang/StringBuffer.append
+[ 158] aload_0
+[ 159] getfield FightC.roundPlayer
+[ 160] invokevirtual java/lang/StringBuffer.append
+[ 161] invokevirtual java/lang/StringBuffer.toString
+[ 162] bipush 7
+[ 163] iconst_5
+[ 164] aload_0
+[ 165] pop
+[ 166] iconst_4
+[ 167] aload_0
+[ 168] pop
+[ 169] bipush 16
+[ 170] ior
+[ 171] invokevirtual javax/microedition/lcdui/Graphics.drawString
+[ 172] aload_0
+[ 173] getfield FightC.level
+[ 174] ifne 47
+[ 175] aload_0
+[ 176] getfield FightC.offGraphics
+[ 177] new 135
+[ 178] dup
+[ 179] invokespecial java/lang/StringBuffer.<init>
+[ 180] aload_0
+[ 181] getfield FightC.roundEnemy
+[ 182] invokevirtual java/lang/StringBuffer.append
+[ 183] ldc 246
+[ 184] invokevirtual java/lang/StringBuffer.append
+[ 185] invokevirtual java/lang/StringBuffer.toString
+[ 186] bipush 112
+[ 187] iconst_5
+[ 188] aload_0
+[ 189] pop
+[ 190] bipush 8
+[ 191] aload_0
+[ 192] pop
+[ 193] bipush 16
+[ 194] ior
+[ 195] invokevirtual javax/microedition/lcdui/Graphics.drawString
+[ 196] goto 208
+[ 197] aload_0
+[ 198] getfield FightC.level
+[ 199] iconst_1
+[ 200] if_icmpne 47
+[ 201] aload_0
+[ 202] getfield FightC.offGraphics
+[ 203] new 135
+[ 204] dup
+[ 205] invokespecial java/lang/StringBuffer.<init>
+[ 206] aload_0
+[ 207] getfield FightC.roundEnemy
+[ 208] invokevirtual java/lang/StringBuffer.append
+[ 209] ldc 247
+[ 210] invokevirtual java/lang/StringBuffer.append
+[ 211] invokevirtual java/lang/StringBuffer.toString
+[ 212] bipush 108
+[ 213] iconst_5
+[ 214] aload_0
+[ 215] pop
+[ 216] bipush 8
+[ 217] aload_0
+[ 218] pop
+[ 219] bipush 16
+[ 220] ior
+[ 221] invokevirtual javax/microedition/lcdui/Graphics.drawString
+[ 222] goto 156
+[ 223] aload_0
+[ 224] getfield FightC.level
+[ 225] iconst_2
+[ 226] if_icmpne 47
+[ 227] aload_0
+[ 228] getfield FightC.offGraphics
+[ 229] new 135
+[ 230] dup
+[ 231] invokespecial java/lang/StringBuffer.<init>
+[ 232] aload_0
+[ 233] getfield FightC.roundEnemy
+[ 234] invokevirtual java/lang/StringBuffer.append
+[ 235] ldc 248
+[ 236] invokevirtual java/lang/StringBuffer.append
+[ 237] invokevirtual java/lang/StringBuffer.toString
+[ 238] bipush 110
+[ 239] iconst_5
+[ 240] aload_0
+[ 241] pop
+[ 242] bipush 8
+[ 243] aload_0
+[ 244] pop
+[ 245] bipush 16
+[ 246] ior
+[ 247] invokevirtual javax/microedition/lcdui/Graphics.drawString
+[ 248] goto 104
+[ 249] aload_0
+[ 250] getfield FightC.level
+[ 251] iconst_3
+[ 252] if_icmpne 47
+[ 253] aload_0
+[ 254] getfield FightC.offGraphics
+[ 255] new 135
+[ 256] dup
+[ 257] invokespecial java/lang/StringBuffer.<init>
+[ 258] aload_0
+[ 259] getfield FightC.roundEnemy
+[ 260] invokevirtual java/lang/StringBuffer.append
+[ 261] ldc 249
+[ 262] invokevirtual java/lang/StringBuffer.append
+[ 263] invokevirtual java/lang/StringBuffer.toString
+[ 264] bipush 112
+[ 265] iconst_5
+[ 266] aload_0
+[ 267] pop
+[ 268] bipush 8
+[ 269] aload_0
+[ 270] pop
+[ 271] bipush 16
+[ 272] ior
+[ 273] invokevirtual javax/microedition/lcdui/Graphics.drawString
+[ 274] goto 52
+[ 275] aload_0
+[ 276] getfield FightC.level
+[ 277] iconst_4
+[ 278] if_icmpne 44
+[ 279] aload_0
+[ 280] getfield FightC.offGraphics
+[ 281] new 135
+[ 282] dup
+[ 283] invokespecial java/lang/StringBuffer.<init>
+[ 284] aload_0
+[ 285] getfield FightC.roundEnemy
+[ 286] invokevirtual java/lang/StringBuffer.append
+[ 287] ldc 250
+[ 288] invokevirtual java/lang/StringBuffer.append
+[ 289] invokevirtual java/lang/StringBuffer.toString
+[ 290] bipush 110
+[ 291] iconst_5
+[ 292] aload_0
+[ 293] pop
+[ 294] bipush 8
+[ 295] aload_0
+[ 296] pop
+[ 297] bipush 16
+[ 298] ior
+[ 299] invokevirtual javax/microedition/lcdui/Graphics.drawString
+[ 300] aload_0
+[ 301] getfield FightC.offGraphics
+[ 302] aload_0
+[ 303] getfield FightC.white_col
+[ 304] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[ 305] aload_0
+[ 306] getfield FightC.offGraphics
+[ 307] bipush 7
+[ 308] bipush 20
+[ 309] aload_0
+[ 310] getfield FightC.hpPlayer
+[ 311] iconst_1
+[ 312] imul
+[ 313] bipush 6
+[ 314] invokevirtual javax/microedition/lcdui/Graphics.fillRect
+[ 315] aload_0
+[ 316] getfield FightC.offGraphics
+[ 317] bipush 113
+[ 318] aload_0
+[ 319] getfield FightC.hpEnemy
+[ 320] iconst_1
+[ 321] imul
+[ 322] isub
+[ 323] bipush 20
+[ 324] aload_0
+[ 325] getfield FightC.hpEnemy
+[ 326] iconst_1
+[ 327] imul
+[ 328] bipush 6
+[ 329] invokevirtual javax/microedition/lcdui/Graphics.fillRect
+[ 330] aload_0
+[ 331] getfield FightC.xMovClouds1
+[ 332] sipush 180
+[ 333] if_icmpge 16
+[ 334] aload_0
+[ 335] dup
+[ 336] getfield FightC.xMovClouds1
+[ 337] iconst_1
+[ 338] iadd
+[ 339] putfield FightC.xMovClouds1
+[ 340] goto 9
+[ 341] aload_0
+[ 342] bipush -35
+[ 343] putfield FightC.xMovClouds1
+[ 344] aload_0
+[ 345] getfield FightC.xMovClouds2
+[ 346] sipush 180
+[ 347] if_icmpge 16
+[ 348] aload_0
+[ 349] dup
+[ 350] getfield FightC.xMovClouds2
+[ 351] iconst_3
+[ 352] iadd
+[ 353] putfield FightC.xMovClouds2
+[ 354] goto 9
+[ 355] aload_0
+[ 356] bipush -35
+[ 357] putfield FightC.xMovClouds2
+[ 358] aload_0
+[ 359] getfield FightC.offGraphics
+[ 360] aload_0
+[ 361] getfield FightC.black_col
+[ 362] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[ 363] aload_0
+[ 364] getfield FightC.offGraphics
+[ 365] aload_0
+[ 366] getfield FightC.xMovClouds1
+[ 367] bipush 36
+[ 368] bipush 9
+[ 369] bipush 9
+[ 370] sipush 180
+[ 371] sipush 180
+[ 372] invokevirtual javax/microedition/lcdui/Graphics.drawRoundRect
+[ 373] aload_0
+[ 374] getfield FightC.offGraphics
+[ 375] aload_0
+[ 376] getfield FightC.xMovClouds1
+[ 377] iconst_3
+[ 378] iadd
+[ 379] bipush 32
+[ 380] bipush 9
+[ 381] bipush 9
+[ 382] sipush 180
+[ 383] sipush 180
+[ 384] invokevirtual javax/microedition/lcdui/Graphics.drawRoundRect
+[ 385] aload_0
+[ 386] getfield FightC.offGraphics
+[ 387] aload_0
+[ 388] getfield FightC.xMovClouds1
+[ 389] bipush 8
+[ 390] iadd
+[ 391] bipush 35
+[ 392] bipush 9
+[ 393] bipush 9
+[ 394] sipush 180
+[ 395] sipush 180
+[ 396] invokevirtual javax/microedition/lcdui/Graphics.drawRoundRect
+[ 397] aload_0
+[ 398] getfield FightC.offGraphics
+[ 399] aload_0
+[ 400] getfield FightC.xMovClouds1
+[ 401] iconst_5
+[ 402] iadd
+[ 403] bipush 39
+[ 404] bipush 9
+[ 405] bipush 9
+[ 406] sipush 180
+[ 407] sipush 180
+[ 408] invokevirtual javax/microedition/lcdui/Graphics.drawRoundRect
+[ 409] aload_0
+[ 410] getfield FightC.offGraphics
+[ 411] aload_0
+[ 412] getfield FightC.white_col
+[ 413] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[ 414] aload_0
+[ 415] getfield FightC.offGraphics
+[ 416] aload_0
+[ 417] getfield FightC.xMovClouds1
+[ 418] iconst_1
+[ 419] iadd
+[ 420] bipush 37
+[ 421] bipush 7
+[ 422] bipush 7
+[ 423] sipush 180
+[ 424] sipush 180
+[ 425] invokevirtual javax/microedition/lcdui/Graphics.fillRoundRect
+[ 426] aload_0
+[ 427] getfield FightC.offGraphics
+[ 428] aload_0
+[ 429] getfield FightC.xMovClouds1
+[ 430] iconst_4
+[ 431] iadd
+[ 432] bipush 33
+[ 433] bipush 7
+[ 434] bipush 7
+[ 435] sipush 180
+[ 436] sipush 180
+[ 437] invokevirtual javax/microedition/lcdui/Graphics.fillRoundRect
+[ 438] aload_0
+[ 439] getfield FightC.offGraphics
+[ 440] aload_0
+[ 441] getfield FightC.xMovClouds1
+[ 442] bipush 9
+[ 443] iadd
+[ 444] bipush 36
+[ 445] bipush 7
+[ 446] bipush 7
+[ 447] sipush 180
+[ 448] sipush 180
+[ 449] invokevirtual javax/microedition/lcdui/Graphics.fillRoundRect
+[ 450] aload_0
+[ 451] getfield FightC.offGraphics
+[ 452] aload_0
+[ 453] getfield FightC.xMovClouds1
+[ 454] bipush 6
+[ 455] iadd
+[ 456] bipush 40
+[ 457] bipush 7
+[ 458] bipush 7
+[ 459] sipush 180
+[ 460] sipush 180
+[ 461] invokevirtual javax/microedition/lcdui/Graphics.fillRoundRect
+[ 462] aload_0
+[ 463] getfield FightC.offGraphics
+[ 464] aload_0
+[ 465] getfield FightC.black_col
+[ 466] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[ 467] aload_0
+[ 468] getfield FightC.offGraphics
+[ 469] aload_0
+[ 470] getfield FightC.xMovClouds2
+[ 471] bipush 6
+[ 472] iadd
+[ 473] bipush 34
+[ 474] bipush 9
+[ 475] bipush 9
+[ 476] sipush 180
+[ 477] sipush 180
+[ 478] invokevirtual javax/microedition/lcdui/Graphics.drawRoundRect
+[ 479] aload_0
+[ 480] getfield FightC.offGraphics
+[ 481] aload_0
+[ 482] getfield FightC.xMovClouds2
+[ 483] bipush 35
+[ 484] bipush 9
+[ 485] bipush 9
+[ 486] sipush 180
+[ 487] sipush 180
+[ 488] invokevirtual javax/microedition/lcdui/Graphics.drawRoundRect
+[ 489] aload_0
+[ 490] getfield FightC.offGraphics
+[ 491] aload_0
+[ 492] getfield FightC.xMovClouds2
+[ 493] iconst_3
+[ 494] iadd
+[ 495] bipush 38
+[ 496] bipush 9
+[ 497] bipush 9
+[ 498] sipush 180
+[ 499] sipush 180
+[ 500] invokevirtual javax/microedition/lcdui/Graphics.drawRoundRect
+[ 501] aload_0
+[ 502] getfield FightC.offGraphics
+[ 503] aload_0
+[ 504] getfield FightC.xMovClouds2
+[ 505] bipush 8
+[ 506] iadd
+[ 507] bipush 37
+[ 508] bipush 9
+[ 509] bipush 9
+[ 510] sipush 180
+[ 511] sipush 180
+[ 512] invokevirtual javax/microedition/lcdui/Graphics.drawRoundRect
+[ 513] aload_0
+[ 514] getfield FightC.offGraphics
+[ 515] aload_0
+[ 516] getfield FightC.white_col
+[ 517] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[ 518] aload_0
+[ 519] getfield FightC.offGraphics
+[ 520] aload_0
+[ 521] getfield FightC.xMovClouds2
+[ 522] bipush 7
+[ 523] iadd
+[ 524] bipush 35
+[ 525] bipush 7
+[ 526] bipush 7
+[ 527] sipush 180
+[ 528] sipush 180
+[ 529] invokevirtual javax/microedition/lcdui/Graphics.fillRoundRect
+[ 530] aload_0
+[ 531] getfield FightC.offGraphics
+[ 532] aload_0
+[ 533] getfield FightC.xMovClouds2
+[ 534] iconst_1
+[ 535] iadd
+[ 536] bipush 36
+[ 537] bipush 7
+[ 538] bipush 7
+[ 539] sipush 180
+[ 540] sipush 180
+[ 541] invokevirtual javax/microedition/lcdui/Graphics.fillRoundRect
+[ 542] aload_0
+[ 543] getfield FightC.offGraphics
+[ 544] aload_0
+[ 545] getfield FightC.xMovClouds2
+[ 546] iconst_4
+[ 547] iadd
+[ 548] bipush 39
+[ 549] bipush 7
+[ 550] bipush 7
+[ 551] sipush 180
+[ 552] sipush 180
+[ 553] invokevirtual javax/microedition/lcdui/Graphics.fillRoundRect
+[ 554] aload_0
+[ 555] getfield FightC.offGraphics
+[ 556] aload_0
+[ 557] getfield FightC.xMovClouds2
+[ 558] bipush 9
+[ 559] iadd
+[ 560] bipush 38
+[ 561] bipush 7
+[ 562] bipush 7
+[ 563] sipush 180
+[ 564] sipush 180
+[ 565] invokevirtual javax/microedition/lcdui/Graphics.fillRoundRect
+[ 566] aload_0
+[ 567] iconst_0
+[ 568] putfield FightC.repaintBackground
+[ 569] return

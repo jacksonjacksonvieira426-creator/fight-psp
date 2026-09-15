@@ -1,0 +1,1083 @@
+// Classe: FightC
+// Metodo: paintFighters
+// Descritor: ()V
+// Instrucoes: 1078
+
+[   0] aload_0
+[   1] getfield FightC.executeCommand
+[   2] ifeq 77
+[   3] aload_0
+[   4] getfield FightC.rememberCommand
+[   5] aload_0
+[   6] getfield FightC.MOVELEFT
+[   7] if_icmpeq 25
+[   8] aload_0
+[   9] getfield FightC.rememberCommand
+[  10] aload_0
+[  11] getfield FightC.MOVERIGHT
+[  12] if_icmpeq 14
+[  13] aload_0
+[  14] getfield FightC.rememberCommand
+[  15] aload_0
+[  16] getfield FightC.BLOCK
+[  17] if_icmpne 44
+[  18] aload_0
+[  19] getfield FightC.statePlayer
+[  20] aload_0
+[  21] getfield FightC.HITTED
+[  22] if_icmpeq 33
+[  23] aload_0
+[  24] getfield FightC.statePlayer
+[  25] aload_0
+[  26] getfield FightC.ONFLOOR
+[  27] if_icmpeq 22
+[  28] aload_0
+[  29] getfield FightC.commandPlayer
+[  30] aload_0
+[  31] getfield FightC.BLOCK
+[  32] if_icmpeq 11
+[  33] aload_0
+[  34] aload_0
+[  35] getfield FightC.rememberCommand
+[  36] putfield FightC.commandPlayer
+[  37] aload_0
+[  38] getfield FightC.gameState
+[  39] aload_0
+[  40] getfield FightC.DEMOMODE
+[  41] if_icmpne 116
+[  42] aload_0
+[  43] getfield FightC.offGraphics
+[  44] iconst_0
+[  45] iconst_0
+[  46] aload_0
+[  47] getfield FightC.width
+[  48] bipush 18
+[  49] invokevirtual javax/microedition/lcdui/Graphics.fillRect
+[  50] aload_0
+[  51] getfield FightC.offGraphics
+[  52] aload_0
+[  53] getfield FightC.logo
+[  54] iconst_0
+[  55] iconst_0
+[  56] aload_0
+[  57] pop
+[  58] bipush 16
+[  59] aload_0
+[  60] pop
+[  61] iconst_4
+[  62] ior
+[  63] invokevirtual javax/microedition/lcdui/Graphics.drawImage
+[  64] aload_0
+[  65] getfield FightC.logoStartTime
+[  66] lconst_0
+[  67] lcmp
+[  68] ifne 16
+[  69] aload_0
+[  70] invokestatic java/util/Calendar.getInstance
+[  71] invokevirtual java/util/Calendar.getTime
+[  72] invokevirtual java/util/Date.getTime
+[  73] putfield FightC.logoStartTime
+[  74] aload_0
+[  75] invokestatic java/util/Calendar.getInstance
+[  76] invokevirtual java/util/Calendar.getTime
+[  77] invokevirtual java/util/Date.getTime
+[  78] putfield FightC.logoActualTime
+[  79] aload_0
+[  80] getfield FightC.logoActualTime
+[  81] aload_0
+[  82] getfield FightC.logoStartTime
+[  83] lsub
+[  84] ldc2_w 257
+[  85] lcmp
+[  86] ifle 28
+[  87] aload_0
+[  88] aload_0
+[  89] getfield FightC.exitCommand
+[  90] invokevirtual javax/microedition/lcdui/Displayable.removeCommand
+[  91] aload_0
+[  92] getfield FightC.FightMainClass
+[  93] invokevirtual Fight.pauseApp
+[  94] aload_0
+[  95] iconst_0
+[  96] putfield FightC.level
+[  97] aload_0
+[  98] iconst_1
+[  99] putfield FightC.repaintBackground
+[ 100] return
+[ 101] aload_0
+[ 102] getfield FightC.imagePlayer
+[ 103] ifne 52
+[ 104] aload_0
+[ 105] aload_0
+[ 106] getfield FightC.commandPlayer
+[ 107] putfield FightC.statePlayer
+[ 108] aload_0
+[ 109] getfield FightC.commandPlayer
+[ 110] aload_0
+[ 111] getfield FightC.PUNCH
+[ 112] if_icmpeq 25
+[ 113] aload_0
+[ 114] getfield FightC.commandPlayer
+[ 115] aload_0
+[ 116] getfield FightC.KICK
+[ 117] if_icmpeq 14
+[ 118] aload_0
+[ 119] getfield FightC.commandPlayer
+[ 120] aload_0
+[ 121] getfield FightC.HITTED
+[ 122] if_icmpne 11
+[ 123] aload_0
+[ 124] aload_0
+[ 125] getfield FightC.NONE
+[ 126] putfield FightC.commandPlayer
+[ 127] iconst_0
+[ 128] istore_1
+[ 129] aload_0
+[ 130] getfield FightC.statePlayer
+[ 131] aload_0
+[ 132] getfield FightC.BLOCK
+[ 133] if_icmpne 8
+[ 134] iconst_5
+[ 135] istore_1
+[ 136] goto 461
+[ 137] aload_0
+[ 138] getfield FightC.statePlayer
+[ 139] aload_0
+[ 140] getfield FightC.MOVELEFT
+[ 141] if_icmpne 62
+[ 142] aload_0
+[ 143] dup
+[ 144] getfield FightC.xPlayer
+[ 145] iconst_4
+[ 146] isub
+[ 147] putfield FightC.xPlayer
+[ 148] aload_0
+[ 149] getfield FightC.xPlayer
+[ 150] bipush -4
+[ 151] if_icmpge 9
+[ 152] aload_0
+[ 153] bipush -4
+[ 154] putfield FightC.xPlayer
+[ 155] aload_0
+[ 156] getfield FightC.imagePlayer
+[ 157] istore_1
+[ 158] aload_0
+[ 159] getfield FightC.imagePlayer
+[ 160] iconst_1
+[ 161] if_icmplt 11
+[ 162] aload_0
+[ 163] iconst_0
+[ 164] putfield FightC.imagePlayer
+[ 165] goto 404
+[ 166] aload_0
+[ 167] dup
+[ 168] getfield FightC.imagePlayer
+[ 169] iconst_1
+[ 170] iadd
+[ 171] putfield FightC.imagePlayer
+[ 172] goto 391
+[ 173] aload_0
+[ 174] getfield FightC.statePlayer
+[ 175] aload_0
+[ 176] getfield FightC.MOVERIGHT
+[ 177] if_icmpne 72
+[ 178] aload_0
+[ 179] dup
+[ 180] getfield FightC.xPlayer
+[ 181] iconst_4
+[ 182] iadd
+[ 183] putfield FightC.xPlayer
+[ 184] aload_0
+[ 185] getfield FightC.xEnemy
+[ 186] aload_0
+[ 187] getfield FightC.xPlayer
+[ 188] isub
+[ 189] bipush 27
+[ 190] if_icmpge 14
+[ 191] aload_0
+[ 192] aload_0
+[ 193] getfield FightC.xEnemy
+[ 194] bipush 27
+[ 195] isub
+[ 196] putfield FightC.xPlayer
+[ 197] aload_0
+[ 198] getfield FightC.imagePlayer
+[ 199] istore_1
+[ 200] aload_0
+[ 201] getfield FightC.imagePlayer
+[ 202] iconst_1
+[ 203] if_icmplt 11
+[ 204] aload_0
+[ 205] iconst_0
+[ 206] putfield FightC.imagePlayer
+[ 207] goto 324
+[ 208] aload_0
+[ 209] dup
+[ 210] getfield FightC.imagePlayer
+[ 211] iconst_1
+[ 212] iadd
+[ 213] putfield FightC.imagePlayer
+[ 214] goto 311
+[ 215] aload_0
+[ 216] getfield FightC.statePlayer
+[ 217] aload_0
+[ 218] getfield FightC.PUNCH
+[ 219] if_icmpne 77
+[ 220] aload_0
+[ 221] getfield FightC.imagePlayer
+[ 222] iconst_2
+[ 223] if_icmpge 40
+[ 224] aload_0
+[ 225] dup
+[ 226] getfield FightC.xPlayer
+[ 227] iconst_4
+[ 228] iadd
+[ 229] putfield FightC.xPlayer
+[ 230] aload_0
+[ 231] getfield FightC.xEnemy
+[ 232] aload_0
+[ 233] getfield FightC.xPlayer
+[ 234] isub
+[ 235] bipush 27
+[ 236] if_icmpge 14
+[ 237] aload_0
+[ 238] aload_0
+[ 239] getfield FightC.xEnemy
+[ 240] bipush 27
+[ 241] isub
+[ 242] putfield FightC.xPlayer
+[ 243] iconst_2
+[ 244] istore_1
+[ 245] aload_0
+[ 246] getfield FightC.imagePlayer
+[ 247] iconst_2
+[ 248] if_icmplt 11
+[ 249] aload_0
+[ 250] iconst_0
+[ 251] putfield FightC.imagePlayer
+[ 252] goto 239
+[ 253] aload_0
+[ 254] dup
+[ 255] getfield FightC.imagePlayer
+[ 256] iconst_1
+[ 257] iadd
+[ 258] putfield FightC.imagePlayer
+[ 259] goto 226
+[ 260] aload_0
+[ 261] getfield FightC.statePlayer
+[ 262] aload_0
+[ 263] getfield FightC.KICK
+[ 264] if_icmpne 78
+[ 265] aload_0
+[ 266] getfield FightC.imagePlayer
+[ 267] iconst_2
+[ 268] if_icmpge 41
+[ 269] aload_0
+[ 270] dup
+[ 271] getfield FightC.xPlayer
+[ 272] iconst_4
+[ 273] iadd
+[ 274] putfield FightC.xPlayer
+[ 275] aload_0
+[ 276] getfield FightC.xEnemy
+[ 277] aload_0
+[ 278] getfield FightC.xPlayer
+[ 279] isub
+[ 280] bipush 27
+[ 281] if_icmpge 14
+[ 282] aload_0
+[ 283] aload_0
+[ 284] getfield FightC.xEnemy
+[ 285] bipush 27
+[ 286] isub
+[ 287] putfield FightC.xPlayer
+[ 288] bipush 6
+[ 289] istore_1
+[ 290] aload_0
+[ 291] getfield FightC.imagePlayer
+[ 292] iconst_2
+[ 293] if_icmplt 11
+[ 294] aload_0
+[ 295] iconst_0
+[ 296] putfield FightC.imagePlayer
+[ 297] goto 153
+[ 298] aload_0
+[ 299] dup
+[ 300] getfield FightC.imagePlayer
+[ 301] iconst_1
+[ 302] iadd
+[ 303] putfield FightC.imagePlayer
+[ 304] goto 140
+[ 305] aload_0
+[ 306] getfield FightC.statePlayer
+[ 307] aload_0
+[ 308] getfield FightC.HITTED
+[ 309] if_icmpne 58
+[ 310] aload_0
+[ 311] dup
+[ 312] getfield FightC.xPlayer
+[ 313] bipush 6
+[ 314] isub
+[ 315] putfield FightC.xPlayer
+[ 316] aload_0
+[ 317] getfield FightC.xPlayer
+[ 318] iconst_1
+[ 319] if_icmpge 8
+[ 320] aload_0
+[ 321] iconst_1
+[ 322] putfield FightC.xPlayer
+[ 323] iconst_3
+[ 324] istore_1
+[ 325] aload_0
+[ 326] getfield FightC.imagePlayer
+[ 327] iconst_2
+[ 328] if_icmplt 11
+[ 329] aload_0
+[ 330] iconst_0
+[ 331] putfield FightC.imagePlayer
+[ 332] goto 87
+[ 333] aload_0
+[ 334] dup
+[ 335] getfield FightC.imagePlayer
+[ 336] iconst_1
+[ 337] iadd
+[ 338] putfield FightC.imagePlayer
+[ 339] goto 74
+[ 340] aload_0
+[ 341] getfield FightC.statePlayer
+[ 342] aload_0
+[ 343] getfield FightC.ONFLOOR
+[ 344] if_icmpne 58
+[ 345] aload_0
+[ 346] dup
+[ 347] getfield FightC.xPlayer
+[ 348] bipush 6
+[ 349] isub
+[ 350] putfield FightC.xPlayer
+[ 351] aload_0
+[ 352] getfield FightC.xPlayer
+[ 353] iconst_2
+[ 354] if_icmpge 8
+[ 355] aload_0
+[ 356] iconst_2
+[ 357] putfield FightC.xPlayer
+[ 358] iconst_4
+[ 359] istore_1
+[ 360] aload_0
+[ 361] getfield FightC.imagePlayer
+[ 362] iconst_1
+[ 363] if_icmplt 11
+[ 364] aload_0
+[ 365] iconst_1
+[ 366] putfield FightC.imagePlayer
+[ 367] goto 21
+[ 368] aload_0
+[ 369] dup
+[ 370] getfield FightC.imagePlayer
+[ 371] iconst_1
+[ 372] iadd
+[ 373] putfield FightC.imagePlayer
+[ 374] goto 8
+[ 375] aload_0
+[ 376] iconst_0
+[ 377] putfield FightC.imagePlayer
+[ 378] aload_0
+[ 379] getfield FightC.imageEnemy
+[ 380] ifne 52
+[ 381] aload_0
+[ 382] aload_0
+[ 383] getfield FightC.commandEnemy
+[ 384] putfield FightC.stateEnemy
+[ 385] aload_0
+[ 386] getfield FightC.commandEnemy
+[ 387] aload_0
+[ 388] getfield FightC.PUNCH
+[ 389] if_icmpeq 25
+[ 390] aload_0
+[ 391] getfield FightC.commandEnemy
+[ 392] aload_0
+[ 393] getfield FightC.KICK
+[ 394] if_icmpeq 14
+[ 395] aload_0
+[ 396] getfield FightC.commandEnemy
+[ 397] aload_0
+[ 398] getfield FightC.HITTED
+[ 399] if_icmpne 11
+[ 400] aload_0
+[ 401] aload_0
+[ 402] getfield FightC.NONE
+[ 403] putfield FightC.commandEnemy
+[ 404] iconst_0
+[ 405] istore_2
+[ 406] aload_0
+[ 407] getfield FightC.stateEnemy
+[ 408] aload_0
+[ 409] getfield FightC.BLOCK
+[ 410] if_icmpne 8
+[ 411] iconst_5
+[ 412] istore_2
+[ 413] goto 465
+[ 414] aload_0
+[ 415] getfield FightC.stateEnemy
+[ 416] aload_0
+[ 417] getfield FightC.MOVELEFT
+[ 418] if_icmpne 72
+[ 419] aload_0
+[ 420] dup
+[ 421] getfield FightC.xEnemy
+[ 422] iconst_4
+[ 423] isub
+[ 424] putfield FightC.xEnemy
+[ 425] aload_0
+[ 426] getfield FightC.xEnemy
+[ 427] aload_0
+[ 428] getfield FightC.xPlayer
+[ 429] isub
+[ 430] bipush 27
+[ 431] if_icmpge 14
+[ 432] aload_0
+[ 433] aload_0
+[ 434] getfield FightC.xPlayer
+[ 435] bipush 27
+[ 436] iadd
+[ 437] putfield FightC.xEnemy
+[ 438] aload_0
+[ 439] getfield FightC.imageEnemy
+[ 440] istore_2
+[ 441] aload_0
+[ 442] getfield FightC.imageEnemy
+[ 443] iconst_1
+[ 444] if_icmplt 11
+[ 445] aload_0
+[ 446] iconst_0
+[ 447] putfield FightC.imageEnemy
+[ 448] goto 398
+[ 449] aload_0
+[ 450] dup
+[ 451] getfield FightC.imageEnemy
+[ 452] iconst_1
+[ 453] iadd
+[ 454] putfield FightC.imageEnemy
+[ 455] goto 385
+[ 456] aload_0
+[ 457] getfield FightC.stateEnemy
+[ 458] aload_0
+[ 459] getfield FightC.MOVERIGHT
+[ 460] if_icmpne 62
+[ 461] aload_0
+[ 462] dup
+[ 463] getfield FightC.xEnemy
+[ 464] iconst_4
+[ 465] iadd
+[ 466] putfield FightC.xEnemy
+[ 467] aload_0
+[ 468] getfield FightC.xEnemy
+[ 469] bipush 92
+[ 470] if_icmple 9
+[ 471] aload_0
+[ 472] bipush 92
+[ 473] putfield FightC.xEnemy
+[ 474] aload_0
+[ 475] getfield FightC.imageEnemy
+[ 476] istore_2
+[ 477] aload_0
+[ 478] getfield FightC.imageEnemy
+[ 479] iconst_1
+[ 480] if_icmplt 11
+[ 481] aload_0
+[ 482] iconst_0
+[ 483] putfield FightC.imageEnemy
+[ 484] goto 328
+[ 485] aload_0
+[ 486] dup
+[ 487] getfield FightC.imageEnemy
+[ 488] iconst_1
+[ 489] iadd
+[ 490] putfield FightC.imageEnemy
+[ 491] goto 315
+[ 492] aload_0
+[ 493] getfield FightC.stateEnemy
+[ 494] aload_0
+[ 495] getfield FightC.PUNCH
+[ 496] if_icmpne 77
+[ 497] aload_0
+[ 498] getfield FightC.imageEnemy
+[ 499] iconst_2
+[ 500] if_icmpge 40
+[ 501] aload_0
+[ 502] dup
+[ 503] getfield FightC.xEnemy
+[ 504] iconst_4
+[ 505] isub
+[ 506] putfield FightC.xEnemy
+[ 507] aload_0
+[ 508] getfield FightC.xEnemy
+[ 509] aload_0
+[ 510] getfield FightC.xPlayer
+[ 511] isub
+[ 512] bipush 27
+[ 513] if_icmpge 14
+[ 514] aload_0
+[ 515] aload_0
+[ 516] getfield FightC.xPlayer
+[ 517] bipush 27
+[ 518] iadd
+[ 519] putfield FightC.xEnemy
+[ 520] iconst_2
+[ 521] istore_2
+[ 522] aload_0
+[ 523] getfield FightC.imageEnemy
+[ 524] iconst_2
+[ 525] if_icmplt 11
+[ 526] aload_0
+[ 527] iconst_0
+[ 528] putfield FightC.imageEnemy
+[ 529] goto 243
+[ 530] aload_0
+[ 531] dup
+[ 532] getfield FightC.imageEnemy
+[ 533] iconst_1
+[ 534] iadd
+[ 535] putfield FightC.imageEnemy
+[ 536] goto 230
+[ 537] aload_0
+[ 538] getfield FightC.stateEnemy
+[ 539] aload_0
+[ 540] getfield FightC.KICK
+[ 541] if_icmpne 78
+[ 542] aload_0
+[ 543] getfield FightC.imageEnemy
+[ 544] iconst_2
+[ 545] if_icmpge 41
+[ 546] aload_0
+[ 547] dup
+[ 548] getfield FightC.xEnemy
+[ 549] iconst_4
+[ 550] isub
+[ 551] putfield FightC.xEnemy
+[ 552] aload_0
+[ 553] getfield FightC.xEnemy
+[ 554] aload_0
+[ 555] getfield FightC.xPlayer
+[ 556] isub
+[ 557] bipush 27
+[ 558] if_icmpge 14
+[ 559] aload_0
+[ 560] aload_0
+[ 561] getfield FightC.xPlayer
+[ 562] bipush 27
+[ 563] iadd
+[ 564] putfield FightC.xEnemy
+[ 565] bipush 6
+[ 566] istore_2
+[ 567] aload_0
+[ 568] getfield FightC.imageEnemy
+[ 569] iconst_2
+[ 570] if_icmplt 11
+[ 571] aload_0
+[ 572] iconst_0
+[ 573] putfield FightC.imageEnemy
+[ 574] goto 157
+[ 575] aload_0
+[ 576] dup
+[ 577] getfield FightC.imageEnemy
+[ 578] iconst_1
+[ 579] iadd
+[ 580] putfield FightC.imageEnemy
+[ 581] goto 144
+[ 582] aload_0
+[ 583] getfield FightC.stateEnemy
+[ 584] aload_0
+[ 585] getfield FightC.HITTED
+[ 586] if_icmpne 60
+[ 587] aload_0
+[ 588] dup
+[ 589] getfield FightC.xEnemy
+[ 590] bipush 6
+[ 591] iadd
+[ 592] putfield FightC.xEnemy
+[ 593] aload_0
+[ 594] getfield FightC.xEnemy
+[ 595] bipush 92
+[ 596] if_icmple 9
+[ 597] aload_0
+[ 598] bipush 92
+[ 599] putfield FightC.xEnemy
+[ 600] iconst_3
+[ 601] istore_2
+[ 602] aload_0
+[ 603] getfield FightC.imageEnemy
+[ 604] iconst_2
+[ 605] if_icmplt 11
+[ 606] aload_0
+[ 607] iconst_0
+[ 608] putfield FightC.imageEnemy
+[ 609] goto 89
+[ 610] aload_0
+[ 611] dup
+[ 612] getfield FightC.imageEnemy
+[ 613] iconst_1
+[ 614] iadd
+[ 615] putfield FightC.imageEnemy
+[ 616] goto 76
+[ 617] aload_0
+[ 618] getfield FightC.stateEnemy
+[ 619] aload_0
+[ 620] getfield FightC.ONFLOOR
+[ 621] if_icmpne 60
+[ 622] aload_0
+[ 623] dup
+[ 624] getfield FightC.xEnemy
+[ 625] bipush 6
+[ 626] iadd
+[ 627] putfield FightC.xEnemy
+[ 628] aload_0
+[ 629] getfield FightC.xEnemy
+[ 630] bipush 92
+[ 631] if_icmple 9
+[ 632] aload_0
+[ 633] bipush 92
+[ 634] putfield FightC.xEnemy
+[ 635] iconst_4
+[ 636] istore_2
+[ 637] aload_0
+[ 638] getfield FightC.imageEnemy
+[ 639] iconst_1
+[ 640] if_icmplt 11
+[ 641] aload_0
+[ 642] iconst_1
+[ 643] putfield FightC.imageEnemy
+[ 644] goto 21
+[ 645] aload_0
+[ 646] dup
+[ 647] getfield FightC.imageEnemy
+[ 648] iconst_1
+[ 649] iadd
+[ 650] putfield FightC.imageEnemy
+[ 651] goto 8
+[ 652] aload_0
+[ 653] iconst_0
+[ 654] putfield FightC.imageEnemy
+[ 655] aload_0
+[ 656] getfield FightC.offGraphics
+[ 657] aload_0
+[ 658] getfield FightC.xEnemy
+[ 659] bipush 63
+[ 660] bipush 30
+[ 661] bipush 30
+[ 662] invokevirtual javax/microedition/lcdui/Graphics.clipRect
+[ 663] aload_0
+[ 664] getfield FightC.offGraphics
+[ 665] aload_0
+[ 666] getfield FightC.picFighters
+[ 667] aload_0
+[ 668] getfield FightC.level
+[ 669] iconst_1
+[ 670] iadd
+[ 671] aaload
+[ 672] aload_0
+[ 673] getfield FightC.xEnemy
+[ 674] bipush 63
+[ 675] iload_2
+[ 676] bipush 30
+[ 677] imul
+[ 678] isub
+[ 679] aload_0
+[ 680] pop
+[ 681] bipush 16
+[ 682] aload_0
+[ 683] pop
+[ 684] iconst_4
+[ 685] ior
+[ 686] invokevirtual javax/microedition/lcdui/Graphics.drawImage
+[ 687] aload_0
+[ 688] getfield FightC.offGraphics
+[ 689] iconst_0
+[ 690] iconst_0
+[ 691] aload_0
+[ 692] getfield FightC.width
+[ 693] aload_0
+[ 694] getfield FightC.remClipY
+[ 695] invokevirtual javax/microedition/lcdui/Graphics.setClip
+[ 696] aload_0
+[ 697] getfield FightC.offGraphics
+[ 698] aload_0
+[ 699] getfield FightC.xPlayer
+[ 700] bipush 63
+[ 701] bipush 30
+[ 702] bipush 30
+[ 703] invokevirtual javax/microedition/lcdui/Graphics.clipRect
+[ 704] aload_0
+[ 705] getfield FightC.offGraphics
+[ 706] aload_0
+[ 707] getfield FightC.picFighters
+[ 708] iconst_0
+[ 709] aaload
+[ 710] aload_0
+[ 711] getfield FightC.xPlayer
+[ 712] bipush 63
+[ 713] iload_1
+[ 714] bipush 30
+[ 715] imul
+[ 716] isub
+[ 717] aload_0
+[ 718] pop
+[ 719] bipush 16
+[ 720] aload_0
+[ 721] pop
+[ 722] iconst_4
+[ 723] ior
+[ 724] invokevirtual javax/microedition/lcdui/Graphics.drawImage
+[ 725] aload_0
+[ 726] getfield FightC.offGraphics
+[ 727] iconst_0
+[ 728] iconst_0
+[ 729] aload_0
+[ 730] getfield FightC.width
+[ 731] aload_0
+[ 732] getfield FightC.remClipY
+[ 733] invokevirtual javax/microedition/lcdui/Graphics.setClip
+[ 734] aload_0
+[ 735] getfield FightC.executeCommand
+[ 736] ifeq 16
+[ 737] aload_0
+[ 738] iconst_0
+[ 739] putfield FightC.executeCommand
+[ 740] aload_0
+[ 741] aload_0
+[ 742] getfield FightC.NONE
+[ 743] putfield FightC.commandPlayer
+[ 744] aload_0
+[ 745] getfield FightC.gameState
+[ 746] aload_0
+[ 747] getfield FightC.GAME
+[ 748] if_icmpne 153
+[ 749] aload_0
+[ 750] getfield FightC.roundDisplay
+[ 751] ifeq 145
+[ 752] aload_0
+[ 753] getfield FightC.offGraphics
+[ 754] aload_0
+[ 755] getfield FightC.black_col
+[ 756] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[ 757] aload_0
+[ 758] getfield FightC.offGraphics
+[ 759] aload_0
+[ 760] getfield FightC.width2
+[ 761] bipush 42
+[ 762] isub
+[ 763] bipush 43
+[ 764] bipush 80
+[ 765] bipush 30
+[ 766] invokevirtual javax/microedition/lcdui/Graphics.fillRect
+[ 767] aload_0
+[ 768] getfield FightC.offGraphics
+[ 769] aload_0
+[ 770] getfield FightC.white_col
+[ 771] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[ 772] aload_0
+[ 773] getfield FightC.offGraphics
+[ 774] aload_0
+[ 775] getfield FightC.width2
+[ 776] bipush 42
+[ 777] isub
+[ 778] bipush 43
+[ 779] bipush 80
+[ 780] bipush 30
+[ 781] invokevirtual javax/microedition/lcdui/Graphics.drawRect
+[ 782] aload_0
+[ 783] getfield FightC.offGraphics
+[ 784] new 135
+[ 785] dup
+[ 786] invokespecial java/lang/StringBuffer.<init>
+[ 787] ldc_w 265
+[ 788] invokevirtual java/lang/StringBuffer.append
+[ 789] aload_0
+[ 790] getfield FightC.roundEnemy
+[ 791] aload_0
+[ 792] getfield FightC.roundPlayer
+[ 793] iadd
+[ 794] iconst_1
+[ 795] iadd
+[ 796] invokevirtual java/lang/StringBuffer.append
+[ 797] invokevirtual java/lang/StringBuffer.toString
+[ 798] bipush 60
+[ 799] bipush 63
+[ 800] aload_0
+[ 801] pop
+[ 802] iconst_1
+[ 803] aload_0
+[ 804] pop
+[ 805] bipush 64
+[ 806] ior
+[ 807] invokevirtual javax/microedition/lcdui/Graphics.drawString
+[ 808] aload_0
+[ 809] getfield FightC.roundCounter
+[ 810] iconst_5
+[ 811] if_icmple 16
+[ 812] aload_0
+[ 813] iconst_0
+[ 814] putfield FightC.roundCounter
+[ 815] aload_0
+[ 816] iconst_0
+[ 817] putfield FightC.roundDisplay
+[ 818] goto 13
+[ 819] aload_0
+[ 820] dup
+[ 821] getfield FightC.roundCounter
+[ 822] iconst_1
+[ 823] iadd
+[ 824] putfield FightC.roundCounter
+[ 825] return
+[ 826] aload_0
+[ 827] getfield FightC.continueGame
+[ 828] ifeq 216
+[ 829] aload_0
+[ 830] getfield FightC.offGraphics
+[ 831] iconst_0
+[ 832] iconst_1
+[ 833] iconst_0
+[ 834] invokestatic javax/microedition/lcdui/Font.getFont
+[ 835] invokevirtual javax/microedition/lcdui/Graphics.setFont
+[ 836] aload_0
+[ 837] getfield FightC.offGraphics
+[ 838] aload_0
+[ 839] getfield FightC.black_col
+[ 840] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[ 841] aload_0
+[ 842] getfield FightC.offGraphics
+[ 843] aload_0
+[ 844] getfield FightC.width2
+[ 845] bipush 56
+[ 846] isub
+[ 847] bipush 16
+[ 848] bipush 110
+[ 849] bipush 30
+[ 850] invokevirtual javax/microedition/lcdui/Graphics.fillRect
+[ 851] aload_0
+[ 852] getfield FightC.offGraphics
+[ 853] aload_0
+[ 854] getfield FightC.width2
+[ 855] bipush 17
+[ 856] isub
+[ 857] bipush 61
+[ 858] bipush 30
+[ 859] bipush 30
+[ 860] invokevirtual javax/microedition/lcdui/Graphics.fillRect
+[ 861] aload_0
+[ 862] getfield FightC.offGraphics
+[ 863] aload_0
+[ 864] getfield FightC.white_col
+[ 865] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[ 866] aload_0
+[ 867] getfield FightC.offGraphics
+[ 868] aload_0
+[ 869] getfield FightC.width2
+[ 870] bipush 56
+[ 871] isub
+[ 872] bipush 16
+[ 873] bipush 110
+[ 874] bipush 30
+[ 875] invokevirtual javax/microedition/lcdui/Graphics.drawRect
+[ 876] aload_0
+[ 877] getfield FightC.offGraphics
+[ 878] aload_0
+[ 879] getfield FightC.width2
+[ 880] bipush 17
+[ 881] isub
+[ 882] bipush 61
+[ 883] bipush 30
+[ 884] bipush 30
+[ 885] invokevirtual javax/microedition/lcdui/Graphics.drawRect
+[ 886] aload_0
+[ 887] getfield FightC.offGraphics
+[ 888] new 135
+[ 889] dup
+[ 890] invokespecial java/lang/StringBuffer.<init>
+[ 891] ldc_w 266
+[ 892] invokevirtual java/lang/StringBuffer.append
+[ 893] aload_0
+[ 894] getfield FightC.countCont
+[ 895] invokevirtual java/lang/StringBuffer.append
+[ 896] invokevirtual java/lang/StringBuffer.toString
+[ 897] bipush 60
+[ 898] bipush 35
+[ 899] aload_0
+[ 900] pop
+[ 901] iconst_1
+[ 902] aload_0
+[ 903] pop
+[ 904] bipush 64
+[ 905] ior
+[ 906] invokevirtual javax/microedition/lcdui/Graphics.drawString
+[ 907] aload_0
+[ 908] getfield FightC.offGraphics
+[ 909] new 135
+[ 910] dup
+[ 911] invokespecial java/lang/StringBuffer.<init>
+[ 912] ldc_w 267
+[ 913] invokevirtual java/lang/StringBuffer.append
+[ 914] aload_0
+[ 915] getfield FightC.continueGameTime
+[ 916] invokevirtual java/lang/StringBuffer.append
+[ 917] invokevirtual java/lang/StringBuffer.toString
+[ 918] bipush 60
+[ 919] bipush 82
+[ 920] aload_0
+[ 921] pop
+[ 922] iconst_1
+[ 923] aload_0
+[ 924] pop
+[ 925] bipush 64
+[ 926] ior
+[ 927] invokevirtual javax/microedition/lcdui/Graphics.drawString
+[ 928] aload_0
+[ 929] getfield FightC.offGraphics
+[ 930] aload_0
+[ 931] getfield FightC.fontL
+[ 932] invokevirtual javax/microedition/lcdui/Graphics.setFont
+[ 933] goto 286
+[ 934] aload_0
+[ 935] getfield FightC.blinkCounter
+[ 936] sipush 550
+[ 937] if_icmpge 249
+[ 938] aload_0
+[ 939] getfield FightC.gameState
+[ 940] aload_0
+[ 941] getfield FightC.DEMOMODE
+[ 942] if_icmpeq 65
+[ 943] aload_0
+[ 944] getfield FightC.offGraphics
+[ 945] aload_0
+[ 946] getfield FightC.black_col
+[ 947] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[ 948] aload_0
+[ 949] getfield FightC.offGraphics
+[ 950] aload_0
+[ 951] getfield FightC.width2
+[ 952] bipush 42
+[ 953] isub
+[ 954] bipush 43
+[ 955] bipush 80
+[ 956] bipush 30
+[ 957] invokevirtual javax/microedition/lcdui/Graphics.fillRect
+[ 958] aload_0
+[ 959] getfield FightC.offGraphics
+[ 960] aload_0
+[ 961] getfield FightC.white_col
+[ 962] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[ 963] aload_0
+[ 964] getfield FightC.offGraphics
+[ 965] aload_0
+[ 966] getfield FightC.width2
+[ 967] bipush 42
+[ 968] isub
+[ 969] bipush 43
+[ 970] bipush 80
+[ 971] bipush 30
+[ 972] invokevirtual javax/microedition/lcdui/Graphics.drawRect
+[ 973] aload_0
+[ 974] getfield FightC.gameState
+[ 975] aload_0
+[ 976] getfield FightC.ENEMYWIN
+[ 977] if_icmpne 39
+[ 978] aload_0
+[ 979] bipush 10
+[ 980] putfield FightC.countCont
+[ 981] aload_0
+[ 982] iconst_1
+[ 983] putfield FightC.repaintBackground
+[ 984] aload_0
+[ 985] getfield FightC.offGraphics
+[ 986] ldc_w 269
+[ 987] bipush 60
+[ 988] bipush 63
+[ 989] aload_0
+[ 990] pop
+[ 991] iconst_1
+[ 992] aload_0
+[ 993] pop
+[ 994] bipush 64
+[ 995] ior
+[ 996] invokevirtual javax/microedition/lcdui/Graphics.drawString
+[ 997] goto 129
+[ 998] aload_0
+[ 999] getfield FightC.gameState
+[1000] aload_0
+[1001] getfield FightC.PLAYERWIN
+[1002] if_icmpeq 10
+[1003] aload_0
+[1004] getfield FightC.playerWinGame
+[1005] ifeq 28
+[1006] aload_0
+[1007] getfield FightC.offGraphics
+[1008] ldc_w 270
+[1009] bipush 60
+[1010] bipush 63
+[1011] aload_0
+[1012] pop
+[1013] iconst_1
+[1014] aload_0
+[1015] pop
+[1016] bipush 64
+[1017] ior
+[1018] invokevirtual javax/microedition/lcdui/Graphics.drawString
+[1019] goto 86
+[1020] aload_0
+[1021] getfield FightC.gameState
+[1022] aload_0
+[1023] getfield FightC.ROUNDWON
+[1024] if_icmpne 35
+[1025] aload_0
+[1026] getfield FightC.hpPlayer
+[1027] ifle 28
+[1028] aload_0
+[1029] getfield FightC.offGraphics
+[1030] ldc_w 271
+[1031] bipush 60
+[1032] bipush 63
+[1033] aload_0
+[1034] pop
+[1035] iconst_1
+[1036] aload_0
+[1037] pop
+[1038] bipush 64
+[1039] ior
+[1040] invokevirtual javax/microedition/lcdui/Graphics.drawString
+[1041] goto 43
+[1042] aload_0
+[1043] getfield FightC.gameState
+[1044] aload_0
+[1045] getfield FightC.ROUNDWON
+[1046] if_icmpne 32
+[1047] aload_0
+[1048] getfield FightC.hpEnemy
+[1049] ifle 25
+[1050] aload_0
+[1051] getfield FightC.offGraphics
+[1052] ldc_w 272
+[1053] bipush 60
+[1054] bipush 63
+[1055] aload_0
+[1056] pop
+[1057] iconst_1
+[1058] aload_0
+[1059] pop
+[1060] bipush 64
+[1061] ior
+[1062] invokevirtual javax/microedition/lcdui/Graphics.drawString
+[1063] aload_0
+[1064] getfield FightC.blinkCounter
+[1065] bipush 8
+[1066] if_icmpne 11
+[1067] aload_0
+[1068] iconst_0
+[1069] putfield FightC.blinkCounter
+[1070] goto 13
+[1071] aload_0
+[1072] dup
+[1073] getfield FightC.blinkCounter
+[1074] iconst_1
+[1075] iadd
+[1076] putfield FightC.blinkCounter
+[1077] return

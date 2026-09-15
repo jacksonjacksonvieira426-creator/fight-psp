@@ -1,0 +1,90 @@
+// Classe: Fight
+// Metodo: displaySettingsScreen
+// Descritor: ()V
+// Instrucoes: 85
+
+[   0] aload_0
+[   1] new 13
+[   2] dup
+[   3] ldc 23
+[   4] iconst_3
+[   5] invokespecial javax/microedition/lcdui/List.<init>
+[   6] putfield Fight.displayMenuSettings
+[   7] aload_0
+[   8] getfield Fight.oemClass
+[   9] getfield OEM.phoneConnected
+[  10] ldc 70
+[  11] invokevirtual java/lang/String.equals
+[  12] ifne 38
+[  13] aload_0
+[  14] getfield Fight.theCanvas
+[  15] getfield FightC.isLight
+[  16] ifeq 17
+[  17] aload_0
+[  18] getfield Fight.displayMenuSettings
+[  19] ldc 64
+[  20] aconst_null
+[  21] invokevirtual javax/microedition/lcdui/List.append
+[  22] pop
+[  23] goto 14
+[  24] aload_0
+[  25] getfield Fight.displayMenuSettings
+[  26] ldc 67
+[  27] aconst_null
+[  28] invokevirtual javax/microedition/lcdui/List.append
+[  29] pop
+[  30] aload_0
+[  31] getfield Fight.theCanvas
+[  32] getfield FightC.isSound
+[  33] ifeq 17
+[  34] aload_0
+[  35] getfield Fight.displayMenuSettings
+[  36] ldc 58
+[  37] aconst_null
+[  38] invokevirtual javax/microedition/lcdui/List.append
+[  39] pop
+[  40] goto 14
+[  41] aload_0
+[  42] getfield Fight.displayMenuSettings
+[  43] ldc 60
+[  44] aconst_null
+[  45] invokevirtual javax/microedition/lcdui/List.append
+[  46] pop
+[  47] aload_0
+[  48] getfield Fight.oemClass
+[  49] getfield OEM.phoneConnected
+[  50] ldc 70
+[  51] invokevirtual java/lang/String.equals
+[  52] ifne 38
+[  53] aload_0
+[  54] getfield Fight.theCanvas
+[  55] getfield FightC.isVibra
+[  56] ifeq 17
+[  57] aload_0
+[  58] getfield Fight.displayMenuSettings
+[  59] ldc 61
+[  60] aconst_null
+[  61] invokevirtual javax/microedition/lcdui/List.append
+[  62] pop
+[  63] goto 14
+[  64] aload_0
+[  65] getfield Fight.displayMenuSettings
+[  66] ldc 63
+[  67] aconst_null
+[  68] invokevirtual javax/microedition/lcdui/List.append
+[  69] pop
+[  70] aload_0
+[  71] getfield Fight.displayMenuSettings
+[  72] aload_0
+[  73] getfield Fight.retInstructionsAboutCommand
+[  74] invokevirtual javax/microedition/lcdui/Displayable.addCommand
+[  75] aload_0
+[  76] getfield Fight.displayMenuSettings
+[  77] aload_0
+[  78] invokevirtual javax/microedition/lcdui/Displayable.setCommandListener
+[  79] aload_0
+[  80] getfield Fight.display
+[  81] aload_0
+[  82] getfield Fight.displayMenuSettings
+[  83] invokevirtual javax/microedition/lcdui/Display.setCurrent
+[  84] return

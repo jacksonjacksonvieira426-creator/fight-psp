@@ -1,0 +1,39 @@
+// Classe: FightC
+// Metodo: incPerc
+// Descritor: (I)V
+// Instrucoes: 34
+
+[   0] aload_0
+[   1] getfield FightC.offGraphics
+[   2] aload_0
+[   3] getfield FightC.white_col
+[   4] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[   5] aload_0
+[   6] getfield FightC.offGraphics
+[   7] bipush 15
+[   8] bipush 44
+[   9] bipush 88
+[  10] bipush 10
+[  11] invokevirtual javax/microedition/lcdui/Graphics.drawRect
+[  12] aload_0
+[  13] bipush 86
+[  14] iload_1
+[  15] imul
+[  16] bipush 100
+[  17] idiv
+[  18] putfield FightC.blue
+[  19] aload_0
+[  20] getfield FightC.offGraphics
+[  21] ldc 161
+[  22] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[  23] aload_0
+[  24] getfield FightC.offGraphics
+[  25] bipush 16
+[  26] bipush 45
+[  27] aload_0
+[  28] getfield FightC.blue
+[  29] iconst_1
+[  30] iadd
+[  31] bipush 9
+[  32] invokevirtual javax/microedition/lcdui/Graphics.fillRect
+[  33] return

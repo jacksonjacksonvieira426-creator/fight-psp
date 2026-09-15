@@ -1,0 +1,49 @@
+// Classe: OEM
+// Metodo: <init>
+// Descritor: (Ljavax/microedition/lcdui/Display;)V
+// Instrucoes: 44
+
+[   0] aload_0
+[   1] invokespecial java/lang/Object.<init>
+[   2] aload_0
+[   3] ldc 2
+[   4] putfield OEM.phoneConnected
+[   5] aload_0
+[   6] aload_1
+[   7] putfield OEM.midletDisplay
+[   8] aload_0
+[   9] new 5
+[  10] dup
+[  11] sipush 1568
+[  12] ldc2_w 6
+[  13] invokespecial com/nokia/mid/sound/Sound.<init>
+[  14] putfield OEM.sound0NOKIA
+[  15] aload_0
+[  16] new 5
+[  17] dup
+[  18] sipush 2217
+[  19] ldc2_w 6
+[  20] invokespecial com/nokia/mid/sound/Sound.<init>
+[  21] putfield OEM.sound1NOKIA
+[  22] aload_0
+[  23] new 5
+[  24] dup
+[  25] sipush 3322
+[  26] ldc2_w 6
+[  27] invokespecial com/nokia/mid/sound/Sound.<init>
+[  28] putfield OEM.sound2NOKIA
+[  29] aload_0
+[  30] new 5
+[  31] dup
+[  32] sipush 2093
+[  33] ldc2_w 6
+[  34] invokespecial com/nokia/mid/sound/Sound.<init>
+[  35] putfield OEM.sound3NOKIA
+[  36] aload_0
+[  37] new 5
+[  38] dup
+[  39] sipush 3951
+[  40] ldc2_w 6
+[  41] invokespecial com/nokia/mid/sound/Sound.<init>
+[  42] putfield OEM.sound4NOKIA
+[  43] return

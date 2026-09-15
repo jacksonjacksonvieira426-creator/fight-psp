@@ -1,0 +1,9 @@
+// Classe: FightC
+// Metodo: hideNotify
+// Descritor: ()V
+// Instrucoes: 4
+
+[   0] aload_0
+[   1] getfield FightC.FightMainClass
+[   2] invokevirtual Fight.pauseApp
+[   3] return

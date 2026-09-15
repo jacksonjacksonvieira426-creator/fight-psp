@@ -1,0 +1,89 @@
+// Classe: FightC
+// Metodo: startGame
+// Descritor: ()V
+// Instrucoes: 84
+
+[   0] aload_0
+[   1] iconst_1
+[   2] putfield FightC.startParsing
+[   3] aload_0
+[   4] bipush 10
+[   5] bipush 10
+[   6] aload_0
+[   7] getfield FightC.level
+[   8] imul
+[   9] aload_0
+[  10] getfield FightC.lastLevel
+[  11] idiv
+[  12] iadd
+[  13] putfield FightC.blockCounter
+[  14] aload_0
+[  15] iconst_1
+[  16] putfield FightC.logoOffScreen
+[  17] aload_0
+[  18] iconst_0
+[  19] putfield FightC.restartGame
+[  20] aload_0
+[  21] iconst_2
+[  22] putfield FightC.xPlayer
+[  23] aload_0
+[  24] aload_0
+[  25] getfield FightC.NONE
+[  26] putfield FightC.commandPlayer
+[  27] aload_0
+[  28] aload_0
+[  29] getfield FightC.NONE
+[  30] putfield FightC.statePlayer
+[  31] aload_0
+[  32] iconst_0
+[  33] putfield FightC.imagePlayer
+[  34] aload_0
+[  35] bipush 40
+[  36] putfield FightC.hpPlayer
+[  37] aload_0
+[  38] iconst_0
+[  39] putfield FightC.roundPlayer
+[  40] aload_0
+[  41] bipush 92
+[  42] putfield FightC.xEnemy
+[  43] aload_0
+[  44] aload_0
+[  45] getfield FightC.NONE
+[  46] putfield FightC.commandEnemy
+[  47] aload_0
+[  48] aload_0
+[  49] getfield FightC.NONE
+[  50] putfield FightC.stateEnemy
+[  51] aload_0
+[  52] iconst_0
+[  53] putfield FightC.imageEnemy
+[  54] aload_0
+[  55] bipush 40
+[  56] putfield FightC.hpEnemy
+[  57] aload_0
+[  58] iconst_0
+[  59] putfield FightC.roundEnemy
+[  60] aload_0
+[  61] getfield FightC.gameState
+[  62] aload_0
+[  63] getfield FightC.PLAYERWIN
+[  64] if_icmpeq 30
+[  65] aload_0
+[  66] aload_0
+[  67] getfield FightC.DEMOMODE
+[  68] putfield FightC.gameState
+[  69] aload_0
+[  70] aload_0
+[  71] getfield FightC.skipCommand
+[  72] invokevirtual javax/microedition/lcdui/Displayable.removeCommand
+[  73] aload_0
+[  74] aload_0
+[  75] getfield FightC.restartCommand
+[  76] invokevirtual javax/microedition/lcdui/Displayable.removeCommand
+[  77] goto 7
+[  78] aload_0
+[  79] invokevirtual FightC.playGame
+[  80] aload_0
+[  81] iconst_1
+[  82] putfield FightC.repaintBackground
+[  83] return

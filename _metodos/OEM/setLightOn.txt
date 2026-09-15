@@ -1,0 +1,9 @@
+// Classe: OEM
+// Metodo: setLightOn
+// Descritor: ()V
+// Instrucoes: 4
+
+[   0] iconst_0
+[   1] bipush 100
+[   2] invokestatic com/nokia/mid/ui/DeviceControl.setLights
+[   3] return

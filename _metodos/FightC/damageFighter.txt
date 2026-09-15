@@ -1,0 +1,276 @@
+// Classe: FightC
+// Metodo: damageFighter
+// Descritor: (Z)V
+// Instrucoes: 271
+
+[   0] iload_1
+[   1] ifeq 323
+[   2] aload_0
+[   3] getfield FightC.statePlayer
+[   4] aload_0
+[   5] getfield FightC.HITTED
+[   6] if_icmpeq 14
+[   7] aload_0
+[   8] getfield FightC.statePlayer
+[   9] aload_0
+[  10] getfield FightC.ONFLOOR
+[  11] if_icmpne 4
+[  12] return
+[  13] aload_0
+[  14] iconst_0
+[  15] putfield FightC.imagePlayer
+[  16] aload_0
+[  17] getfield FightC.gameState
+[  18] aload_0
+[  19] getfield FightC.DEMOMODE
+[  20] if_icmpne 120
+[  21] aload_0
+[  22] iconst_0
+[  23] bipush 100
+[  24] invokespecial FightC.rand
+[  25] istore_2
+[  26] iload_2
+[  27] aload_0
+[  28] getfield FightC.blockCounter
+[  29] if_icmple 93
+[  30] aload_0
+[  31] getfield FightC.stateEnemy
+[  32] aload_0
+[  33] getfield FightC.PUNCH
+[  34] if_icmpne 17
+[  35] aload_0
+[  36] dup
+[  37] getfield FightC.hpPlayer
+[  38] bipush 8
+[  39] isub
+[  40] putfield FightC.hpPlayer
+[  41] goto 24
+[  42] aload_0
+[  43] getfield FightC.stateEnemy
+[  44] aload_0
+[  45] getfield FightC.KICK
+[  46] if_icmpne 13
+[  47] aload_0
+[  48] dup
+[  49] getfield FightC.hpPlayer
+[  50] iconst_5
+[  51] isub
+[  52] putfield FightC.hpPlayer
+[  53] aload_0
+[  54] getfield FightC.hpPlayer
+[  55] ifle 19
+[  56] aload_0
+[  57] aload_0
+[  58] aload_0
+[  59] getfield FightC.HITTED
+[  60] dup_x1
+[  61] putfield FightC.statePlayer
+[  62] putfield FightC.commandPlayer
+[  63] goto 411
+[  64] aload_0
+[  65] aload_0
+[  66] aload_0
+[  67] getfield FightC.ONFLOOR
+[  68] dup_x1
+[  69] putfield FightC.statePlayer
+[  70] putfield FightC.commandPlayer
+[  71] aload_0
+[  72] iconst_0
+[  73] putfield FightC.hpPlayer
+[  74] goto 390
+[  75] aload_0
+[  76] aload_0
+[  77] getfield FightC.BLOCK
+[  78] putfield FightC.commandPlayer
+[  79] goto 379
+[  80] aload_0
+[  81] getfield FightC.stateEnemy
+[  82] aload_0
+[  83] getfield FightC.PUNCH
+[  84] if_icmpne 17
+[  85] aload_0
+[  86] dup
+[  87] getfield FightC.hpPlayer
+[  88] bipush 8
+[  89] isub
+[  90] putfield FightC.hpPlayer
+[  91] goto 24
+[  92] aload_0
+[  93] getfield FightC.stateEnemy
+[  94] aload_0
+[  95] getfield FightC.KICK
+[  96] if_icmpne 13
+[  97] aload_0
+[  98] dup
+[  99] getfield FightC.hpPlayer
+[ 100] iconst_5
+[ 101] isub
+[ 102] putfield FightC.hpPlayer
+[ 103] aload_0
+[ 104] getfield FightC.isVibra
+[ 105] ifeq 13
+[ 106] aload_0
+[ 107] getfield FightC.FightMainClass
+[ 108] getfield Fight.oemClass
+[ 109] invokevirtual OEM.vibration
+[ 110] goto 9
+[ 111] astore_2
+[ 112] aload_0
+[ 113] iconst_0
+[ 114] putfield FightC.isVibra
+[ 115] aload_0
+[ 116] getfield FightC.isSound
+[ 117] ifeq 16
+[ 118] aload_0
+[ 119] getfield FightC.FightMainClass
+[ 120] getfield Fight.oemClass
+[ 121] ldc_w 277
+[ 122] invokevirtual OEM.playSound
+[ 123] goto 9
+[ 124] astore_2
+[ 125] aload_0
+[ 126] iconst_0
+[ 127] putfield FightC.isSound
+[ 128] aload_0
+[ 129] bipush 10
+[ 130] bipush 10
+[ 131] aload_0
+[ 132] getfield FightC.level
+[ 133] imul
+[ 134] aload_0
+[ 135] getfield FightC.lastLevel
+[ 136] idiv
+[ 137] iadd
+[ 138] putfield FightC.blockCounter
+[ 139] aload_0
+[ 140] getfield FightC.hpPlayer
+[ 141] ifle 19
+[ 142] aload_0
+[ 143] aload_0
+[ 144] aload_0
+[ 145] getfield FightC.HITTED
+[ 146] dup_x1
+[ 147] putfield FightC.statePlayer
+[ 148] putfield FightC.commandPlayer
+[ 149] goto 236
+[ 150] aload_0
+[ 151] aload_0
+[ 152] aload_0
+[ 153] getfield FightC.ONFLOOR
+[ 154] dup_x1
+[ 155] putfield FightC.statePlayer
+[ 156] putfield FightC.commandPlayer
+[ 157] aload_0
+[ 158] iconst_0
+[ 159] putfield FightC.hpPlayer
+[ 160] goto 215
+[ 161] aload_0
+[ 162] getfield FightC.stateEnemy
+[ 163] aload_0
+[ 164] getfield FightC.HITTED
+[ 165] if_icmpeq 14
+[ 166] aload_0
+[ 167] getfield FightC.stateEnemy
+[ 168] aload_0
+[ 169] getfield FightC.ONFLOOR
+[ 170] if_icmpne 4
+[ 171] return
+[ 172] aload_0
+[ 173] iconst_0
+[ 174] putfield FightC.imageEnemy
+[ 175] aload_0
+[ 176] iconst_0
+[ 177] bipush 100
+[ 178] invokespecial FightC.rand
+[ 179] istore_2
+[ 180] iload_2
+[ 181] aload_0
+[ 182] getfield FightC.blockCounter
+[ 183] if_icmple 163
+[ 184] aload_0
+[ 185] getfield FightC.statePlayer
+[ 186] aload_0
+[ 187] getfield FightC.PUNCH
+[ 188] if_icmpne 17
+[ 189] aload_0
+[ 190] dup
+[ 191] getfield FightC.hpEnemy
+[ 192] bipush 8
+[ 193] isub
+[ 194] putfield FightC.hpEnemy
+[ 195] goto 24
+[ 196] aload_0
+[ 197] getfield FightC.statePlayer
+[ 198] aload_0
+[ 199] getfield FightC.KICK
+[ 200] if_icmpne 13
+[ 201] aload_0
+[ 202] dup
+[ 203] getfield FightC.hpEnemy
+[ 204] iconst_5
+[ 205] isub
+[ 206] putfield FightC.hpEnemy
+[ 207] aload_0
+[ 208] getfield FightC.gameState
+[ 209] aload_0
+[ 210] getfield FightC.DEMOMODE
+[ 211] if_icmpeq 32
+[ 212] aload_0
+[ 213] getfield FightC.isSound
+[ 214] ifeq 16
+[ 215] aload_0
+[ 216] getfield FightC.FightMainClass
+[ 217] getfield Fight.oemClass
+[ 218] ldc_w 279
+[ 219] invokevirtual OEM.playSound
+[ 220] goto 9
+[ 221] astore_3
+[ 222] aload_0
+[ 223] iconst_0
+[ 224] putfield FightC.isSound
+[ 225] aload_0
+[ 226] getfield FightC.blockCounter
+[ 227] bipush 80
+[ 228] if_icmpge 24
+[ 229] aload_0
+[ 230] dup
+[ 231] getfield FightC.blockCounter
+[ 232] bipush 10
+[ 233] aload_0
+[ 234] getfield FightC.level
+[ 235] imul
+[ 236] aload_0
+[ 237] getfield FightC.lastLevel
+[ 238] idiv
+[ 239] iadd
+[ 240] putfield FightC.blockCounter
+[ 241] aload_0
+[ 242] getfield FightC.hpEnemy
+[ 243] ifle 19
+[ 244] aload_0
+[ 245] aload_0
+[ 246] aload_0
+[ 247] getfield FightC.HITTED
+[ 248] dup_x1
+[ 249] putfield FightC.stateEnemy
+[ 250] putfield FightC.commandEnemy
+[ 251] goto 32
+[ 252] aload_0
+[ 253] aload_0
+[ 254] aload_0
+[ 255] getfield FightC.ONFLOOR
+[ 256] dup_x1
+[ 257] putfield FightC.stateEnemy
+[ 258] putfield FightC.commandEnemy
+[ 259] aload_0
+[ 260] iconst_0
+[ 261] putfield FightC.hpEnemy
+[ 262] goto 11
+[ 263] aload_0
+[ 264] aload_0
+[ 265] getfield FightC.BLOCK
+[ 266] putfield FightC.commandEnemy
+[ 267] aload_0
+[ 268] iconst_1
+[ 269] putfield FightC.repaintBackground
+[ 270] return

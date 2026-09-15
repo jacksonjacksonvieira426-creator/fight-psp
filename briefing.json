@@ -1,0 +1,163 @@
+{
+  "jogo": "",
+  "classes": {
+    "Fight": [
+      {
+        "nome": "commandAction",
+        "instrucoes": 304
+      },
+      {
+        "nome": "constructor",
+        "instrucoes": 20
+      },
+      {
+        "nome": "destroyApp",
+        "instrucoes": 13
+      },
+      {
+        "nome": "displaySettingsScreen",
+        "instrucoes": 85
+      },
+      {
+        "nome": "pauseApp",
+        "instrucoes": 101
+      },
+      {
+        "nome": "startApp",
+        "instrucoes": 10
+      }
+    ],
+    "FightC": [
+      {
+        "nome": "checkForHitFighters",
+        "instrucoes": 406
+      },
+      {
+        "nome": "constructor",
+        "instrucoes": 371
+      },
+      {
+        "nome": "controlCpuFighter",
+        "instrucoes": 296
+      },
+      {
+        "nome": "damageFighter",
+        "instrucoes": 271
+      },
+      {
+        "nome": "drawScreen",
+        "instrucoes": 182
+      },
+      {
+        "nome": "game",
+        "instrucoes": 914
+      },
+      {
+        "nome": "hideNotify",
+        "instrucoes": 4
+      },
+      {
+        "nome": "incPerc",
+        "instrucoes": 34
+      },
+      {
+        "nome": "keyPressed",
+        "instrucoes": 98
+      },
+      {
+        "nome": "keyReleased",
+        "instrucoes": 47
+      },
+      {
+        "nome": "paint",
+        "instrucoes": 136
+      },
+      {
+        "nome": "paintBackground",
+        "instrucoes": 570
+      },
+      {
+        "nome": "paintCopperBar",
+        "instrucoes": 157
+      },
+      {
+        "nome": "paintFighters",
+        "instrucoes": 1078
+      },
+      {
+        "nome": "playGame",
+        "instrucoes": 122
+      },
+      {
+        "nome": "rand",
+        "instrucoes": 12
+      },
+      {
+        "nome": "run",
+        "instrucoes": 22
+      },
+      {
+        "nome": "skip",
+        "instrucoes": 16
+      },
+      {
+        "nome": "startGame",
+        "instrucoes": 84
+      }
+    ],
+    "OEM": [
+      {
+        "nome": "constructor",
+        "instrucoes": 44
+      },
+      {
+        "nome": "playSound",
+        "instrucoes": 48
+      },
+      {
+        "nome": "setLightOff",
+        "instrucoes": 4
+      },
+      {
+        "nome": "setLightOn",
+        "instrucoes": 4
+      },
+      {
+        "nome": "vibration",
+        "instrucoes": 4
+      }
+    ]
+  },
+  "metodos_criticos": [
+    {
+      "classe": "FightC",
+      "metodo": "run",
+      "instrucoes": 22
+    },
+    {
+      "classe": "FightC",
+      "metodo": "keyPressed",
+      "instrucoes": 98
+    },
+    {
+      "classe": "FightC",
+      "metodo": "paint",
+      "instrucoes": 136
+    },
+    {
+      "classe": "FightC",
+      "metodo": "paintCopperBar",
+      "instrucoes": 157
+    },
+    {
+      "classe": "FightC",
+      "metodo": "paintBackground",
+      "instrucoes": 570
+    },
+    {
+      "classe": "FightC",
+      "metodo": "paintFighters",
+      "instrucoes": 1078
+    }
+  ]
+}

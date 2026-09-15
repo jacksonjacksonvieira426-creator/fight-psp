@@ -1,0 +1,376 @@
+// Classe: FightC
+// Metodo: <init>
+// Descritor: (LFight;)V
+// Instrucoes: 371
+
+[   0] aload_0
+[   1] invokespecial javax/microedition/lcdui/Canvas.<init>
+[   2] aload_0
+[   3] iconst_0
+[   4] putfield FightC.demoMode
+[   5] aload_0
+[   6] iconst_0
+[   7] putfield FightC.gameOff
+[   8] aload_0
+[   9] bipush 100
+[  10] putfield FightC.xMove
+[  11] aload_0
+[  12] iconst_0
+[  13] putfield FightC.div
+[  14] aload_0
+[  15] bipush 10
+[  16] putfield FightC.countCont
+[  17] aload_0
+[  18] iconst_0
+[  19] putfield FightC.infoScreen
+[  20] aload_0
+[  21] iconst_0
+[  22] putfield FightC.logoOffScreen
+[  23] aload_0
+[  24] iconst_1
+[  25] putfield FightC.deleteFirstScreen
+[  26] aload_0
+[  27] iconst_1
+[  28] putfield FightC.finishedpainting
+[  29] aload_0
+[  30] iconst_1
+[  31] putfield FightC.repaintBackground
+[  32] aload_0
+[  33] iconst_0
+[  34] putfield FightC.rememberLevel
+[  35] aload_0
+[  36] bipush 9
+[  37] putfield FightC.numImgs
+[  38] aload_0
+[  39] iconst_0
+[  40] putfield FightC.loadedPic
+[  41] aload_0
+[  42] iconst_0
+[  43] putfield FightC.DEMOMODE
+[  44] aload_0
+[  45] iconst_1
+[  46] putfield FightC.GAME
+[  47] aload_0
+[  48] iconst_2
+[  49] putfield FightC.ENEMYWIN
+[  50] aload_0
+[  51] iconst_3
+[  52] putfield FightC.PLAYERWIN
+[  53] aload_0
+[  54] iconst_4
+[  55] putfield FightC.ROUNDWON
+[  56] aload_0
+[  57] iconst_5
+[  58] putfield FightC.NEWLEVEL
+[  59] aload_0
+[  60] iconst_m1
+[  61] putfield FightC.NONE
+[  62] aload_0
+[  63] iconst_0
+[  64] putfield FightC.MOVELEFT
+[  65] aload_0
+[  66] iconst_1
+[  67] putfield FightC.MOVERIGHT
+[  68] aload_0
+[  69] iconst_2
+[  70] putfield FightC.PUNCH
+[  71] aload_0
+[  72] iconst_3
+[  73] putfield FightC.KICK
+[  74] aload_0
+[  75] iconst_4
+[  76] putfield FightC.BLOCK
+[  77] aload_0
+[  78] iconst_5
+[  79] putfield FightC.HITTED
+[  80] aload_0
+[  81] bipush 6
+[  82] putfield FightC.ONFLOOR
+[  83] aload_0
+[  84] new 31
+[  85] dup
+[  86] invokespecial java/util/Random.<init>
+[  87] putfield FightC.rand
+[  88] aload_0
+[  89] aload_0
+[  90] getfield FightC.DEMOMODE
+[  91] putfield FightC.gameState
+[  92] aload_0
+[  93] iconst_0
+[  94] putfield FightC.continueGame
+[  95] aload_0
+[  96] ldc2_w 36
+[  97] putfield FightC.continueGameTime
+[  98] aload_0
+[  99] lconst_0
+[ 100] putfield FightC.continueGameActualTime
+[ 101] aload_0
+[ 102] lconst_0
+[ 103] putfield FightC.continueGameStartingTime
+[ 104] aload_0
+[ 105] iconst_0
+[ 106] putfield FightC.executeCommand
+[ 107] aload_0
+[ 108] iconst_0
+[ 109] putfield FightC.playerWinGame
+[ 110] aload_0
+[ 111] iconst_0
+[ 112] putfield FightC.level
+[ 113] aload_0
+[ 114] iconst_4
+[ 115] putfield FightC.lastLevel
+[ 116] aload_0
+[ 117] iconst_0
+[ 118] putfield FightC.actualText
+[ 119] aload_0
+[ 120] iconst_0
+[ 121] putfield FightC.roundCounter
+[ 122] aload_0
+[ 123] iconst_1
+[ 124] putfield FightC.roundDisplay
+[ 125] aload_0
+[ 126] iconst_1
+[ 127] putfield FightC.isSound
+[ 128] aload_0
+[ 129] iconst_1
+[ 130] putfield FightC.isVibra
+[ 131] aload_0
+[ 132] iconst_1
+[ 133] putfield FightC.isLight
+[ 134] aload_0
+[ 135] iconst_0
+[ 136] putfield FightC.extraGfxY
+[ 137] aload_0
+[ 138] bipush 9
+[ 139] newarray 10
+[ 140] dup
+[ 141] iconst_0
+[ 142] ldc 52
+[ 143] iastore
+[ 144] dup
+[ 145] iconst_1
+[ 146] ldc 53
+[ 147] iastore
+[ 148] dup
+[ 149] iconst_2
+[ 150] ldc 54
+[ 151] iastore
+[ 152] dup
+[ 153] iconst_3
+[ 154] ldc 55
+[ 155] iastore
+[ 156] dup
+[ 157] iconst_4
+[ 158] ldc 56
+[ 159] iastore
+[ 160] dup
+[ 161] iconst_5
+[ 162] ldc 55
+[ 163] iastore
+[ 164] dup
+[ 165] bipush 6
+[ 166] ldc 54
+[ 167] iastore
+[ 168] dup
+[ 169] bipush 7
+[ 170] ldc 53
+[ 171] iastore
+[ 172] dup
+[ 173] bipush 8
+[ 174] ldc 52
+[ 175] iastore
+[ 176] putfield FightC.colorCopper
+[ 177] aload_0
+[ 178] iconst_0
+[ 179] putfield FightC.firstCopper
+[ 180] aload_0
+[ 181] lconst_0
+[ 182] putfield FightC.logoActualTime
+[ 183] aload_0
+[ 184] lconst_0
+[ 185] putfield FightC.logoStartTime
+[ 186] aload_0
+[ 187] iconst_0
+[ 188] putfield FightC.restartDemoMode
+[ 189] aload_0
+[ 190] iconst_0
+[ 191] putfield FightC.restartGame
+[ 192] aload_0
+[ 193] iconst_0
+[ 194] putfield FightC.len
+[ 195] aload_0
+[ 196] iconst_0
+[ 197] putfield FightC.count
+[ 198] aload_0
+[ 199] iconst_1
+[ 200] putfield FightC.startParsing
+[ 201] aload_0
+[ 202] bipush 6
+[ 203] putfield FightC.yPrint
+[ 204] aload_0
+[ 205] iconst_0
+[ 206] putfield FightC.skipCounter
+[ 207] aload_0
+[ 208] iconst_0
+[ 209] putfield FightC.page
+[ 210] aload_0
+[ 211] bipush -35
+[ 212] putfield FightC.xMovClouds1
+[ 213] aload_0
+[ 214] bipush -35
+[ 215] putfield FightC.xMovClouds2
+[ 216] aload_0
+[ 217] bipush 20
+[ 218] putfield FightC.blockCounter
+[ 219] aload_0
+[ 220] invokestatic java/util/Calendar.getInstance
+[ 221] invokevirtual java/util/Calendar.getTime
+[ 222] invokevirtual java/util/Date.getTime
+[ 223] putfield FightC.demoTimer
+[ 224] aload_0
+[ 225] aload_1
+[ 226] putfield FightC.FightMainClass
+[ 227] aload_0
+[ 228] getfield FightC.FightMainClass
+[ 229] getfield Fight.oemClass
+[ 230] invokevirtual OEM.setLightOn
+[ 231] aload_0
+[ 232] ldc 78
+[ 233] putfield FightC.blue_col
+[ 234] aload_0
+[ 235] ldc 80
+[ 236] putfield FightC.white_col
+[ 237] aload_0
+[ 238] iconst_0
+[ 239] putfield FightC.black_col
+[ 240] aload_0
+[ 241] new 83
+[ 242] dup
+[ 243] ldc 84
+[ 244] bipush 7
+[ 245] iconst_1
+[ 246] invokespecial javax/microedition/lcdui/Command.<init>
+[ 247] putfield FightC.exitCommand
+[ 248] aload_0
+[ 249] new 83
+[ 250] dup
+[ 251] ldc 87
+[ 252] bipush 7
+[ 253] iconst_1
+[ 254] invokespecial javax/microedition/lcdui/Command.<init>
+[ 255] putfield FightC.restartCommand
+[ 256] aload_0
+[ 257] new 83
+[ 258] dup
+[ 259] ldc 89
+[ 260] iconst_1
+[ 261] iconst_3
+[ 262] invokespecial javax/microedition/lcdui/Command.<init>
+[ 263] putfield FightC.helpCommand
+[ 264] aload_0
+[ 265] new 83
+[ 266] dup
+[ 267] ldc 91
+[ 268] iconst_1
+[ 269] iconst_1
+[ 270] invokespecial javax/microedition/lcdui/Command.<init>
+[ 271] putfield FightC.skipCommand
+[ 272] aload_0
+[ 273] bipush 120
+[ 274] putfield FightC.width
+[ 275] aload_0
+[ 276] bipush 96
+[ 277] putfield FightC.height
+[ 278] aload_0
+[ 279] aload_0
+[ 280] invokevirtual javax/microedition/lcdui/Canvas.getWidth
+[ 281] putfield FightC.realw
+[ 282] aload_0
+[ 283] aload_0
+[ 284] invokevirtual javax/microedition/lcdui/Canvas.getHeight
+[ 285] putfield FightC.realh
+[ 286] aload_0
+[ 287] getfield FightC.realh
+[ 288] bipush 120
+[ 289] if_icmplt 8
+[ 290] aload_0
+[ 291] iconst_1
+[ 292] putfield FightC.extraGfxY
+[ 293] aload_0
+[ 294] aload_0
+[ 295] getfield FightC.realw
+[ 296] aload_0
+[ 297] getfield FightC.width
+[ 298] isub
+[ 299] iconst_1
+[ 300] ishr
+[ 301] putfield FightC.scostaW
+[ 302] aload_0
+[ 303] aload_0
+[ 304] getfield FightC.realh
+[ 305] aload_0
+[ 306] getfield FightC.height
+[ 307] isub
+[ 308] iconst_1
+[ 309] ishr
+[ 310] putfield FightC.scostaH
+[ 311] aload_0
+[ 312] aload_0
+[ 313] getfield FightC.width
+[ 314] iconst_1
+[ 315] ishr
+[ 316] putfield FightC.width2
+[ 317] aload_0
+[ 318] new 102
+[ 319] dup
+[ 320] aload_0
+[ 321] invokespecial java/lang/Thread.<init>
+[ 322] putfield FightC.thread
+[ 323] aload_0
+[ 324] getfield FightC.thread
+[ 325] invokevirtual java/lang/Thread.start
+[ 326] aload_0
+[ 327] aload_0
+[ 328] getfield FightC.width
+[ 329] aload_0
+[ 330] getfield FightC.height
+[ 331] invokestatic javax/microedition/lcdui/Image.createImage
+[ 332] putfield FightC.offImage
+[ 333] aload_0
+[ 334] aload_0
+[ 335] getfield FightC.offImage
+[ 336] invokevirtual javax/microedition/lcdui/Image.getGraphics
+[ 337] putfield FightC.offGraphics
+[ 338] aload_0
+[ 339] getfield FightC.offGraphics
+[ 340] iconst_0
+[ 341] iconst_0
+[ 342] aload_0
+[ 343] getfield FightC.width
+[ 344] aload_0
+[ 345] getfield FightC.height
+[ 346] invokevirtual javax/microedition/lcdui/Graphics.setClip
+[ 347] aload_0
+[ 348] aload_0
+[ 349] getfield FightC.height
+[ 350] putfield FightC.remClipY
+[ 351] aload_0
+[ 352] bipush 6
+[ 353] anewarray 112
+[ 354] putfield FightC.levelMsgs
+[ 355] aload_0
+[ 356] bipush 7
+[ 357] anewarray 114
+[ 358] putfield FightC.picFighters
+[ 359] aload_0
+[ 360] iconst_0
+[ 361] iconst_0
+[ 362] bipush 8
+[ 363] invokestatic javax/microedition/lcdui/Font.getFont
+[ 364] putfield FightC.fontL
+[ 365] aload_0
+[ 366] getfield FightC.offGraphics
+[ 367] aload_0
+[ 368] getfield FightC.fontL
+[ 369] invokevirtual javax/microedition/lcdui/Graphics.setFont
+[ 370] return

@@ -1,0 +1,919 @@
+// Classe: FightC
+// Metodo: game
+// Descritor: ()V
+// Instrucoes: 914
+
+[   0] aload_0
+[   1] getfield FightC.gameState
+[   2] aload_0
+[   3] getfield FightC.NEWLEVEL
+[   4] if_icmpne 1398
+[   5] aload_0
+[   6] getfield FightC.offGraphics
+[   7] aload_0
+[   8] getfield FightC.fontL
+[   9] invokevirtual javax/microedition/lcdui/Graphics.setFont
+[  10] aload_0
+[  11] getfield FightC.rememberLevel
+[  12] ifeq 37
+[  13] aload_0
+[  14] getfield FightC.level
+[  15] aload_0
+[  16] getfield FightC.lastLevel
+[  17] if_icmpne 11
+[  18] aload_0
+[  19] iconst_0
+[  20] putfield FightC.level
+[  21] goto 13
+[  22] aload_0
+[  23] dup
+[  24] getfield FightC.level
+[  25] iconst_1
+[  26] iadd
+[  27] putfield FightC.level
+[  28] aload_0
+[  29] iconst_0
+[  30] putfield FightC.rememberLevel
+[  31] aload_0
+[  32] getfield FightC.startParsing
+[  33] ifeq 658
+[  34] aload_0
+[  35] getfield FightC.playerWinGame
+[  36] ifeq 303
+[  37] aload_0
+[  38] bipush 10
+[  39] putfield FightC.countCont
+[  40] aload_0
+[  41] getfield FightC.page
+[  42] ifne 54
+[  43] aload_0
+[  44] getfield FightC.levelMsgs
+[  45] iconst_0
+[  46] ldc 162
+[  47] aastore
+[  48] aload_0
+[  49] getfield FightC.levelMsgs
+[  50] iconst_1
+[  51] ldc 163
+[  52] aastore
+[  53] aload_0
+[  54] getfield FightC.levelMsgs
+[  55] iconst_2
+[  56] ldc 164
+[  57] aastore
+[  58] aload_0
+[  59] getfield FightC.levelMsgs
+[  60] iconst_3
+[  61] ldc 165
+[  62] aastore
+[  63] aload_0
+[  64] getfield FightC.levelMsgs
+[  65] iconst_4
+[  66] ldc 166
+[  67] aastore
+[  68] aload_0
+[  69] getfield FightC.levelMsgs
+[  70] iconst_5
+[  71] ldc 167
+[  72] aastore
+[  73] goto 530
+[  74] aload_0
+[  75] getfield FightC.page
+[  76] iconst_1
+[  77] if_icmpne 54
+[  78] aload_0
+[  79] getfield FightC.levelMsgs
+[  80] iconst_0
+[  81] ldc 168
+[  82] aastore
+[  83] aload_0
+[  84] getfield FightC.levelMsgs
+[  85] iconst_1
+[  86] ldc 169
+[  87] aastore
+[  88] aload_0
+[  89] getfield FightC.levelMsgs
+[  90] iconst_2
+[  91] ldc 170
+[  92] aastore
+[  93] aload_0
+[  94] getfield FightC.levelMsgs
+[  95] iconst_3
+[  96] ldc 171
+[  97] aastore
+[  98] aload_0
+[  99] getfield FightC.levelMsgs
+[ 100] iconst_4
+[ 101] ldc 172
+[ 102] aastore
+[ 103] aload_0
+[ 104] getfield FightC.levelMsgs
+[ 105] iconst_5
+[ 106] ldc 173
+[ 107] aastore
+[ 108] goto 471
+[ 109] aload_0
+[ 110] getfield FightC.page
+[ 111] iconst_2
+[ 112] if_icmpne 54
+[ 113] aload_0
+[ 114] getfield FightC.levelMsgs
+[ 115] iconst_0
+[ 116] ldc 174
+[ 117] aastore
+[ 118] aload_0
+[ 119] getfield FightC.levelMsgs
+[ 120] iconst_1
+[ 121] ldc 175
+[ 122] aastore
+[ 123] aload_0
+[ 124] getfield FightC.levelMsgs
+[ 125] iconst_2
+[ 126] ldc 176
+[ 127] aastore
+[ 128] aload_0
+[ 129] getfield FightC.levelMsgs
+[ 130] iconst_3
+[ 131] ldc 177
+[ 132] aastore
+[ 133] aload_0
+[ 134] getfield FightC.levelMsgs
+[ 135] iconst_4
+[ 136] ldc 178
+[ 137] aastore
+[ 138] aload_0
+[ 139] getfield FightC.levelMsgs
+[ 140] iconst_5
+[ 141] ldc 179
+[ 142] aastore
+[ 143] goto 412
+[ 144] aload_0
+[ 145] getfield FightC.page
+[ 146] iconst_3
+[ 147] if_icmpne 54
+[ 148] aload_0
+[ 149] getfield FightC.levelMsgs
+[ 150] iconst_0
+[ 151] ldc 180
+[ 152] aastore
+[ 153] aload_0
+[ 154] getfield FightC.levelMsgs
+[ 155] iconst_1
+[ 156] ldc 143
+[ 157] aastore
+[ 158] aload_0
+[ 159] getfield FightC.levelMsgs
+[ 160] iconst_2
+[ 161] ldc 181
+[ 162] aastore
+[ 163] aload_0
+[ 164] getfield FightC.levelMsgs
+[ 165] iconst_3
+[ 166] ldc 182
+[ 167] aastore
+[ 168] aload_0
+[ 169] getfield FightC.levelMsgs
+[ 170] iconst_4
+[ 171] ldc 183
+[ 172] aastore
+[ 173] aload_0
+[ 174] getfield FightC.levelMsgs
+[ 175] iconst_5
+[ 176] ldc 180
+[ 177] aastore
+[ 178] goto 353
+[ 179] aload_0
+[ 180] getfield FightC.page
+[ 181] iconst_4
+[ 182] if_icmpne 345
+[ 183] aload_0
+[ 184] getfield FightC.levelMsgs
+[ 185] iconst_0
+[ 186] ldc 184
+[ 187] aastore
+[ 188] aload_0
+[ 189] getfield FightC.levelMsgs
+[ 190] iconst_1
+[ 191] ldc 185
+[ 192] aastore
+[ 193] aload_0
+[ 194] getfield FightC.levelMsgs
+[ 195] iconst_2
+[ 196] ldc 186
+[ 197] aastore
+[ 198] aload_0
+[ 199] getfield FightC.levelMsgs
+[ 200] iconst_3
+[ 201] ldc 187
+[ 202] aastore
+[ 203] aload_0
+[ 204] getfield FightC.levelMsgs
+[ 205] iconst_4
+[ 206] ldc 188
+[ 207] aastore
+[ 208] aload_0
+[ 209] getfield FightC.levelMsgs
+[ 210] iconst_5
+[ 211] ldc 189
+[ 212] aastore
+[ 213] goto 294
+[ 214] aload_0
+[ 215] getfield FightC.level
+[ 216] ifne 54
+[ 217] aload_0
+[ 218] getfield FightC.levelMsgs
+[ 219] iconst_0
+[ 220] ldc 190
+[ 221] aastore
+[ 222] aload_0
+[ 223] getfield FightC.levelMsgs
+[ 224] iconst_1
+[ 225] ldc 191
+[ 226] aastore
+[ 227] aload_0
+[ 228] getfield FightC.levelMsgs
+[ 229] iconst_2
+[ 230] ldc 192
+[ 231] aastore
+[ 232] aload_0
+[ 233] getfield FightC.levelMsgs
+[ 234] iconst_3
+[ 235] ldc 193
+[ 236] aastore
+[ 237] aload_0
+[ 238] getfield FightC.levelMsgs
+[ 239] iconst_4
+[ 240] ldc 194
+[ 241] aastore
+[ 242] aload_0
+[ 243] getfield FightC.levelMsgs
+[ 244] iconst_5
+[ 245] ldc 195
+[ 246] aastore
+[ 247] goto 236
+[ 248] aload_0
+[ 249] getfield FightC.level
+[ 250] iconst_1
+[ 251] if_icmpne 54
+[ 252] aload_0
+[ 253] getfield FightC.levelMsgs
+[ 254] iconst_0
+[ 255] ldc 196
+[ 256] aastore
+[ 257] aload_0
+[ 258] getfield FightC.levelMsgs
+[ 259] iconst_1
+[ 260] ldc 197
+[ 261] aastore
+[ 262] aload_0
+[ 263] getfield FightC.levelMsgs
+[ 264] iconst_2
+[ 265] ldc 198
+[ 266] aastore
+[ 267] aload_0
+[ 268] getfield FightC.levelMsgs
+[ 269] iconst_3
+[ 270] ldc 199
+[ 271] aastore
+[ 272] aload_0
+[ 273] getfield FightC.levelMsgs
+[ 274] iconst_4
+[ 275] ldc 200
+[ 276] aastore
+[ 277] aload_0
+[ 278] getfield FightC.levelMsgs
+[ 279] iconst_5
+[ 280] ldc 201
+[ 281] aastore
+[ 282] goto 177
+[ 283] aload_0
+[ 284] getfield FightC.level
+[ 285] iconst_2
+[ 286] if_icmpne 54
+[ 287] aload_0
+[ 288] getfield FightC.levelMsgs
+[ 289] iconst_0
+[ 290] ldc 202
+[ 291] aastore
+[ 292] aload_0
+[ 293] getfield FightC.levelMsgs
+[ 294] iconst_1
+[ 295] ldc 203
+[ 296] aastore
+[ 297] aload_0
+[ 298] getfield FightC.levelMsgs
+[ 299] iconst_2
+[ 300] ldc 204
+[ 301] aastore
+[ 302] aload_0
+[ 303] getfield FightC.levelMsgs
+[ 304] iconst_3
+[ 305] ldc 205
+[ 306] aastore
+[ 307] aload_0
+[ 308] getfield FightC.levelMsgs
+[ 309] iconst_4
+[ 310] ldc 206
+[ 311] aastore
+[ 312] aload_0
+[ 313] getfield FightC.levelMsgs
+[ 314] iconst_5
+[ 315] ldc 195
+[ 316] aastore
+[ 317] goto 118
+[ 318] aload_0
+[ 319] getfield FightC.level
+[ 320] iconst_3
+[ 321] if_icmpne 54
+[ 322] aload_0
+[ 323] getfield FightC.levelMsgs
+[ 324] iconst_0
+[ 325] ldc 207
+[ 326] aastore
+[ 327] aload_0
+[ 328] getfield FightC.levelMsgs
+[ 329] iconst_1
+[ 330] ldc 208
+[ 331] aastore
+[ 332] aload_0
+[ 333] getfield FightC.levelMsgs
+[ 334] iconst_2
+[ 335] ldc 209
+[ 336] aastore
+[ 337] aload_0
+[ 338] getfield FightC.levelMsgs
+[ 339] iconst_3
+[ 340] ldc 210
+[ 341] aastore
+[ 342] aload_0
+[ 343] getfield FightC.levelMsgs
+[ 344] iconst_4
+[ 345] ldc 211
+[ 346] aastore
+[ 347] aload_0
+[ 348] getfield FightC.levelMsgs
+[ 349] iconst_5
+[ 350] ldc 212
+[ 351] aastore
+[ 352] goto 59
+[ 353] aload_0
+[ 354] getfield FightC.level
+[ 355] iconst_4
+[ 356] if_icmpne 51
+[ 357] aload_0
+[ 358] getfield FightC.levelMsgs
+[ 359] iconst_0
+[ 360] ldc 213
+[ 361] aastore
+[ 362] aload_0
+[ 363] getfield FightC.levelMsgs
+[ 364] iconst_1
+[ 365] ldc 214
+[ 366] aastore
+[ 367] aload_0
+[ 368] getfield FightC.levelMsgs
+[ 369] iconst_2
+[ 370] ldc 215
+[ 371] aastore
+[ 372] aload_0
+[ 373] getfield FightC.levelMsgs
+[ 374] iconst_3
+[ 375] ldc 216
+[ 376] aastore
+[ 377] aload_0
+[ 378] getfield FightC.levelMsgs
+[ 379] iconst_4
+[ 380] ldc 217
+[ 381] aastore
+[ 382] aload_0
+[ 383] getfield FightC.levelMsgs
+[ 384] iconst_5
+[ 385] ldc 218
+[ 386] aastore
+[ 387] aload_0
+[ 388] bipush 6
+[ 389] putfield FightC.yPrint
+[ 390] aload_0
+[ 391] iconst_0
+[ 392] putfield FightC.actualText
+[ 393] aload_0
+[ 394] iconst_0
+[ 395] putfield FightC.count
+[ 396] aload_0
+[ 397] aload_0
+[ 398] getfield FightC.levelMsgs
+[ 399] aload_0
+[ 400] getfield FightC.actualText
+[ 401] aaload
+[ 402] invokevirtual java/lang/String.length
+[ 403] putfield FightC.len
+[ 404] aload_0
+[ 405] aload_0
+[ 406] getfield FightC.fontL
+[ 407] aload_0
+[ 408] getfield FightC.levelMsgs
+[ 409] aload_0
+[ 410] getfield FightC.actualText
+[ 411] aaload
+[ 412] invokevirtual javax/microedition/lcdui/Font.stringWidth
+[ 413] putfield FightC.strWidth
+[ 414] aload_0
+[ 415] iconst_0
+[ 416] putfield FightC.startParsing
+[ 417] aload_0
+[ 418] getfield FightC.count
+[ 419] aload_0
+[ 420] getfield FightC.len
+[ 421] if_icmpeq 16
+[ 422] aload_0
+[ 423] dup
+[ 424] getfield FightC.count
+[ 425] iconst_1
+[ 426] iadd
+[ 427] putfield FightC.count
+[ 428] goto 225
+[ 429] aload_0
+[ 430] getfield FightC.actualText
+[ 431] iconst_5
+[ 432] if_icmpne 155
+[ 433] aload_0
+[ 434] getfield FightC.playerWinGame
+[ 435] ifeq 114
+[ 436] aload_0
+[ 437] getfield FightC.page
+[ 438] iconst_4
+[ 439] if_icmpne 56
+[ 440] aload_0
+[ 441] getfield FightC.skipCounter
+[ 442] bipush 20
+[ 443] if_icmple 34
+[ 444] aload_0
+[ 445] iconst_0
+[ 446] putfield FightC.skipCounter
+[ 447] aload_0
+[ 448] iconst_0
+[ 449] putfield FightC.page
+[ 450] aload_0
+[ 451] iconst_0
+[ 452] putfield FightC.playerWinGame
+[ 453] aload_0
+[ 454] aload_0
+[ 455] getfield FightC.DEMOMODE
+[ 456] putfield FightC.gameState
+[ 457] aload_0
+[ 458] iconst_1
+[ 459] putfield FightC.repaintBackground
+[ 460] goto 162
+[ 461] aload_0
+[ 462] dup
+[ 463] getfield FightC.skipCounter
+[ 464] iconst_1
+[ 465] iadd
+[ 466] putfield FightC.skipCounter
+[ 467] goto 149
+[ 468] aload_0
+[ 469] getfield FightC.skipCounter
+[ 470] bipush 20
+[ 471] if_icmple 31
+[ 472] aload_0
+[ 473] iconst_1
+[ 474] putfield FightC.startParsing
+[ 475] aload_0
+[ 476] dup
+[ 477] getfield FightC.page
+[ 478] iconst_1
+[ 479] iadd
+[ 480] putfield FightC.page
+[ 481] aload_0
+[ 482] iconst_0
+[ 483] putfield FightC.skipCounter
+[ 484] aload_0
+[ 485] iconst_1
+[ 486] putfield FightC.repaintBackground
+[ 487] goto 112
+[ 488] aload_0
+[ 489] dup
+[ 490] getfield FightC.skipCounter
+[ 491] iconst_1
+[ 492] iadd
+[ 493] putfield FightC.skipCounter
+[ 494] goto 99
+[ 495] aload_0
+[ 496] getfield FightC.skipCounter
+[ 497] bipush 20
+[ 498] if_icmple 15
+[ 499] aload_0
+[ 500] iconst_0
+[ 501] putfield FightC.skipCounter
+[ 502] aload_0
+[ 503] invokevirtual FightC.skip
+[ 504] goto 78
+[ 505] aload_0
+[ 506] dup
+[ 507] getfield FightC.skipCounter
+[ 508] iconst_1
+[ 509] iadd
+[ 510] putfield FightC.skipCounter
+[ 511] goto 65
+[ 512] aload_0
+[ 513] dup
+[ 514] getfield FightC.actualText
+[ 515] iconst_1
+[ 516] iadd
+[ 517] putfield FightC.actualText
+[ 518] aload_0
+[ 519] aload_0
+[ 520] getfield FightC.levelMsgs
+[ 521] aload_0
+[ 522] getfield FightC.actualText
+[ 523] aaload
+[ 524] invokevirtual java/lang/String.length
+[ 525] putfield FightC.len
+[ 526] aload_0
+[ 527] aload_0
+[ 528] getfield FightC.fontL
+[ 529] aload_0
+[ 530] getfield FightC.levelMsgs
+[ 531] aload_0
+[ 532] getfield FightC.actualText
+[ 533] aaload
+[ 534] invokevirtual javax/microedition/lcdui/Font.stringWidth
+[ 535] putfield FightC.strWidth
+[ 536] aload_0
+[ 537] iconst_0
+[ 538] putfield FightC.count
+[ 539] aload_0
+[ 540] dup
+[ 541] getfield FightC.yPrint
+[ 542] bipush 14
+[ 543] iadd
+[ 544] putfield FightC.yPrint
+[ 545] aload_0
+[ 546] aload_0
+[ 547] getfield FightC.levelMsgs
+[ 548] aload_0
+[ 549] getfield FightC.actualText
+[ 550] aaload
+[ 551] iconst_0
+[ 552] aload_0
+[ 553] getfield FightC.count
+[ 554] invokevirtual java/lang/String.substring
+[ 555] putfield FightC.text
+[ 556] aload_0
+[ 557] aload_0
+[ 558] getfield FightC.fontL
+[ 559] aload_0
+[ 560] getfield FightC.text
+[ 561] invokevirtual javax/microedition/lcdui/Font.stringWidth
+[ 562] putfield FightC.cursorPos
+[ 563] aload_0
+[ 564] getfield FightC.offGraphics
+[ 565] aload_0
+[ 566] getfield FightC.blue_col
+[ 567] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[ 568] aload_0
+[ 569] getfield FightC.offGraphics
+[ 570] iconst_0
+[ 571] iconst_0
+[ 572] aload_0
+[ 573] getfield FightC.width
+[ 574] aload_0
+[ 575] getfield FightC.height
+[ 576] invokevirtual javax/microedition/lcdui/Graphics.fillRect
+[ 577] aload_0
+[ 578] getfield FightC.offGraphics
+[ 579] aload_0
+[ 580] getfield FightC.width
+[ 581] bipush 70
+[ 582] isub
+[ 583] iconst_1
+[ 584] ishr
+[ 585] aload_0
+[ 586] getfield FightC.height
+[ 587] bipush 54
+[ 588] isub
+[ 589] iconst_1
+[ 590] ishr
+[ 591] bipush 70
+[ 592] bipush 54
+[ 593] invokevirtual javax/microedition/lcdui/Graphics.clipRect
+[ 594] aload_0
+[ 595] getfield FightC.offGraphics
+[ 596] iconst_0
+[ 597] iconst_0
+[ 598] aload_0
+[ 599] getfield FightC.width
+[ 600] aload_0
+[ 601] getfield FightC.remClipY
+[ 602] invokevirtual javax/microedition/lcdui/Graphics.setClip
+[ 603] iconst_0
+[ 604] istore_1
+[ 605] goto 116
+[ 606] aload_0
+[ 607] getfield FightC.fontL
+[ 608] aload_0
+[ 609] getfield FightC.levelMsgs
+[ 610] iload_1
+[ 611] aaload
+[ 612] invokevirtual javax/microedition/lcdui/Font.stringWidth
+[ 613] istore_2
+[ 614] aload_0
+[ 615] getfield FightC.offGraphics
+[ 616] aload_0
+[ 617] getfield FightC.black_col
+[ 618] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[ 619] aload_0
+[ 620] getfield FightC.offGraphics
+[ 621] aload_0
+[ 622] getfield FightC.levelMsgs
+[ 623] iload_1
+[ 624] aaload
+[ 625] aload_0
+[ 626] getfield FightC.width
+[ 627] iload_2
+[ 628] isub
+[ 629] iconst_2
+[ 630] idiv
+[ 631] iconst_1
+[ 632] iadd
+[ 633] iload_1
+[ 634] bipush 14
+[ 635] imul
+[ 636] bipush 7
+[ 637] iadd
+[ 638] aload_0
+[ 639] pop
+[ 640] bipush 16
+[ 641] aload_0
+[ 642] pop
+[ 643] iconst_4
+[ 644] ior
+[ 645] invokevirtual javax/microedition/lcdui/Graphics.drawString
+[ 646] aload_0
+[ 647] getfield FightC.offGraphics
+[ 648] aload_0
+[ 649] getfield FightC.white_col
+[ 650] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[ 651] aload_0
+[ 652] getfield FightC.offGraphics
+[ 653] aload_0
+[ 654] getfield FightC.levelMsgs
+[ 655] iload_1
+[ 656] aaload
+[ 657] aload_0
+[ 658] getfield FightC.width
+[ 659] iload_2
+[ 660] isub
+[ 661] iconst_2
+[ 662] idiv
+[ 663] iload_1
+[ 664] bipush 14
+[ 665] imul
+[ 666] bipush 6
+[ 667] iadd
+[ 668] aload_0
+[ 669] pop
+[ 670] bipush 16
+[ 671] aload_0
+[ 672] pop
+[ 673] iconst_4
+[ 674] ior
+[ 675] invokevirtual javax/microedition/lcdui/Graphics.drawString
+[ 676] iinc 1
+[ 677] iload_1
+[ 678] aload_0
+[ 679] getfield FightC.actualText
+[ 680] if_icmplt -118
+[ 681] aload_0
+[ 682] getfield FightC.offGraphics
+[ 683] aload_0
+[ 684] getfield FightC.black_col
+[ 685] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[ 686] aload_0
+[ 687] getfield FightC.offGraphics
+[ 688] aload_0
+[ 689] getfield FightC.text
+[ 690] aload_0
+[ 691] getfield FightC.width
+[ 692] aload_0
+[ 693] getfield FightC.strWidth
+[ 694] isub
+[ 695] iconst_2
+[ 696] idiv
+[ 697] iconst_1
+[ 698] iadd
+[ 699] aload_0
+[ 700] getfield FightC.yPrint
+[ 701] iconst_1
+[ 702] iadd
+[ 703] aload_0
+[ 704] pop
+[ 705] bipush 16
+[ 706] aload_0
+[ 707] pop
+[ 708] iconst_4
+[ 709] ior
+[ 710] invokevirtual javax/microedition/lcdui/Graphics.drawString
+[ 711] aload_0
+[ 712] getfield FightC.blinkCounter
+[ 713] ifne 38
+[ 714] aload_0
+[ 715] getfield FightC.offGraphics
+[ 716] aload_0
+[ 717] getfield FightC.width
+[ 718] aload_0
+[ 719] getfield FightC.strWidth
+[ 720] isub
+[ 721] iconst_1
+[ 722] ishr
+[ 723] aload_0
+[ 724] getfield FightC.cursorPos
+[ 725] iadd
+[ 726] iconst_1
+[ 727] iadd
+[ 728] aload_0
+[ 729] getfield FightC.yPrint
+[ 730] iconst_4
+[ 731] iadd
+[ 732] bipush 6
+[ 733] bipush 6
+[ 734] invokevirtual javax/microedition/lcdui/Graphics.fillRect
+[ 735] aload_0
+[ 736] getfield FightC.offGraphics
+[ 737] aload_0
+[ 738] getfield FightC.white_col
+[ 739] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[ 740] aload_0
+[ 741] getfield FightC.offGraphics
+[ 742] aload_0
+[ 743] getfield FightC.text
+[ 744] aload_0
+[ 745] getfield FightC.width
+[ 746] aload_0
+[ 747] getfield FightC.strWidth
+[ 748] isub
+[ 749] iconst_2
+[ 750] idiv
+[ 751] aload_0
+[ 752] getfield FightC.yPrint
+[ 753] aload_0
+[ 754] pop
+[ 755] bipush 16
+[ 756] aload_0
+[ 757] pop
+[ 758] iconst_4
+[ 759] ior
+[ 760] invokevirtual javax/microedition/lcdui/Graphics.drawString
+[ 761] aload_0
+[ 762] getfield FightC.blinkCounter
+[ 763] ifne 36
+[ 764] aload_0
+[ 765] getfield FightC.offGraphics
+[ 766] aload_0
+[ 767] getfield FightC.width
+[ 768] aload_0
+[ 769] getfield FightC.strWidth
+[ 770] isub
+[ 771] iconst_1
+[ 772] ishr
+[ 773] aload_0
+[ 774] getfield FightC.cursorPos
+[ 775] iadd
+[ 776] aload_0
+[ 777] getfield FightC.yPrint
+[ 778] iconst_3
+[ 779] iadd
+[ 780] bipush 6
+[ 781] bipush 6
+[ 782] invokevirtual javax/microedition/lcdui/Graphics.fillRect
+[ 783] aload_0
+[ 784] getfield FightC.blinkCounter
+[ 785] ifne 11
+[ 786] aload_0
+[ 787] iconst_1
+[ 788] putfield FightC.blinkCounter
+[ 789] goto 259
+[ 790] aload_0
+[ 791] iconst_0
+[ 792] putfield FightC.blinkCounter
+[ 793] goto 251
+[ 794] aload_0
+[ 795] getfield FightC.gameState
+[ 796] aload_0
+[ 797] getfield FightC.GAME
+[ 798] if_icmpne 22
+[ 799] aload_0
+[ 800] getfield FightC.restartGame
+[ 801] ifne 15
+[ 802] aload_0
+[ 803] iconst_1
+[ 804] invokevirtual FightC.controlCpuFighter
+[ 805] aload_0
+[ 806] invokespecial FightC.checkForHitFighters
+[ 807] goto 213
+[ 808] aload_0
+[ 809] getfield FightC.gameState
+[ 810] aload_0
+[ 811] getfield FightC.DEMOMODE
+[ 812] if_icmpne 27
+[ 813] aload_0
+[ 814] getfield FightC.restartGame
+[ 815] ifne 20
+[ 816] aload_0
+[ 817] iconst_0
+[ 818] invokevirtual FightC.controlCpuFighter
+[ 819] aload_0
+[ 820] iconst_1
+[ 821] invokevirtual FightC.controlCpuFighter
+[ 822] aload_0
+[ 823] invokespecial FightC.checkForHitFighters
+[ 824] goto 178
+[ 825] aload_0
+[ 826] getfield FightC.restartGame
+[ 827] ifeq 171
+[ 828] aload_0
+[ 829] getfield FightC.continueGame
+[ 830] ifeq 71
+[ 831] aload_0
+[ 832] getfield FightC.continueGameTime
+[ 833] lconst_1
+[ 834] lcmp
+[ 835] iflt 10
+[ 836] aload_0
+[ 837] getfield FightC.countCont
+[ 838] ifge 18
+[ 839] aload_0
+[ 840] ldc2_w 229
+[ 841] putfield FightC.continueGameTime
+[ 842] aload_0
+[ 843] iconst_0
+[ 844] putfield FightC.continueGame
+[ 845] goto 133
+[ 846] aload_0
+[ 847] invokestatic java/util/Calendar.getInstance
+[ 848] invokevirtual java/util/Calendar.getTime
+[ 849] invokevirtual java/util/Date.getTime
+[ 850] putfield FightC.continueGameActualTime
+[ 851] aload_0
+[ 852] ldc2_w 231
+[ 853] aload_0
+[ 854] getfield FightC.continueGameActualTime
+[ 855] aload_0
+[ 856] getfield FightC.continueGameStartingTime
+[ 857] lsub
+[ 858] lsub
+[ 859] ldc2_w 233
+[ 860] ldiv
+[ 861] putfield FightC.continueGameTime
+[ 862] goto 96
+[ 863] aload_0
+[ 864] getfield FightC.restartDemoMode
+[ 865] bipush 25
+[ 866] if_icmple 61
+[ 867] aload_0
+[ 868] getfield FightC.roundPlayer
+[ 869] iconst_2
+[ 870] if_icmpeq 36
+[ 871] aload_0
+[ 872] getfield FightC.roundEnemy
+[ 873] iconst_2
+[ 874] if_icmpeq 28
+[ 875] aload_0
+[ 876] getfield FightC.gameState
+[ 877] aload_0
+[ 878] getfield FightC.DEMOMODE
+[ 879] if_icmpne 10
+[ 880] aload_0
+[ 881] invokevirtual FightC.startGame
+[ 882] goto 14
+[ 883] aload_0
+[ 884] invokevirtual FightC.playGame
+[ 885] goto 7
+[ 886] aload_0
+[ 887] invokevirtual FightC.startGame
+[ 888] aload_0
+[ 889] iconst_0
+[ 890] putfield FightC.restartGame
+[ 891] aload_0
+[ 892] iconst_0
+[ 893] putfield FightC.restartDemoMode
+[ 894] goto 29
+[ 895] aload_0
+[ 896] aload_0
+[ 897] getfield FightC.NONE
+[ 898] putfield FightC.commandEnemy
+[ 899] aload_0
+[ 900] aload_0
+[ 901] getfield FightC.NONE
+[ 902] putfield FightC.commandPlayer
+[ 903] aload_0
+[ 904] dup
+[ 905] getfield FightC.restartDemoMode
+[ 906] iconst_1
+[ 907] iadd
+[ 908] putfield FightC.restartDemoMode
+[ 909] aload_0
+[ 910] invokespecial FightC.paintBackground
+[ 911] aload_0
+[ 912] invokevirtual FightC.paintFighters
+[ 913] return

@@ -1,0 +1,411 @@
+// Classe: FightC
+// Metodo: checkForHitFighters
+// Descritor: ()V
+// Instrucoes: 406
+
+[   0] aload_0
+[   1] getfield FightC.xEnemy
+[   2] aload_0
+[   3] getfield FightC.xPlayer
+[   4] isub
+[   5] invokestatic java/lang/Math.abs
+[   6] istore_1
+[   7] iload_1
+[   8] bipush 30
+[   9] if_icmpge 807
+[  10] aload_0
+[  11] getfield FightC.stateEnemy
+[  12] aload_0
+[  13] getfield FightC.PUNCH
+[  14] if_icmpne 110
+[  15] aload_0
+[  16] getfield FightC.statePlayer
+[  17] aload_0
+[  18] getfield FightC.PUNCH
+[  19] if_icmpne 99
+[  20] aload_0
+[  21] getfield FightC.gameState
+[  22] aload_0
+[  23] getfield FightC.DEMOMODE
+[  24] if_icmpeq 88
+[  25] aload_0
+[  26] iconst_1
+[  27] invokevirtual FightC.damageFighter
+[  28] aload_0
+[  29] getfield FightC.hpPlayer
+[  30] ifgt 762
+[  31] aload_0
+[  32] getfield FightC.roundEnemy
+[  33] iconst_1
+[  34] if_icmpne 42
+[  35] aload_0
+[  36] dup
+[  37] getfield FightC.countCont
+[  38] iconst_1
+[  39] isub
+[  40] putfield FightC.countCont
+[  41] aload_0
+[  42] iconst_1
+[  43] putfield FightC.continueGame
+[  44] aload_0
+[  45] invokestatic java/util/Calendar.getInstance
+[  46] invokevirtual java/util/Calendar.getTime
+[  47] invokevirtual java/util/Date.getTime
+[  48] putfield FightC.continueGameStartingTime
+[  49] aload_0
+[  50] aload_0
+[  51] getfield FightC.ENEMYWIN
+[  52] putfield FightC.gameState
+[  53] goto 11
+[  54] aload_0
+[  55] aload_0
+[  56] getfield FightC.ROUNDWON
+[  57] putfield FightC.gameState
+[  58] aload_0
+[  59] dup
+[  60] getfield FightC.roundEnemy
+[  61] iconst_1
+[  62] iadd
+[  63] putfield FightC.roundEnemy
+[  64] aload_0
+[  65] iconst_1
+[  66] putfield FightC.restartGame
+[  67] goto 689
+[  68] aload_0
+[  69] getfield FightC.stateEnemy
+[  70] aload_0
+[  71] getfield FightC.KICK
+[  72] if_icmpne 114
+[  73] aload_0
+[  74] getfield FightC.statePlayer
+[  75] aload_0
+[  76] getfield FightC.KICK
+[  77] if_icmpne 103
+[  78] aload_0
+[  79] getfield FightC.gameState
+[  80] aload_0
+[  81] getfield FightC.DEMOMODE
+[  82] if_icmpeq 92
+[  83] aload_0
+[  84] iconst_0
+[  85] invokevirtual FightC.damageFighter
+[  86] aload_0
+[  87] getfield FightC.hpEnemy
+[  88] ifgt 644
+[  89] aload_0
+[  90] getfield FightC.gameState
+[  91] aload_0
+[  92] getfield FightC.DEMOMODE
+[  93] if_icmpeq 633
+[  94] aload_0
+[  95] getfield FightC.roundPlayer
+[  96] iconst_1
+[  97] if_icmpne 35
+[  98] aload_0
+[  99] getfield FightC.level
+[ 100] aload_0
+[ 101] getfield FightC.lastLevel
+[ 102] if_icmpne 8
+[ 103] aload_0
+[ 104] iconst_1
+[ 105] putfield FightC.playerWinGame
+[ 106] aload_0
+[ 107] iconst_1
+[ 108] putfield FightC.rememberLevel
+[ 109] aload_0
+[ 110] aload_0
+[ 111] getfield FightC.PLAYERWIN
+[ 112] putfield FightC.gameState
+[ 113] goto 11
+[ 114] aload_0
+[ 115] aload_0
+[ 116] getfield FightC.ROUNDWON
+[ 117] putfield FightC.gameState
+[ 118] aload_0
+[ 119] dup
+[ 120] getfield FightC.roundPlayer
+[ 121] iconst_1
+[ 122] iadd
+[ 123] putfield FightC.roundPlayer
+[ 124] aload_0
+[ 125] iconst_1
+[ 126] putfield FightC.restartGame
+[ 127] goto 567
+[ 128] aload_0
+[ 129] getfield FightC.stateEnemy
+[ 130] aload_0
+[ 131] getfield FightC.KICK
+[ 132] if_icmpne 14
+[ 133] aload_0
+[ 134] getfield FightC.statePlayer
+[ 135] aload_0
+[ 136] getfield FightC.PUNCH
+[ 137] if_icmpeq 25
+[ 138] aload_0
+[ 139] getfield FightC.stateEnemy
+[ 140] aload_0
+[ 141] getfield FightC.PUNCH
+[ 142] if_icmpne 212
+[ 143] aload_0
+[ 144] getfield FightC.statePlayer
+[ 145] aload_0
+[ 146] getfield FightC.KICK
+[ 147] if_icmpne 201
+[ 148] aload_0
+[ 149] getfield FightC.gameState
+[ 150] aload_0
+[ 151] getfield FightC.DEMOMODE
+[ 152] if_icmpeq 190
+[ 153] aload_0
+[ 154] iconst_0
+[ 155] bipush 10
+[ 156] invokespecial FightC.rand
+[ 157] istore_2
+[ 158] iload_2
+[ 159] iconst_4
+[ 160] if_icmple 92
+[ 161] aload_0
+[ 162] iconst_0
+[ 163] invokevirtual FightC.damageFighter
+[ 164] aload_0
+[ 165] getfield FightC.hpEnemy
+[ 166] ifgt 487
+[ 167] aload_0
+[ 168] getfield FightC.gameState
+[ 169] aload_0
+[ 170] getfield FightC.DEMOMODE
+[ 171] if_icmpeq 476
+[ 172] aload_0
+[ 173] getfield FightC.roundPlayer
+[ 174] iconst_1
+[ 175] if_icmpne 35
+[ 176] aload_0
+[ 177] getfield FightC.level
+[ 178] aload_0
+[ 179] getfield FightC.lastLevel
+[ 180] if_icmpne 8
+[ 181] aload_0
+[ 182] iconst_1
+[ 183] putfield FightC.playerWinGame
+[ 184] aload_0
+[ 185] iconst_1
+[ 186] putfield FightC.rememberLevel
+[ 187] aload_0
+[ 188] aload_0
+[ 189] getfield FightC.PLAYERWIN
+[ 190] putfield FightC.gameState
+[ 191] goto 11
+[ 192] aload_0
+[ 193] aload_0
+[ 194] getfield FightC.ROUNDWON
+[ 195] putfield FightC.gameState
+[ 196] aload_0
+[ 197] dup
+[ 198] getfield FightC.roundPlayer
+[ 199] iconst_1
+[ 200] iadd
+[ 201] putfield FightC.roundPlayer
+[ 202] aload_0
+[ 203] iconst_1
+[ 204] putfield FightC.restartGame
+[ 205] goto 410
+[ 206] aload_0
+[ 207] iconst_1
+[ 208] invokevirtual FightC.damageFighter
+[ 209] aload_0
+[ 210] getfield FightC.hpPlayer
+[ 211] ifgt 398
+[ 212] aload_0
+[ 213] getfield FightC.roundEnemy
+[ 214] iconst_1
+[ 215] if_icmpne 42
+[ 216] aload_0
+[ 217] dup
+[ 218] getfield FightC.countCont
+[ 219] iconst_1
+[ 220] isub
+[ 221] putfield FightC.countCont
+[ 222] aload_0
+[ 223] iconst_1
+[ 224] putfield FightC.continueGame
+[ 225] aload_0
+[ 226] invokestatic java/util/Calendar.getInstance
+[ 227] invokevirtual java/util/Calendar.getTime
+[ 228] invokevirtual java/util/Date.getTime
+[ 229] putfield FightC.continueGameStartingTime
+[ 230] aload_0
+[ 231] aload_0
+[ 232] getfield FightC.ENEMYWIN
+[ 233] putfield FightC.gameState
+[ 234] goto 11
+[ 235] aload_0
+[ 236] aload_0
+[ 237] getfield FightC.ROUNDWON
+[ 238] putfield FightC.gameState
+[ 239] aload_0
+[ 240] dup
+[ 241] getfield FightC.roundEnemy
+[ 242] iconst_1
+[ 243] iadd
+[ 244] putfield FightC.roundEnemy
+[ 245] aload_0
+[ 246] iconst_1
+[ 247] putfield FightC.restartGame
+[ 248] goto 325
+[ 249] aload_0
+[ 250] getfield FightC.stateEnemy
+[ 251] aload_0
+[ 252] getfield FightC.PUNCH
+[ 253] if_icmpeq 14
+[ 254] aload_0
+[ 255] getfield FightC.stateEnemy
+[ 256] aload_0
+[ 257] getfield FightC.KICK
+[ 258] if_icmpne 147
+[ 259] aload_0
+[ 260] getfield FightC.statePlayer
+[ 261] aload_0
+[ 262] getfield FightC.BLOCK
+[ 263] if_icmpeq 125
+[ 264] aload_0
+[ 265] iconst_1
+[ 266] invokevirtual FightC.damageFighter
+[ 267] aload_0
+[ 268] getfield FightC.hpPlayer
+[ 269] ifgt 87
+[ 270] aload_0
+[ 271] getfield FightC.gameState
+[ 272] aload_0
+[ 273] getfield FightC.DEMOMODE
+[ 274] if_icmpeq 76
+[ 275] aload_0
+[ 276] getfield FightC.roundEnemy
+[ 277] iconst_1
+[ 278] if_icmpne 42
+[ 279] aload_0
+[ 280] dup
+[ 281] getfield FightC.countCont
+[ 282] iconst_1
+[ 283] isub
+[ 284] putfield FightC.countCont
+[ 285] aload_0
+[ 286] iconst_1
+[ 287] putfield FightC.continueGame
+[ 288] aload_0
+[ 289] invokestatic java/util/Calendar.getInstance
+[ 290] invokevirtual java/util/Calendar.getTime
+[ 291] invokevirtual java/util/Date.getTime
+[ 292] putfield FightC.continueGameStartingTime
+[ 293] aload_0
+[ 294] aload_0
+[ 295] getfield FightC.ENEMYWIN
+[ 296] putfield FightC.gameState
+[ 297] goto 11
+[ 298] aload_0
+[ 299] aload_0
+[ 300] getfield FightC.ROUNDWON
+[ 301] putfield FightC.gameState
+[ 302] aload_0
+[ 303] dup
+[ 304] getfield FightC.roundEnemy
+[ 305] iconst_1
+[ 306] iadd
+[ 307] putfield FightC.roundEnemy
+[ 308] aload_0
+[ 309] iconst_1
+[ 310] putfield FightC.restartGame
+[ 311] goto 196
+[ 312] aload_0
+[ 313] getfield FightC.hpPlayer
+[ 314] ifgt 189
+[ 315] aload_0
+[ 316] getfield FightC.gameState
+[ 317] aload_0
+[ 318] getfield FightC.DEMOMODE
+[ 319] if_icmpne 178
+[ 320] aload_0
+[ 321] iconst_1
+[ 322] putfield FightC.restartGame
+[ 323] goto 170
+[ 324] aload_0
+[ 325] aload_0
+[ 326] getfield FightC.NONE
+[ 327] putfield FightC.stateEnemy
+[ 328] goto 159
+[ 329] aload_0
+[ 330] getfield FightC.statePlayer
+[ 331] aload_0
+[ 332] getfield FightC.PUNCH
+[ 333] if_icmpeq 14
+[ 334] aload_0
+[ 335] getfield FightC.statePlayer
+[ 336] aload_0
+[ 337] getfield FightC.KICK
+[ 338] if_icmpne 137
+[ 339] aload_0
+[ 340] getfield FightC.stateEnemy
+[ 341] aload_0
+[ 342] getfield FightC.BLOCK
+[ 343] if_icmpeq 118
+[ 344] aload_0
+[ 345] iconst_0
+[ 346] invokevirtual FightC.damageFighter
+[ 347] aload_0
+[ 348] getfield FightC.hpEnemy
+[ 349] ifgt 80
+[ 350] aload_0
+[ 351] getfield FightC.gameState
+[ 352] aload_0
+[ 353] getfield FightC.DEMOMODE
+[ 354] if_icmpeq 69
+[ 355] aload_0
+[ 356] getfield FightC.roundPlayer
+[ 357] iconst_1
+[ 358] if_icmpne 35
+[ 359] aload_0
+[ 360] getfield FightC.level
+[ 361] aload_0
+[ 362] getfield FightC.lastLevel
+[ 363] if_icmpne 8
+[ 364] aload_0
+[ 365] iconst_1
+[ 366] putfield FightC.playerWinGame
+[ 367] aload_0
+[ 368] iconst_1
+[ 369] putfield FightC.rememberLevel
+[ 370] aload_0
+[ 371] aload_0
+[ 372] getfield FightC.PLAYERWIN
+[ 373] putfield FightC.gameState
+[ 374] goto 11
+[ 375] aload_0
+[ 376] aload_0
+[ 377] getfield FightC.ROUNDWON
+[ 378] putfield FightC.gameState
+[ 379] aload_0
+[ 380] dup
+[ 381] getfield FightC.roundPlayer
+[ 382] iconst_1
+[ 383] iadd
+[ 384] putfield FightC.roundPlayer
+[ 385] aload_0
+[ 386] iconst_1
+[ 387] putfield FightC.restartGame
+[ 388] goto 37
+[ 389] aload_0
+[ 390] getfield FightC.hpEnemy
+[ 391] ifgt 30
+[ 392] aload_0
+[ 393] getfield FightC.gameState
+[ 394] aload_0
+[ 395] getfield FightC.DEMOMODE
+[ 396] if_icmpne 19
+[ 397] aload_0
+[ 398] iconst_1
+[ 399] putfield FightC.restartGame
+[ 400] goto 11
+[ 401] aload_0
+[ 402] aload_0
+[ 403] getfield FightC.NONE
+[ 404] putfield FightC.statePlayer
+[ 405] return

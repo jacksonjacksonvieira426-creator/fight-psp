@@ -1,0 +1,18 @@
+// Classe: Fight
+// Metodo: destroyApp
+// Descritor: (Z)V
+// Instrucoes: 13
+
+[   0] aload_0
+[   1] getfield Fight.display
+[   2] aconst_null
+[   3] invokevirtual javax/microedition/lcdui/Display.setCurrent
+[   4] aload_0
+[   5] aconst_null
+[   6] putfield Fight.theCanvas
+[   7] aload_0
+[   8] aconst_null
+[   9] putfield Fight.display
+[  10] aload_0
+[  11] invokevirtual javax/microedition/midlet/MIDlet.notifyDestroyed
+[  12] return

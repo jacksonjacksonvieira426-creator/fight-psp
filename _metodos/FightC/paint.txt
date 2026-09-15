@@ -1,0 +1,141 @@
+// Classe: FightC
+// Metodo: paint
+// Descritor: (Ljavax/microedition/lcdui/Graphics;)V
+// Instrucoes: 136
+
+[   0] aload_0
+[   1] getfield FightC.deleteFirstScreen
+[   2] ifeq 58
+[   3] aload_0
+[   4] getfield FightC.realw
+[   5] aload_0
+[   6] getfield FightC.realh
+[   7] invokestatic javax/microedition/lcdui/Image.createImage
+[   8] astore_2
+[   9] aload_2
+[  10] invokevirtual javax/microedition/lcdui/Image.getGraphics
+[  11] astore_3
+[  12] aload_3
+[  13] aload_0
+[  14] getfield FightC.white_col
+[  15] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[  16] aload_3
+[  17] iconst_0
+[  18] iconst_0
+[  19] aload_0
+[  20] getfield FightC.realw
+[  21] aload_0
+[  22] getfield FightC.realh
+[  23] invokevirtual javax/microedition/lcdui/Graphics.fillRect
+[  24] aload_1
+[  25] aload_2
+[  26] iconst_0
+[  27] iconst_0
+[  28] bipush 16
+[  29] iconst_4
+[  30] ior
+[  31] invokevirtual javax/microedition/lcdui/Graphics.drawImage
+[  32] aload_0
+[  33] iconst_0
+[  34] putfield FightC.deleteFirstScreen
+[  35] aload_1
+[  36] aload_0
+[  37] getfield FightC.white_col
+[  38] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[  39] aload_1
+[  40] iconst_0
+[  41] iconst_0
+[  42] aload_0
+[  43] getfield FightC.realw
+[  44] aload_0
+[  45] getfield FightC.realh
+[  46] invokevirtual javax/microedition/lcdui/Graphics.fillRect
+[  47] aload_0
+[  48] getfield FightC.extraGfxY
+[  49] ifeq 9
+[  50] aload_0
+[  51] aload_1
+[  52] iconst_0
+[  53] invokevirtual FightC.paintCopperBar
+[  54] aload_1
+[  55] aload_0
+[  56] getfield FightC.offImage
+[  57] aload_0
+[  58] getfield FightC.scostaW
+[  59] aload_0
+[  60] getfield FightC.scostaH
+[  61] bipush 16
+[  62] iconst_4
+[  63] ior
+[  64] invokevirtual javax/microedition/lcdui/Graphics.drawImage
+[  65] aload_1
+[  66] aload_0
+[  67] getfield FightC.black_col
+[  68] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[  69] aload_1
+[  70] aload_0
+[  71] getfield FightC.scostaW
+[  72] aload_0
+[  73] getfield FightC.scostaH
+[  74] aload_0
+[  75] getfield FightC.width
+[  76] aload_0
+[  77] getfield FightC.height
+[  78] invokevirtual javax/microedition/lcdui/Graphics.drawRect
+[  79] aload_0
+[  80] getfield FightC.extraGfxY
+[  81] ifeq 9
+[  82] aload_0
+[  83] aload_1
+[  84] iconst_1
+[  85] invokevirtual FightC.paintCopperBar
+[  86] aload_0
+[  87] getfield FightC.demoMode
+[  88] ifle 89
+[  89] invokestatic java/util/Calendar.getInstance
+[  90] invokevirtual java/util/Calendar.getTime
+[  91] invokevirtual java/util/Date.getTime
+[  92] aload_0
+[  93] getfield FightC.demoTimer
+[  94] lsub
+[  95] aload_0
+[  96] getfield FightC.demoMode
+[  97] i2l
+[  98] lcmp
+[  99] iflt 66
+[ 100] aload_1
+[ 101] iconst_0
+[ 102] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[ 103] aload_1
+[ 104] iconst_0
+[ 105] iconst_0
+[ 106] aload_0
+[ 107] getfield FightC.realw
+[ 108] aload_0
+[ 109] getfield FightC.realh
+[ 110] invokevirtual javax/microedition/lcdui/Graphics.fillRect
+[ 111] aload_1
+[ 112] ldc 80
+[ 113] invokevirtual javax/microedition/lcdui/Graphics.setColor
+[ 114] aload_1
+[ 115] aload_0
+[ 116] getfield FightC.fontL
+[ 117] invokevirtual javax/microedition/lcdui/Graphics.setFont
+[ 118] aload_1
+[ 119] ldc 131
+[ 120] aload_0
+[ 121] getfield FightC.realw
+[ 122] aload_0
+[ 123] getfield FightC.fontL
+[ 124] ldc 131
+[ 125] invokevirtual javax/microedition/lcdui/Font.stringWidth
+[ 126] isub
+[ 127] iconst_1
+[ 128] ishr
+[ 129] aload_0
+[ 130] getfield FightC.realh
+[ 131] iconst_1
+[ 132] ishr
+[ 133] bipush 20
+[ 134] invokevirtual javax/microedition/lcdui/Graphics.drawString
+[ 135] return

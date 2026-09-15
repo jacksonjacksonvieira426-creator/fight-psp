@@ -1,0 +1,21 @@
+// Classe: FightC
+// Metodo: skip
+// Descritor: ()V
+// Instrucoes: 16
+
+[   0] aload_0
+[   1] aload_0
+[   2] getfield FightC.skipCommand
+[   3] invokevirtual javax/microedition/lcdui/Displayable.removeCommand
+[   4] aload_0
+[   5] aload_0
+[   6] getfield FightC.helpCommand
+[   7] invokevirtual javax/microedition/lcdui/Displayable.addCommand
+[   8] aload_0
+[   9] aload_0
+[  10] getfield FightC.GAME
+[  11] putfield FightC.gameState
+[  12] aload_0
+[  13] iconst_1
+[  14] putfield FightC.repaintBackground
+[  15] return

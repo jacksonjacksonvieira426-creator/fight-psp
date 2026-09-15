@@ -1,0 +1,301 @@
+// Classe: FightC
+// Metodo: controlCpuFighter
+// Descritor: (Z)V
+// Instrucoes: 296
+
+[   0] iconst_0
+[   1] istore_2
+[   2] iconst_0
+[   3] istore_3
+[   4] iload_1
+[   5] ifeq 20
+[   6] aload_0
+[   7] getfield FightC.xEnemy
+[   8] aload_0
+[   9] getfield FightC.xPlayer
+[  10] isub
+[  11] invokestatic java/lang/Math.abs
+[  12] istore 4
+[  13] goto 17
+[  14] aload_0
+[  15] getfield FightC.xPlayer
+[  16] aload_0
+[  17] getfield FightC.xEnemy
+[  18] isub
+[  19] invokestatic java/lang/Math.abs
+[  20] istore 4
+[  21] iload 4
+[  22] bipush 44
+[  23] if_icmpge 25
+[  24] iload_2
+[  25] aload_0
+[  26] iconst_0
+[  27] iconst_5
+[  28] invokespecial FightC.rand
+[  29] iadd
+[  30] istore_2
+[  31] iload_3
+[  32] aload_0
+[  33] bipush -5
+[  34] iconst_2
+[  35] invokespecial FightC.rand
+[  36] iadd
+[  37] istore_3
+[  38] goto 82
+[  39] iload 4
+[  40] bipush 54
+[  41] if_icmpge 25
+[  42] iload_2
+[  43] aload_0
+[  44] iconst_0
+[  45] iconst_3
+[  46] invokespecial FightC.rand
+[  47] iadd
+[  48] istore_2
+[  49] iload_3
+[  50] aload_0
+[  51] bipush -4
+[  52] iconst_5
+[  53] invokespecial FightC.rand
+[  54] iadd
+[  55] istore_3
+[  56] goto 53
+[  57] iload 4
+[  58] bipush 64
+[  59] if_icmpge 26
+[  60] iload_2
+[  61] aload_0
+[  62] bipush -2
+[  63] iconst_1
+[  64] invokespecial FightC.rand
+[  65] iadd
+[  66] istore_2
+[  67] iload_3
+[  68] aload_0
+[  69] bipush -3
+[  70] iconst_5
+[  71] invokespecial FightC.rand
+[  72] iadd
+[  73] istore_3
+[  74] goto 23
+[  75] iload_2
+[  76] aload_0
+[  77] bipush -10
+[  78] iconst_1
+[  79] invokespecial FightC.rand
+[  80] iadd
+[  81] istore_2
+[  82] iload_3
+[  83] aload_0
+[  84] bipush -2
+[  85] iconst_5
+[  86] invokespecial FightC.rand
+[  87] iadd
+[  88] istore_3
+[  89] iload_2
+[  90] ifgt 7
+[  91] iload_3
+[  92] ifeq 64
+[  93] aload_0
+[  94] bipush -4
+[  95] bipush 10
+[  96] invokespecial FightC.rand
+[  97] istore 5
+[  98] iload 5
+[  99] aload_0
+[ 100] getfield FightC.level
+[ 101] if_icmple 45
+[ 102] iload_2
+[ 103] ifle 5
+[ 104] iconst_0
+[ 105] istore_2
+[ 106] iload_3
+[ 107] ifeq 5
+[ 108] iconst_0
+[ 109] istore_3
+[ 110] aload_0
+[ 111] getfield FightC.stateEnemy
+[ 112] aload_0
+[ 113] getfield FightC.MOVELEFT
+[ 114] if_icmpeq 14
+[ 115] aload_0
+[ 116] getfield FightC.stateEnemy
+[ 117] aload_0
+[ 118] getfield FightC.MOVERIGHT
+[ 119] if_icmpne 11
+[ 120] aload_0
+[ 121] aload_0
+[ 122] getfield FightC.NONE
+[ 123] putfield FightC.stateEnemy
+[ 124] aload_0
+[ 125] getfield FightC.commandEnemy
+[ 126] aload_0
+[ 127] getfield FightC.BLOCK
+[ 128] if_icmpeq 25
+[ 129] aload_0
+[ 130] getfield FightC.commandPlayer
+[ 131] aload_0
+[ 132] getfield FightC.BLOCK
+[ 133] if_icmpne 56
+[ 134] aload_0
+[ 135] getfield FightC.gameState
+[ 136] aload_0
+[ 137] getfield FightC.DEMOMODE
+[ 138] if_icmpne 45
+[ 139] iconst_0
+[ 140] istore_3
+[ 141] iconst_0
+[ 142] istore_2
+[ 143] aload_0
+[ 144] getfield FightC.commandEnemy
+[ 145] aload_0
+[ 146] getfield FightC.BLOCK
+[ 147] if_icmpne 11
+[ 148] aload_0
+[ 149] aload_0
+[ 150] getfield FightC.NONE
+[ 151] putfield FightC.commandPlayer
+[ 152] aload_0
+[ 153] getfield FightC.commandPlayer
+[ 154] aload_0
+[ 155] getfield FightC.BLOCK
+[ 156] if_icmpne 11
+[ 157] aload_0
+[ 158] aload_0
+[ 159] getfield FightC.NONE
+[ 160] putfield FightC.commandEnemy
+[ 161] iload_1
+[ 162] ifeq 37
+[ 163] aload_0
+[ 164] getfield FightC.stateEnemy
+[ 165] aload_0
+[ 166] getfield FightC.MOVELEFT
+[ 167] if_icmpne 9
+[ 168] iinc 3
+[ 169] goto 51
+[ 170] aload_0
+[ 171] getfield FightC.stateEnemy
+[ 172] aload_0
+[ 173] getfield FightC.MOVERIGHT
+[ 174] if_icmpne 40
+[ 175] iinc 3
+[ 176] goto 34
+[ 177] aload_0
+[ 178] getfield FightC.statePlayer
+[ 179] aload_0
+[ 180] getfield FightC.MOVELEFT
+[ 181] if_icmpne 9
+[ 182] iinc 3
+[ 183] goto 17
+[ 184] aload_0
+[ 185] getfield FightC.statePlayer
+[ 186] aload_0
+[ 187] getfield FightC.MOVERIGHT
+[ 188] if_icmpne 6
+[ 189] iinc 3
+[ 190] iload_1
+[ 191] ifeq 105
+[ 192] iload_2
+[ 193] ifle 60
+[ 194] aload_0
+[ 195] getfield FightC.blockCounter
+[ 196] bipush 20
+[ 197] if_icmple 13
+[ 198] aload_0
+[ 199] dup
+[ 200] getfield FightC.blockCounter
+[ 201] iconst_1
+[ 202] isub
+[ 203] putfield FightC.blockCounter
+[ 204] aload_0
+[ 205] iconst_0
+[ 206] bipush 10
+[ 207] invokespecial FightC.rand
+[ 208] istore 5
+[ 209] iload 5
+[ 210] bipush 6
+[ 211] if_icmple 14
+[ 212] aload_0
+[ 213] aload_0
+[ 214] getfield FightC.KICK
+[ 215] putfield FightC.commandEnemy
+[ 216] goto 165
+[ 217] aload_0
+[ 218] aload_0
+[ 219] getfield FightC.PUNCH
+[ 220] putfield FightC.commandEnemy
+[ 221] goto 154
+[ 222] iload_3
+[ 223] ifge 14
+[ 224] aload_0
+[ 225] aload_0
+[ 226] getfield FightC.MOVELEFT
+[ 227] putfield FightC.commandEnemy
+[ 228] goto 139
+[ 229] iload_3
+[ 230] ifle 14
+[ 231] aload_0
+[ 232] aload_0
+[ 233] getfield FightC.MOVERIGHT
+[ 234] putfield FightC.commandEnemy
+[ 235] goto 124
+[ 236] aload_0
+[ 237] aload_0
+[ 238] getfield FightC.NONE
+[ 239] putfield FightC.commandEnemy
+[ 240] goto 113
+[ 241] iload_2
+[ 242] ifle 71
+[ 243] aload_0
+[ 244] getfield FightC.blockCounter
+[ 245] bipush 70
+[ 246] if_icmpge 24
+[ 247] aload_0
+[ 248] dup
+[ 249] getfield FightC.blockCounter
+[ 250] bipush 10
+[ 251] aload_0
+[ 252] getfield FightC.level
+[ 253] imul
+[ 254] aload_0
+[ 255] getfield FightC.lastLevel
+[ 256] idiv
+[ 257] iadd
+[ 258] putfield FightC.blockCounter
+[ 259] aload_0
+[ 260] iconst_0
+[ 261] bipush 10
+[ 262] invokespecial FightC.rand
+[ 263] istore 5
+[ 264] iload 5
+[ 265] bipush 6
+[ 266] if_icmple 14
+[ 267] aload_0
+[ 268] aload_0
+[ 269] getfield FightC.KICK
+[ 270] putfield FightC.commandPlayer
+[ 271] goto 52
+[ 272] aload_0
+[ 273] aload_0
+[ 274] getfield FightC.PUNCH
+[ 275] putfield FightC.commandPlayer
+[ 276] goto 41
+[ 277] iload_3
+[ 278] ifge 14
+[ 279] aload_0
+[ 280] aload_0
+[ 281] getfield FightC.MOVELEFT
+[ 282] putfield FightC.commandPlayer
+[ 283] goto 26
+[ 284] iload_3
+[ 285] ifle 14
+[ 286] aload_0
+[ 287] aload_0
+[ 288] getfield FightC.MOVERIGHT
+[ 289] putfield FightC.commandPlayer
+[ 290] goto 11
+[ 291] aload_0
+[ 292] aload_0
+[ 293] getfield FightC.NONE
+[ 294] putfield FightC.commandPlayer
+[ 295] return

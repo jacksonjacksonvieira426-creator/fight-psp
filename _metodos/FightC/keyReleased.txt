@@ -1,0 +1,52 @@
+// Classe: FightC
+// Metodo: keyReleased
+// Descritor: (I)V
+// Instrucoes: 47
+
+[   0] aload_0
+[   1] getfield FightC.gameState
+[   2] aload_0
+[   3] getfield FightC.GAME
+[   4] if_icmpeq 4
+[   5] return
+[   6] aload_0
+[   7] iload_1
+[   8] invokevirtual javax/microedition/lcdui/Canvas.getGameAction
+[   9] istore_2
+[  10] iload_1
+[  11] bipush 53
+[  12] if_icmpne 22
+[  13] aload_0
+[  14] aload_0
+[  15] getfield FightC.NONE
+[  16] putfield FightC.rememberCommand
+[  17] aload_0
+[  18] aload_0
+[  19] getfield FightC.NONE
+[  20] putfield FightC.commandPlayer
+[  21] goto 44
+[  22] iload_2
+[  23] iconst_2
+[  24] if_icmpeq 9
+[  25] iload_1
+[  26] bipush 52
+[  27] if_icmpne 14
+[  28] aload_0
+[  29] aload_0
+[  30] getfield FightC.NONE
+[  31] putfield FightC.commandPlayer
+[  32] goto 22
+[  33] iload_2
+[  34] iconst_5
+[  35] if_icmpeq 9
+[  36] iload_1
+[  37] bipush 54
+[  38] if_icmpne 11
+[  39] aload_0
+[  40] aload_0
+[  41] getfield FightC.NONE
+[  42] putfield FightC.commandPlayer
+[  43] aload_0
+[  44] iconst_1
+[  45] putfield FightC.executeCommand
+[  46] return

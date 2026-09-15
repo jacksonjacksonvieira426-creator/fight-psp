@@ -1,0 +1,53 @@
+// Classe: OEM
+// Metodo: playSound
+// Descritor: (Ljava/lang/String;)V
+// Instrucoes: 48
+
+[   0] aload_1
+[   1] invokevirtual java/lang/String.toLowerCase
+[   2] astore_2
+[   3] aload_2
+[   4] ldc 19
+[   5] invokevirtual java/lang/String.equals
+[   6] ifeq 14
+[   7] aload_0
+[   8] getfield OEM.sound0NOKIA
+[   9] iconst_1
+[  10] invokevirtual com/nokia/mid/sound/Sound.play
+[  11] goto 80
+[  12] aload_2
+[  13] ldc 22
+[  14] invokevirtual java/lang/String.equals
+[  15] ifeq 14
+[  16] aload_0
+[  17] getfield OEM.sound1NOKIA
+[  18] iconst_1
+[  19] invokevirtual com/nokia/mid/sound/Sound.play
+[  20] goto 60
+[  21] aload_2
+[  22] ldc 23
+[  23] invokevirtual java/lang/String.equals
+[  24] ifeq 14
+[  25] aload_0
+[  26] getfield OEM.sound2NOKIA
+[  27] iconst_1
+[  28] invokevirtual com/nokia/mid/sound/Sound.play
+[  29] goto 40
+[  30] aload_2
+[  31] ldc 24
+[  32] invokevirtual java/lang/String.equals
+[  33] ifeq 14
+[  34] aload_0
+[  35] getfield OEM.sound3NOKIA
+[  36] iconst_1
+[  37] invokevirtual com/nokia/mid/sound/Sound.play
+[  38] goto 20
+[  39] aload_2
+[  40] ldc 25
+[  41] invokevirtual java/lang/String.equals
+[  42] ifeq 11
+[  43] aload_0
+[  44] getfield OEM.sound4NOKIA
+[  45] iconst_1
+[  46] invokevirtual com/nokia/mid/sound/Sound.play
+[  47] return
