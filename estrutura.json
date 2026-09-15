@@ -1,0 +1,5226 @@
+{
+  "jar": "Fight.jar",
+  "nome_projeto": "fight",
+  "midlet": "Fight",
+  "canvas": "FightC",
+  "classes": [
+    {
+      "arquivo": "Fight.class",
+      "nome": "Fight",
+      "super": "MIDlet",
+      "campos": [
+        {
+          "nome": "theCanvas",
+          "desc": "LFightC;",
+          "tipo_c": "FightC*"
+        },
+        {
+          "nome": "display",
+          "desc": "Ljavax/microedition/lcdui/Display;",
+          "tipo_c": "Display*"
+        },
+        {
+          "nome": "oemClass",
+          "desc": "LOEM;",
+          "tipo_c": "OEM*"
+        },
+        {
+          "nome": "menuScreen",
+          "desc": "Ljavax/microedition/lcdui/List;",
+          "tipo_c": "List*"
+        },
+        {
+          "nome": "displayMenuSettings",
+          "desc": "Ljavax/microedition/lcdui/List;",
+          "tipo_c": "List*"
+        },
+        {
+          "nome": "instructions",
+          "desc": "Ljavax/microedition/lcdui/Form;",
+          "tipo_c": "Form*"
+        },
+        {
+          "nome": "retInstructionsAboutCommand",
+          "desc": "Ljavax/microedition/lcdui/Command;",
+          "tipo_c": "Command*"
+        },
+        {
+          "nome": "backInstructionsCommand",
+          "desc": "Ljavax/microedition/lcdui/Command;",
+          "tipo_c": "Command*"
+        }
+      ],
+      "metodos": [
+        {
+          "nome": "<init>",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 20,
+          "apis": {
+            "javax/microedition/midlet/MIDlet.<init>": 1,
+            "javax/microedition/lcdui/Display.getDisplay": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              1,
+              "javax/microedition/midlet/MIDlet.<init>"
+            ],
+            [
+              4,
+              "javax/microedition/lcdui/Display.getDisplay"
+            ]
+          ],
+          "fields": [
+            [
+              5,
+              "putfield",
+              "Fight.display"
+            ],
+            [
+              10,
+              "getfield",
+              "Fight.display"
+            ],
+            [
+              12,
+              "putfield",
+              "Fight.oemClass"
+            ],
+            [
+              18,
+              "putfield",
+              "Fight.theCanvas"
+            ]
+          ]
+        },
+        {
+          "nome": "startApp",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 10,
+          "apis": {
+            "javax/microedition/lcdui/Displayable.setCommandListener": 1,
+            "javax/microedition/lcdui/Display.setCurrent": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              3,
+              "javax/microedition/lcdui/Displayable.setCommandListener"
+            ],
+            [
+              8,
+              "javax/microedition/lcdui/Display.setCurrent"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Fight.theCanvas"
+            ],
+            [
+              5,
+              "getfield",
+              "Fight.display"
+            ],
+            [
+              7,
+              "getfield",
+              "Fight.theCanvas"
+            ]
+          ]
+        },
+        {
+          "nome": "pauseApp",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 101,
+          "apis": {
+            "javax/microedition/lcdui/List.<init>": 1,
+            "javax/microedition/lcdui/List.append": 4,
+            "javax/microedition/lcdui/Command.<init>": 2,
+            "javax/microedition/lcdui/Displayable.addCommand": 2,
+            "javax/microedition/lcdui/Displayable.setCommandListener": 1,
+            "javax/microedition/lcdui/Display.setCurrent": 1
+          },
+          "constantes": [
+            [
+              2,
+              1
+            ],
+            [
+              8,
+              3
+            ],
+            [
+              54,
+              7
+            ],
+            [
+              55,
+              1
+            ],
+            [
+              62,
+              7
+            ],
+            [
+              63,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              9,
+              "javax/microedition/lcdui/List.<init>"
+            ],
+            [
+              30,
+              "javax/microedition/lcdui/List.append"
+            ],
+            [
+              36,
+              "javax/microedition/lcdui/List.append"
+            ],
+            [
+              42,
+              "javax/microedition/lcdui/List.append"
+            ],
+            [
+              48,
+              "javax/microedition/lcdui/List.append"
+            ],
+            [
+              56,
+              "javax/microedition/lcdui/Command.<init>"
+            ],
+            [
+              64,
+              "javax/microedition/lcdui/Command.<init>"
+            ],
+            [
+              81,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ],
+            [
+              88,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ],
+            [
+              92,
+              "javax/microedition/lcdui/Displayable.setCommandListener"
+            ],
+            [
+              97,
+              "javax/microedition/lcdui/Display.setCurrent"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Fight.theCanvas"
+            ],
+            [
+              3,
+              "putfield",
+              "FightC.gameOff"
+            ],
+            [
+              10,
+              "putfield",
+              "Fight.menuScreen"
+            ],
+            [
+              12,
+              "getfield",
+              "Fight.theCanvas"
+            ],
+            [
+              13,
+              "getfield",
+              "FightC.gameState"
+            ],
+            [
+              15,
+              "getfield",
+              "Fight.theCanvas"
+            ],
+            [
+              16,
+              "getfield",
+              "FightC.DEMOMODE"
+            ],
+            [
+              19,
+              "getfield",
+              "Fight.theCanvas"
+            ],
+            [
+              20,
+              "getfield",
+              "FightC.continueGame"
+            ],
+            [
+              23,
+              "getfield",
+              "Fight.theCanvas"
+            ],
+            [
+              24,
+              "getfield",
+              "FightC.logo"
+            ],
+            [
+              27,
+              "getfield",
+              "Fight.menuScreen"
+            ],
+            [
+              33,
+              "getfield",
+              "Fight.menuScreen"
+            ],
+            [
+              39,
+              "getfield",
+              "Fight.menuScreen"
+            ],
+            [
+              45,
+              "getfield",
+              "Fight.menuScreen"
+            ],
+            [
+              57,
+              "putfield",
+              "Fight.backInstructionsCommand"
+            ],
+            [
+              65,
+              "putfield",
+              "Fight.retInstructionsAboutCommand"
+            ],
+            [
+              67,
+              "getfield",
+              "Fight.theCanvas"
+            ],
+            [
+              68,
+              "getfield",
+              "FightC.gameState"
+            ],
+            [
+              70,
+              "getfield",
+              "Fight.theCanvas"
+            ]
+          ]
+        },
+        {
+          "nome": "destroyApp",
+          "desc": "(Z)V",
+          "tipo_ret": "void",
+          "n_instr": 13,
+          "apis": {
+            "javax/microedition/lcdui/Display.setCurrent": 1,
+            "javax/microedition/midlet/MIDlet.notifyDestroyed": 1
+          },
+          "constantes": [],
+          "chamadas": [
+            [
+              3,
+              "javax/microedition/lcdui/Display.setCurrent"
+            ],
+            [
+              11,
+              "javax/microedition/midlet/MIDlet.notifyDestroyed"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "Fight.display"
+            ],
+            [
+              6,
+              "putfield",
+              "Fight.theCanvas"
+            ],
+            [
+              9,
+              "putfield",
+              "Fight.display"
+            ]
+          ]
+        },
+        {
+          "nome": "commandAction",
+          "desc": "(Ljavax/microedition/lcdui/Command;Ljavax/microedition/lcdui/Displayable;)V",
+          "tipo_ret": "void",
+          "n_instr": 304,
+          "apis": {
+            "javax/microedition/lcdui/Display.setCurrent": 4,
+            "javax/microedition/lcdui/List.getSelectedIndex": 10,
+            "javax/microedition/lcdui/List.getString": 10,
+            "java/lang/String.equals": 10,
+            "javax/microedition/lcdui/Form.<init>": 2,
+            "javax/microedition/lcdui/Form.append": 2,
+            "javax/microedition/lcdui/Displayable.addCommand": 2,
+            "javax/microedition/lcdui/Displayable.setCommandListener": 2,
+            "javax/microedition/lcdui/Displayable.removeCommand": 1
+          },
+          "constantes": [
+            [
+              6,
+              0
+            ],
+            [
+              18,
+              10
+            ],
+            [
+              22,
+              0
+            ],
+            [
+              26,
+              0
+            ],
+            [
+              69,
+              0
+            ],
+            [
+              144,
+              0
+            ],
+            [
+              218,
+              0
+            ],
+            [
+              233,
+              1
+            ],
+            [
+              248,
+              0
+            ],
+            [
+              263,
+              1
+            ],
+            [
+              281,
+              0
+            ],
+            [
+              296,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              66,
+              "javax/microedition/lcdui/Display.setCurrent"
+            ],
+            [
+              85,
+              "javax/microedition/lcdui/List.getSelectedIndex"
+            ],
+            [
+              86,
+              "javax/microedition/lcdui/List.getString"
+            ],
+            [
+              88,
+              "java/lang/String.equals"
+            ],
+            [
+              96,
+              "javax/microedition/lcdui/Form.<init>"
+            ],
+            [
+              101,
+              "javax/microedition/lcdui/Form.append"
+            ],
+            [
+              107,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ],
+            [
+              111,
+              "javax/microedition/lcdui/Displayable.setCommandListener"
+            ],
+            [
+              116,
+              "javax/microedition/lcdui/Display.setCurrent"
+            ],
+            [
+              121,
+              "javax/microedition/lcdui/List.getSelectedIndex"
+            ],
+            [
+              122,
+              "javax/microedition/lcdui/List.getString"
+            ],
+            [
+              124,
+              "java/lang/String.equals"
+            ],
+            [
+              133,
+              "javax/microedition/lcdui/Displayable.removeCommand"
+            ],
+            [
+              141,
+              "javax/microedition/lcdui/Display.setCurrent"
+            ],
+            [
+              150,
+              "javax/microedition/lcdui/List.getSelectedIndex"
+            ],
+            [
+              151,
+              "javax/microedition/lcdui/List.getString"
+            ],
+            [
+              153,
+              "java/lang/String.equals"
+            ],
+            [
+              161,
+              "javax/microedition/lcdui/Form.<init>"
+            ],
+            [
+              166,
+              "javax/microedition/lcdui/Form.append"
+            ],
+            [
+              172,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ]
+          ],
+          "fields": [
+            [
+              2,
+              "getfield",
+              "Fight.theCanvas"
+            ],
+            [
+              3,
+              "getfield",
+              "FightC.exitCommand"
+            ],
+            [
+              13,
+              "getfield",
+              "Fight.theCanvas"
+            ],
+            [
+              14,
+              "getfield",
+              "FightC.restartCommand"
+            ],
+            [
+              17,
+              "getfield",
+              "Fight.theCanvas"
+            ],
+            [
+              19,
+              "putfield",
+              "FightC.countCont"
+            ],
+            [
+              21,
+              "getfield",
+              "Fight.theCanvas"
+            ],
+            [
+              23,
+              "putfield",
+              "FightC.level"
+            ],
+            [
+              25,
+              "getfield",
+              "Fight.theCanvas"
+            ],
+            [
+              27,
+              "putfield",
+              "FightC.continueGame"
+            ],
+            [
+              29,
+              "getfield",
+              "Fight.theCanvas"
+            ],
+            [
+              36,
+              "getfield",
+              "Fight.theCanvas"
+            ],
+            [
+              37,
+              "getfield",
+              "FightC.helpCommand"
+            ],
+            [
+              44,
+              "getfield",
+              "Fight.theCanvas"
+            ],
+            [
+              45,
+              "getfield",
+              "FightC.skipCommand"
+            ],
+            [
+              48,
+              "getfield",
+              "Fight.theCanvas"
+            ],
+            [
+              53,
+              "getfield",
+              "Fight.retInstructionsAboutCommand"
+            ],
+            [
+              60,
+              "getfield",
+              "Fight.backInstructionsCommand"
+            ],
+            [
+              63,
+              "getfield",
+              "Fight.display"
+            ],
+            [
+              65,
+              "getfield",
+              "Fight.theCanvas"
+            ]
+          ]
+        },
+        {
+          "nome": "displaySettingsScreen",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 85,
+          "apis": {
+            "javax/microedition/lcdui/List.<init>": 1,
+            "java/lang/String.equals": 2,
+            "javax/microedition/lcdui/List.append": 6,
+            "javax/microedition/lcdui/Displayable.addCommand": 1,
+            "javax/microedition/lcdui/Displayable.setCommandListener": 1,
+            "javax/microedition/lcdui/Display.setCurrent": 1
+          },
+          "constantes": [
+            [
+              4,
+              3
+            ]
+          ],
+          "chamadas": [
+            [
+              5,
+              "javax/microedition/lcdui/List.<init>"
+            ],
+            [
+              11,
+              "java/lang/String.equals"
+            ],
+            [
+              21,
+              "javax/microedition/lcdui/List.append"
+            ],
+            [
+              28,
+              "javax/microedition/lcdui/List.append"
+            ],
+            [
+              38,
+              "javax/microedition/lcdui/List.append"
+            ],
+            [
+              45,
+              "javax/microedition/lcdui/List.append"
+            ],
+            [
+              51,
+              "java/lang/String.equals"
+            ],
+            [
+              61,
+              "javax/microedition/lcdui/List.append"
+            ],
+            [
+              68,
+              "javax/microedition/lcdui/List.append"
+            ],
+            [
+              74,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ],
+            [
+              78,
+              "javax/microedition/lcdui/Displayable.setCommandListener"
+            ],
+            [
+              83,
+              "javax/microedition/lcdui/Display.setCurrent"
+            ]
+          ],
+          "fields": [
+            [
+              6,
+              "putfield",
+              "Fight.displayMenuSettings"
+            ],
+            [
+              8,
+              "getfield",
+              "Fight.oemClass"
+            ],
+            [
+              9,
+              "getfield",
+              "OEM.phoneConnected"
+            ],
+            [
+              14,
+              "getfield",
+              "Fight.theCanvas"
+            ],
+            [
+              15,
+              "getfield",
+              "FightC.isLight"
+            ],
+            [
+              18,
+              "getfield",
+              "Fight.displayMenuSettings"
+            ],
+            [
+              25,
+              "getfield",
+              "Fight.displayMenuSettings"
+            ],
+            [
+              31,
+              "getfield",
+              "Fight.theCanvas"
+            ],
+            [
+              32,
+              "getfield",
+              "FightC.isSound"
+            ],
+            [
+              35,
+              "getfield",
+              "Fight.displayMenuSettings"
+            ],
+            [
+              42,
+              "getfield",
+              "Fight.displayMenuSettings"
+            ],
+            [
+              48,
+              "getfield",
+              "Fight.oemClass"
+            ],
+            [
+              49,
+              "getfield",
+              "OEM.phoneConnected"
+            ],
+            [
+              54,
+              "getfield",
+              "Fight.theCanvas"
+            ],
+            [
+              55,
+              "getfield",
+              "FightC.isVibra"
+            ],
+            [
+              58,
+              "getfield",
+              "Fight.displayMenuSettings"
+            ],
+            [
+              65,
+              "getfield",
+              "Fight.displayMenuSettings"
+            ],
+            [
+              71,
+              "getfield",
+              "Fight.displayMenuSettings"
+            ],
+            [
+              73,
+              "getfield",
+              "Fight.retInstructionsAboutCommand"
+            ],
+            [
+              76,
+              "getfield",
+              "Fight.displayMenuSettings"
+            ]
+          ]
+        }
+      ],
+      "apis": {
+        "javax/microedition/midlet/MIDlet.<init>": 1,
+        "javax/microedition/lcdui/Display.getDisplay": 1,
+        "javax/microedition/lcdui/Displayable.setCommandListener": 5,
+        "javax/microedition/lcdui/Display.setCurrent": 8,
+        "javax/microedition/lcdui/List.<init>": 2,
+        "javax/microedition/lcdui/List.append": 10,
+        "javax/microedition/lcdui/Command.<init>": 2,
+        "javax/microedition/lcdui/Displayable.addCommand": 5,
+        "javax/microedition/midlet/MIDlet.notifyDestroyed": 1,
+        "javax/microedition/lcdui/List.getSelectedIndex": 10,
+        "javax/microedition/lcdui/List.getString": 10,
+        "java/lang/String.equals": 12,
+        "javax/microedition/lcdui/Form.<init>": 2,
+        "javax/microedition/lcdui/Form.append": 2,
+        "javax/microedition/lcdui/Displayable.removeCommand": 1
+      },
+      "padroes": [
+        "MIDLET",
+        "TEM_STARTAPP"
+      ]
+    },
+    {
+      "arquivo": "FightC.class",
+      "nome": "FightC",
+      "super": "Canvas",
+      "campos": [
+        {
+          "nome": "demoTimer",
+          "desc": "J",
+          "tipo_c": "int64_t"
+        },
+        {
+          "nome": "demoMode",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "gameOff",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "xMove",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "div",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "countCont",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "thread",
+          "desc": "Ljava/lang/Thread;",
+          "tipo_c": "Thread*"
+        },
+        {
+          "nome": "exitCommand",
+          "desc": "Ljavax/microedition/lcdui/Command;",
+          "tipo_c": "Command*"
+        },
+        {
+          "nome": "helpCommand",
+          "desc": "Ljavax/microedition/lcdui/Command;",
+          "tipo_c": "Command*"
+        },
+        {
+          "nome": "skipCommand",
+          "desc": "Ljavax/microedition/lcdui/Command;",
+          "tipo_c": "Command*"
+        },
+        {
+          "nome": "restartCommand",
+          "desc": "Ljavax/microedition/lcdui/Command;",
+          "tipo_c": "Command*"
+        },
+        {
+          "nome": "fontL",
+          "desc": "Ljavax/microedition/lcdui/Font;",
+          "tipo_c": "Font*"
+        },
+        {
+          "nome": "infoScreen",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "logoOffScreen",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "deleteFirstScreen",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "finishedpainting",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "repaintBackground",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "rememberLevel",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "logo",
+          "desc": "Ljavax/microedition/lcdui/Image;",
+          "tipo_c": "Image*"
+        },
+        {
+          "nome": "picFighters",
+          "desc": "[Ljavax/microedition/lcdui/Image;",
+          "tipo_c": "Image**"
+        },
+        {
+          "nome": "picBackgroundLevels",
+          "desc": "Ljavax/microedition/lcdui/Image;",
+          "tipo_c": "Image*"
+        },
+        {
+          "nome": "numImgs",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "loadedPic",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "offGraphics",
+          "desc": "Ljavax/microedition/lcdui/Graphics;",
+          "tipo_c": "Graphics*"
+        },
+        {
+          "nome": "offImage",
+          "desc": "Ljavax/microedition/lcdui/Image;",
+          "tipo_c": "Image*"
+        },
+        {
+          "nome": "width",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "height",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "width2",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "realw",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "realh",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "scostaW",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "scostaH",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "remClipY",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "DEMOMODE",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "GAME",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "ENEMYWIN",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "PLAYERWIN",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "ROUNDWON",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "NEWLEVEL",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "NONE",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "MOVELEFT",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "MOVERIGHT",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "PUNCH",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "KICK",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "BLOCK",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "HITTED",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "ONFLOOR",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "xPlayer",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "commandPlayer",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "statePlayer",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "imagePlayer",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "hpPlayer",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "roundPlayer",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "xEnemy",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "commandEnemy",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "stateEnemy",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "imageEnemy",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "hpEnemy",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "roundEnemy",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "rand",
+          "desc": "Ljava/util/Random;",
+          "tipo_c": "Random*"
+        },
+        {
+          "nome": "gameState",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "continueGame",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "continueGameTime",
+          "desc": "J",
+          "tipo_c": "int64_t"
+        },
+        {
+          "nome": "continueGameActualTime",
+          "desc": "J",
+          "tipo_c": "int64_t"
+        },
+        {
+          "nome": "continueGameStartingTime",
+          "desc": "J",
+          "tipo_c": "int64_t"
+        },
+        {
+          "nome": "executeCommand",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "rememberCommand",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "playerWinGame",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "level",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "lastLevel",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "levelMsgs",
+          "desc": "[Ljava/lang/String;",
+          "tipo_c": "String**"
+        },
+        {
+          "nome": "text",
+          "desc": "Ljava/lang/String;",
+          "tipo_c": "String*"
+        },
+        {
+          "nome": "actualText",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "roundCounter",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "roundDisplay",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "isSound",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "isVibra",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "isLight",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "blue_col",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "white_col",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "black_col",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "FightMainClass",
+          "desc": "LFight;",
+          "tipo_c": "Fight*"
+        },
+        {
+          "nome": "extraGfxY",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "colorCopper",
+          "desc": "[I",
+          "tipo_c": "int*"
+        },
+        {
+          "nome": "firstCopper",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "logoActualTime",
+          "desc": "J",
+          "tipo_c": "int64_t"
+        },
+        {
+          "nome": "logoStartTime",
+          "desc": "J",
+          "tipo_c": "int64_t"
+        },
+        {
+          "nome": "blinkCounter",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "blue",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "restartDemoMode",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "restartGame",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "len",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "count",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "startParsing",
+          "desc": "Z",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "yPrint",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "skipCounter",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "strWidth",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "cursorPos",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "page",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "xMovClouds1",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "xMovClouds2",
+          "desc": "I",
+          "tipo_c": "int"
+        },
+        {
+          "nome": "blockCounter",
+          "desc": "I",
+          "tipo_c": "int"
+        }
+      ],
+      "metodos": [
+        {
+          "nome": "hideNotify",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 4,
+          "apis": {},
+          "constantes": [],
+          "chamadas": [],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "FightC.FightMainClass"
+            ]
+          ]
+        },
+        {
+          "nome": "<init>",
+          "desc": "(LFight;)V",
+          "tipo_ret": "void",
+          "n_instr": 371,
+          "apis": {
+            "javax/microedition/lcdui/Canvas.<init>": 1,
+            "java/util/Random.<init>": 1,
+            "java/util/Calendar.getInstance": 1,
+            "java/util/Calendar.getTime": 1,
+            "java/util/Date.getTime": 1,
+            "javax/microedition/lcdui/Command.<init>": 4,
+            "javax/microedition/lcdui/Canvas.getWidth": 1,
+            "javax/microedition/lcdui/Canvas.getHeight": 1,
+            "java/lang/Thread.<init>": 1,
+            "java/lang/Thread.start": 1,
+            "javax/microedition/lcdui/Image.createImage": 1,
+            "javax/microedition/lcdui/Image.getGraphics": 1,
+            "javax/microedition/lcdui/Graphics.setClip": 1,
+            "javax/microedition/lcdui/Font.getFont": 1,
+            "javax/microedition/lcdui/Graphics.setFont": 1
+          },
+          "constantes": [
+            [
+              3,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              9,
+              100
+            ],
+            [
+              12,
+              0
+            ],
+            [
+              15,
+              10
+            ],
+            [
+              18,
+              0
+            ],
+            [
+              21,
+              0
+            ],
+            [
+              24,
+              1
+            ],
+            [
+              27,
+              1
+            ],
+            [
+              30,
+              1
+            ],
+            [
+              33,
+              0
+            ],
+            [
+              36,
+              9
+            ],
+            [
+              39,
+              0
+            ],
+            [
+              42,
+              0
+            ],
+            [
+              45,
+              1
+            ],
+            [
+              48,
+              2
+            ],
+            [
+              51,
+              3
+            ],
+            [
+              54,
+              4
+            ],
+            [
+              57,
+              5
+            ],
+            [
+              60,
+              -1
+            ]
+          ],
+          "chamadas": [
+            [
+              1,
+              "javax/microedition/lcdui/Canvas.<init>"
+            ],
+            [
+              86,
+              "java/util/Random.<init>"
+            ],
+            [
+              220,
+              "java/util/Calendar.getInstance"
+            ],
+            [
+              221,
+              "java/util/Calendar.getTime"
+            ],
+            [
+              222,
+              "java/util/Date.getTime"
+            ],
+            [
+              246,
+              "javax/microedition/lcdui/Command.<init>"
+            ],
+            [
+              254,
+              "javax/microedition/lcdui/Command.<init>"
+            ],
+            [
+              262,
+              "javax/microedition/lcdui/Command.<init>"
+            ],
+            [
+              270,
+              "javax/microedition/lcdui/Command.<init>"
+            ],
+            [
+              280,
+              "javax/microedition/lcdui/Canvas.getWidth"
+            ],
+            [
+              284,
+              "javax/microedition/lcdui/Canvas.getHeight"
+            ],
+            [
+              321,
+              "java/lang/Thread.<init>"
+            ],
+            [
+              325,
+              "java/lang/Thread.start"
+            ],
+            [
+              331,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              336,
+              "javax/microedition/lcdui/Image.getGraphics"
+            ],
+            [
+              346,
+              "javax/microedition/lcdui/Graphics.setClip"
+            ],
+            [
+              363,
+              "javax/microedition/lcdui/Font.getFont"
+            ],
+            [
+              369,
+              "javax/microedition/lcdui/Graphics.setFont"
+            ]
+          ],
+          "fields": [
+            [
+              4,
+              "putfield",
+              "FightC.demoMode"
+            ],
+            [
+              7,
+              "putfield",
+              "FightC.gameOff"
+            ],
+            [
+              10,
+              "putfield",
+              "FightC.xMove"
+            ],
+            [
+              13,
+              "putfield",
+              "FightC.div"
+            ],
+            [
+              16,
+              "putfield",
+              "FightC.countCont"
+            ],
+            [
+              19,
+              "putfield",
+              "FightC.infoScreen"
+            ],
+            [
+              22,
+              "putfield",
+              "FightC.logoOffScreen"
+            ],
+            [
+              25,
+              "putfield",
+              "FightC.deleteFirstScreen"
+            ],
+            [
+              28,
+              "putfield",
+              "FightC.finishedpainting"
+            ],
+            [
+              31,
+              "putfield",
+              "FightC.repaintBackground"
+            ],
+            [
+              34,
+              "putfield",
+              "FightC.rememberLevel"
+            ],
+            [
+              37,
+              "putfield",
+              "FightC.numImgs"
+            ],
+            [
+              40,
+              "putfield",
+              "FightC.loadedPic"
+            ],
+            [
+              43,
+              "putfield",
+              "FightC.DEMOMODE"
+            ],
+            [
+              46,
+              "putfield",
+              "FightC.GAME"
+            ],
+            [
+              49,
+              "putfield",
+              "FightC.ENEMYWIN"
+            ],
+            [
+              52,
+              "putfield",
+              "FightC.PLAYERWIN"
+            ],
+            [
+              55,
+              "putfield",
+              "FightC.ROUNDWON"
+            ],
+            [
+              58,
+              "putfield",
+              "FightC.NEWLEVEL"
+            ],
+            [
+              61,
+              "putfield",
+              "FightC.NONE"
+            ]
+          ]
+        },
+        {
+          "nome": "run",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 22,
+          "apis": {
+            "java/lang/Thread.sleep": 1,
+            "javax/microedition/lcdui/Canvas.repaint": 1,
+            "javax/microedition/lcdui/Canvas.serviceRepaints": 1
+          },
+          "constantes": [
+            [
+              5,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              2,
+              "java/lang/Thread.sleep"
+            ],
+            [
+              13,
+              "javax/microedition/lcdui/Canvas.repaint"
+            ],
+            [
+              15,
+              "javax/microedition/lcdui/Canvas.serviceRepaints"
+            ]
+          ],
+          "fields": [
+            [
+              4,
+              "getfield",
+              "FightC.finishedpainting"
+            ],
+            [
+              8,
+              "getfield",
+              "FightC.gameOff"
+            ],
+            [
+              19,
+              "getfield",
+              "FightC.thread"
+            ]
+          ]
+        },
+        {
+          "nome": "paint",
+          "desc": "(Ljavax/microedition/lcdui/Graphics;)V",
+          "tipo_ret": "void",
+          "n_instr": 136,
+          "apis": {
+            "javax/microedition/lcdui/Image.createImage": 1,
+            "javax/microedition/lcdui/Image.getGraphics": 1,
+            "javax/microedition/lcdui/Graphics.setColor": 5,
+            "javax/microedition/lcdui/Graphics.fillRect": 3,
+            "javax/microedition/lcdui/Graphics.drawImage": 2,
+            "javax/microedition/lcdui/Graphics.drawRect": 1,
+            "java/util/Calendar.getInstance": 1,
+            "java/util/Calendar.getTime": 1,
+            "java/util/Date.getTime": 1,
+            "javax/microedition/lcdui/Graphics.setFont": 1,
+            "javax/microedition/lcdui/Font.stringWidth": 1,
+            "javax/microedition/lcdui/Graphics.drawString": 1
+          },
+          "constantes": [
+            [
+              17,
+              0
+            ],
+            [
+              18,
+              0
+            ],
+            [
+              26,
+              0
+            ],
+            [
+              27,
+              0
+            ],
+            [
+              28,
+              16
+            ],
+            [
+              29,
+              4
+            ],
+            [
+              33,
+              0
+            ],
+            [
+              40,
+              0
+            ],
+            [
+              41,
+              0
+            ],
+            [
+              52,
+              0
+            ],
+            [
+              61,
+              16
+            ],
+            [
+              62,
+              4
+            ],
+            [
+              84,
+              1
+            ],
+            [
+              101,
+              0
+            ],
+            [
+              104,
+              0
+            ],
+            [
+              105,
+              0
+            ],
+            [
+              127,
+              1
+            ],
+            [
+              131,
+              1
+            ],
+            [
+              133,
+              20
+            ]
+          ],
+          "chamadas": [
+            [
+              7,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              10,
+              "javax/microedition/lcdui/Image.getGraphics"
+            ],
+            [
+              15,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              23,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              31,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ],
+            [
+              38,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              46,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              64,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ],
+            [
+              68,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              78,
+              "javax/microedition/lcdui/Graphics.drawRect"
+            ],
+            [
+              89,
+              "java/util/Calendar.getInstance"
+            ],
+            [
+              90,
+              "java/util/Calendar.getTime"
+            ],
+            [
+              91,
+              "java/util/Date.getTime"
+            ],
+            [
+              102,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              110,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              113,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              117,
+              "javax/microedition/lcdui/Graphics.setFont"
+            ],
+            [
+              125,
+              "javax/microedition/lcdui/Font.stringWidth"
+            ],
+            [
+              134,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "FightC.deleteFirstScreen"
+            ],
+            [
+              4,
+              "getfield",
+              "FightC.realw"
+            ],
+            [
+              6,
+              "getfield",
+              "FightC.realh"
+            ],
+            [
+              14,
+              "getfield",
+              "FightC.white_col"
+            ],
+            [
+              20,
+              "getfield",
+              "FightC.realw"
+            ],
+            [
+              22,
+              "getfield",
+              "FightC.realh"
+            ],
+            [
+              34,
+              "putfield",
+              "FightC.deleteFirstScreen"
+            ],
+            [
+              37,
+              "getfield",
+              "FightC.white_col"
+            ],
+            [
+              43,
+              "getfield",
+              "FightC.realw"
+            ],
+            [
+              45,
+              "getfield",
+              "FightC.realh"
+            ],
+            [
+              48,
+              "getfield",
+              "FightC.extraGfxY"
+            ],
+            [
+              56,
+              "getfield",
+              "FightC.offImage"
+            ],
+            [
+              58,
+              "getfield",
+              "FightC.scostaW"
+            ],
+            [
+              60,
+              "getfield",
+              "FightC.scostaH"
+            ],
+            [
+              67,
+              "getfield",
+              "FightC.black_col"
+            ],
+            [
+              71,
+              "getfield",
+              "FightC.scostaW"
+            ],
+            [
+              73,
+              "getfield",
+              "FightC.scostaH"
+            ],
+            [
+              75,
+              "getfield",
+              "FightC.width"
+            ],
+            [
+              77,
+              "getfield",
+              "FightC.height"
+            ],
+            [
+              80,
+              "getfield",
+              "FightC.extraGfxY"
+            ]
+          ]
+        },
+        {
+          "nome": "paintCopperBar",
+          "desc": "(Ljavax/microedition/lcdui/Graphics;Z)V",
+          "tipo_ret": "void",
+          "n_instr": 157,
+          "apis": {
+            "javax/microedition/lcdui/Graphics.setColor": 4,
+            "javax/microedition/lcdui/Graphics.drawLine": 1,
+            "javax/microedition/lcdui/Graphics.fillRect": 2,
+            "javax/microedition/lcdui/Graphics.setFont": 1,
+            "java/lang/StringBuffer.<init>": 2,
+            "java/lang/StringBuffer.append": 4,
+            "java/lang/String.valueOf": 2,
+            "java/lang/StringBuffer.toString": 2,
+            "javax/microedition/lcdui/Font.stringWidth": 2,
+            "javax/microedition/lcdui/Graphics.drawString": 2
+          },
+          "constantes": [
+            [
+              8,
+              0
+            ],
+            [
+              22,
+              96
+            ],
+            [
+              29,
+              120
+            ],
+            [
+              33,
+              96
+            ],
+            [
+              42,
+              1
+            ],
+            [
+              44,
+              9
+            ],
+            [
+              49,
+              9
+            ],
+            [
+              54,
+              1
+            ],
+            [
+              56,
+              9
+            ],
+            [
+              69,
+              15
+            ],
+            [
+              71,
+              121
+            ],
+            [
+              72,
+              15
+            ],
+            [
+              83,
+              15
+            ],
+            [
+              85,
+              121
+            ],
+            [
+              86,
+              15
+            ],
+            [
+              107,
+              1
+            ],
+            [
+              123,
+              1
+            ],
+            [
+              130,
+              1
+            ],
+            [
+              134,
+              13
+            ],
+            [
+              136,
+              20
+            ]
+          ],
+          "chamadas": [
+            [
+              16,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              38,
+              "javax/microedition/lcdui/Graphics.drawLine"
+            ],
+            [
+              63,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              73,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              77,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              87,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              91,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              95,
+              "javax/microedition/lcdui/Graphics.setFont"
+            ],
+            [
+              102,
+              "java/lang/StringBuffer.<init>"
+            ],
+            [
+              104,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              109,
+              "java/lang/String.valueOf"
+            ],
+            [
+              110,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              111,
+              "java/lang/StringBuffer.toString"
+            ],
+            [
+              118,
+              "java/lang/StringBuffer.<init>"
+            ],
+            [
+              120,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              125,
+              "java/lang/String.valueOf"
+            ],
+            [
+              126,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              127,
+              "java/lang/StringBuffer.toString"
+            ],
+            [
+              128,
+              "javax/microedition/lcdui/Font.stringWidth"
+            ],
+            [
+              137,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "FightC.gameState"
+            ],
+            [
+              3,
+              "getfield",
+              "FightC.DEMOMODE"
+            ],
+            [
+              13,
+              "getfield",
+              "FightC.colorCopper"
+            ],
+            [
+              19,
+              "getfield",
+              "FightC.scostaW"
+            ],
+            [
+              21,
+              "getfield",
+              "FightC.scostaH"
+            ],
+            [
+              25,
+              "getfield",
+              "FightC.firstCopper"
+            ],
+            [
+              28,
+              "getfield",
+              "FightC.scostaW"
+            ],
+            [
+              32,
+              "getfield",
+              "FightC.scostaH"
+            ],
+            [
+              36,
+              "getfield",
+              "FightC.firstCopper"
+            ],
+            [
+              41,
+              "getfield",
+              "FightC.firstCopper"
+            ],
+            [
+              46,
+              "putfield",
+              "FightC.firstCopper"
+            ],
+            [
+              53,
+              "getfield",
+              "FightC.firstCopper"
+            ],
+            [
+              58,
+              "putfield",
+              "FightC.firstCopper"
+            ],
+            [
+              62,
+              "getfield",
+              "FightC.white_col"
+            ],
+            [
+              66,
+              "getfield",
+              "FightC.scostaW"
+            ],
+            [
+              68,
+              "getfield",
+              "FightC.scostaH"
+            ],
+            [
+              76,
+              "getfield",
+              "FightC.black_col"
+            ],
+            [
+              80,
+              "getfield",
+              "FightC.scostaW"
+            ],
+            [
+              82,
+              "getfield",
+              "FightC.scostaH"
+            ],
+            [
+              90,
+              "getfield",
+              "FightC.white_col"
+            ]
+          ]
+        },
+        {
+          "nome": "drawScreen",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 182,
+          "apis": {
+            "javax/microedition/lcdui/Graphics.setColor": 3,
+            "javax/microedition/lcdui/Graphics.fillRect": 1,
+            "javax/microedition/lcdui/Graphics.drawString": 4,
+            "javax/microedition/lcdui/Displayable.addCommand": 2,
+            "javax/microedition/lcdui/Canvas.repaint": 1,
+            "javax/microedition/lcdui/Canvas.serviceRepaints": 1,
+            "java/lang/StringBuffer.<init>": 1,
+            "java/lang/StringBuffer.append": 3,
+            "java/lang/StringBuffer.toString": 1,
+            "javax/microedition/lcdui/Image.createImage": 3,
+            "java/io/PrintStream.println": 1
+          },
+          "constantes": [
+            [
+              1,
+              0
+            ],
+            [
+              13,
+              0
+            ],
+            [
+              14,
+              0
+            ],
+            [
+              30,
+              2
+            ],
+            [
+              32,
+              32
+            ],
+            [
+              35,
+              1
+            ],
+            [
+              38,
+              64
+            ],
+            [
+              46,
+              2
+            ],
+            [
+              48,
+              82
+            ],
+            [
+              51,
+              1
+            ],
+            [
+              54,
+              64
+            ],
+            [
+              67,
+              30
+            ],
+            [
+              70,
+              1
+            ],
+            [
+              73,
+              64
+            ],
+            [
+              81,
+              80
+            ],
+            [
+              84,
+              1
+            ],
+            [
+              87,
+              64
+            ],
+            [
+              93,
+              1
+            ],
+            [
+              95,
+              100
+            ],
+            [
+              115,
+              6
+            ]
+          ],
+          "chamadas": [
+            [
+              10,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              19,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              24,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              40,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              56,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              61,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              75,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              89,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              104,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ],
+            [
+              108,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ],
+            [
+              110,
+              "javax/microedition/lcdui/Canvas.repaint"
+            ],
+            [
+              112,
+              "javax/microedition/lcdui/Canvas.serviceRepaints"
+            ],
+            [
+              123,
+              "java/lang/StringBuffer.<init>"
+            ],
+            [
+              125,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              128,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              130,
+              "java/lang/StringBuffer.append"
+            ],
+            [
+              131,
+              "java/lang/StringBuffer.toString"
+            ],
+            [
+              132,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              146,
+              "javax/microedition/lcdui/Image.createImage"
+            ],
+            [
+              151,
+              "javax/microedition/lcdui/Image.createImage"
+            ]
+          ],
+          "fields": [
+            [
+              2,
+              "putfield",
+              "FightC.finishedpainting"
+            ],
+            [
+              4,
+              "getfield",
+              "FightC.logo"
+            ],
+            [
+              7,
+              "getfield",
+              "FightC.offGraphics"
+            ],
+            [
+              9,
+              "getfield",
+              "FightC.blue_col"
+            ],
+            [
+              12,
+              "getfield",
+              "FightC.offGraphics"
+            ],
+            [
+              16,
+              "getfield",
+              "FightC.width"
+            ],
+            [
+              18,
+              "getfield",
+              "FightC.height"
+            ],
+            [
+              21,
+              "getfield",
+              "FightC.offGraphics"
+            ],
+            [
+              23,
+              "getfield",
+              "FightC.black_col"
+            ],
+            [
+              26,
+              "getfield",
+              "FightC.offGraphics"
+            ],
+            [
+              29,
+              "getfield",
+              "FightC.width2"
+            ],
+            [
+              42,
+              "getfield",
+              "FightC.offGraphics"
+            ],
+            [
+              45,
+              "getfield",
+              "FightC.width2"
+            ],
+            [
+              58,
+              "getfield",
+              "FightC.offGraphics"
+            ],
+            [
+              60,
+              "getfield",
+              "FightC.white_col"
+            ],
+            [
+              63,
+              "getfield",
+              "FightC.offGraphics"
+            ],
+            [
+              66,
+              "getfield",
+              "FightC.width2"
+            ],
+            [
+              77,
+              "getfield",
+              "FightC.offGraphics"
+            ],
+            [
+              80,
+              "getfield",
+              "FightC.width2"
+            ],
+            [
+              92,
+              "getfield",
+              "FightC.loadedPic"
+            ]
+          ]
+        },
+        {
+          "nome": "incPerc",
+          "desc": "(I)V",
+          "tipo_ret": "void",
+          "n_instr": 34,
+          "apis": {
+            "javax/microedition/lcdui/Graphics.setColor": 2,
+            "javax/microedition/lcdui/Graphics.drawRect": 1,
+            "javax/microedition/lcdui/Graphics.fillRect": 1
+          },
+          "constantes": [
+            [
+              7,
+              15
+            ],
+            [
+              8,
+              44
+            ],
+            [
+              9,
+              88
+            ],
+            [
+              10,
+              10
+            ],
+            [
+              13,
+              86
+            ],
+            [
+              16,
+              100
+            ],
+            [
+              25,
+              16
+            ],
+            [
+              26,
+              45
+            ],
+            [
+              29,
+              1
+            ],
+            [
+              31,
+              9
+            ]
+          ],
+          "chamadas": [
+            [
+              4,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              11,
+              "javax/microedition/lcdui/Graphics.drawRect"
+            ],
+            [
+              22,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              32,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "FightC.offGraphics"
+            ],
+            [
+              3,
+              "getfield",
+              "FightC.white_col"
+            ],
+            [
+              6,
+              "getfield",
+              "FightC.offGraphics"
+            ],
+            [
+              18,
+              "putfield",
+              "FightC.blue"
+            ],
+            [
+              20,
+              "getfield",
+              "FightC.offGraphics"
+            ],
+            [
+              24,
+              "getfield",
+              "FightC.offGraphics"
+            ],
+            [
+              28,
+              "getfield",
+              "FightC.blue"
+            ]
+          ]
+        },
+        {
+          "nome": "game",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 914,
+          "apis": {
+            "javax/microedition/lcdui/Graphics.setFont": 1,
+            "java/lang/String.length": 2,
+            "javax/microedition/lcdui/Font.stringWidth": 4,
+            "java/lang/String.substring": 1,
+            "javax/microedition/lcdui/Graphics.setColor": 5,
+            "javax/microedition/lcdui/Graphics.fillRect": 3,
+            "javax/microedition/lcdui/Graphics.clipRect": 1,
+            "javax/microedition/lcdui/Graphics.setClip": 1,
+            "javax/microedition/lcdui/Graphics.drawString": 4,
+            "java/util/Calendar.getInstance": 1,
+            "java/util/Calendar.getTime": 1,
+            "java/util/Date.getTime": 1
+          },
+          "constantes": [
+            [
+              19,
+              0
+            ],
+            [
+              25,
+              1
+            ],
+            [
+              29,
+              0
+            ],
+            [
+              38,
+              10
+            ],
+            [
+              45,
+              0
+            ],
+            [
+              50,
+              1
+            ],
+            [
+              55,
+              2
+            ],
+            [
+              60,
+              3
+            ],
+            [
+              65,
+              4
+            ],
+            [
+              70,
+              5
+            ],
+            [
+              76,
+              1
+            ],
+            [
+              80,
+              0
+            ],
+            [
+              85,
+              1
+            ],
+            [
+              90,
+              2
+            ],
+            [
+              95,
+              3
+            ],
+            [
+              100,
+              4
+            ],
+            [
+              105,
+              5
+            ],
+            [
+              111,
+              2
+            ],
+            [
+              115,
+              0
+            ],
+            [
+              120,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              9,
+              "javax/microedition/lcdui/Graphics.setFont"
+            ],
+            [
+              402,
+              "java/lang/String.length"
+            ],
+            [
+              412,
+              "javax/microedition/lcdui/Font.stringWidth"
+            ],
+            [
+              524,
+              "java/lang/String.length"
+            ],
+            [
+              534,
+              "javax/microedition/lcdui/Font.stringWidth"
+            ],
+            [
+              554,
+              "java/lang/String.substring"
+            ],
+            [
+              561,
+              "javax/microedition/lcdui/Font.stringWidth"
+            ],
+            [
+              567,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              576,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              593,
+              "javax/microedition/lcdui/Graphics.clipRect"
+            ],
+            [
+              602,
+              "javax/microedition/lcdui/Graphics.setClip"
+            ],
+            [
+              612,
+              "javax/microedition/lcdui/Font.stringWidth"
+            ],
+            [
+              618,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              645,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              650,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              675,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              685,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              710,
+              "javax/microedition/lcdui/Graphics.drawString"
+            ],
+            [
+              734,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              739,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "FightC.gameState"
+            ],
+            [
+              3,
+              "getfield",
+              "FightC.NEWLEVEL"
+            ],
+            [
+              6,
+              "getfield",
+              "FightC.offGraphics"
+            ],
+            [
+              8,
+              "getfield",
+              "FightC.fontL"
+            ],
+            [
+              11,
+              "getfield",
+              "FightC.rememberLevel"
+            ],
+            [
+              14,
+              "getfield",
+              "FightC.level"
+            ],
+            [
+              16,
+              "getfield",
+              "FightC.lastLevel"
+            ],
+            [
+              20,
+              "putfield",
+              "FightC.level"
+            ],
+            [
+              24,
+              "getfield",
+              "FightC.level"
+            ],
+            [
+              27,
+              "putfield",
+              "FightC.level"
+            ],
+            [
+              30,
+              "putfield",
+              "FightC.rememberLevel"
+            ],
+            [
+              32,
+              "getfield",
+              "FightC.startParsing"
+            ],
+            [
+              35,
+              "getfield",
+              "FightC.playerWinGame"
+            ],
+            [
+              39,
+              "putfield",
+              "FightC.countCont"
+            ],
+            [
+              41,
+              "getfield",
+              "FightC.page"
+            ],
+            [
+              44,
+              "getfield",
+              "FightC.levelMsgs"
+            ],
+            [
+              49,
+              "getfield",
+              "FightC.levelMsgs"
+            ],
+            [
+              54,
+              "getfield",
+              "FightC.levelMsgs"
+            ],
+            [
+              59,
+              "getfield",
+              "FightC.levelMsgs"
+            ],
+            [
+              64,
+              "getfield",
+              "FightC.levelMsgs"
+            ]
+          ]
+        },
+        {
+          "nome": "paintBackground",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 570,
+          "apis": {
+            "javax/microedition/lcdui/Graphics.clipRect": 1,
+            "javax/microedition/lcdui/Graphics.drawImage": 1,
+            "javax/microedition/lcdui/Graphics.setClip": 1,
+            "javax/microedition/lcdui/Graphics.setColor": 12,
+            "javax/microedition/lcdui/Graphics.fillRect": 7,
+            "javax/microedition/lcdui/Graphics.drawLine": 4,
+            "java/lang/StringBuffer.<init>": 6,
+            "java/lang/StringBuffer.append": 12,
+            "java/lang/StringBuffer.toString": 6,
+            "javax/microedition/lcdui/Graphics.drawString": 6,
+            "javax/microedition/lcdui/Graphics.drawRoundRect": 8,
+            "javax/microedition/lcdui/Graphics.fillRoundRect": 8
+          },
+          "constantes": [
+            [
+              8,
+              0
+            ],
+            [
+              9,
+              31
+            ],
+            [
+              12,
+              30
+            ],
+            [
+              18,
+              0
+            ],
+            [
+              19,
+              31
+            ],
+            [
+              20,
+              30
+            ],
+            [
+              27,
+              16
+            ],
+            [
+              30,
+              4
+            ],
+            [
+              35,
+              0
+            ],
+            [
+              36,
+              0
+            ],
+            [
+              48,
+              0
+            ],
+            [
+              49,
+              61
+            ],
+            [
+              52,
+              20
+            ],
+            [
+              60,
+              0
+            ],
+            [
+              61,
+              81
+            ],
+            [
+              64,
+              12
+            ],
+            [
+              72,
+              0
+            ],
+            [
+              73,
+              93
+            ],
+            [
+              76,
+              3
+            ],
+            [
+              85,
+              0
+            ]
+          ],
+          "chamadas": [
+            [
+              13,
+              "javax/microedition/lcdui/Graphics.clipRect"
+            ],
+            [
+              32,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ],
+            [
+              41,
+              "javax/microedition/lcdui/Graphics.setClip"
+            ],
+            [
+              45,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              53,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              57,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              65,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              69,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              77,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              82,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              90,
+              "javax/microedition/lcdui/Graphics.drawLine"
+            ],
+            [
+              98,
+              "javax/microedition/lcdui/Graphics.drawLine"
+            ],
+            [
+              106,
+              "javax/microedition/lcdui/Graphics.drawLine"
+            ],
+            [
+              114,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              122,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              127,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              137,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              145,
+              "javax/microedition/lcdui/Graphics.drawLine"
+            ],
+            [
+              150,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              155,
+              "java/lang/StringBuffer.<init>"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "FightC.gameState"
+            ],
+            [
+              3,
+              "getfield",
+              "FightC.DEMOMODE"
+            ],
+            [
+              7,
+              "getfield",
+              "FightC.offGraphics"
+            ],
+            [
+              11,
+              "getfield",
+              "FightC.width"
+            ],
+            [
+              15,
+              "getfield",
+              "FightC.offGraphics"
+            ],
+            [
+              17,
+              "getfield",
+              "FightC.picBackgroundLevels"
+            ],
+            [
+              22,
+              "getfield",
+              "FightC.level"
+            ],
+            [
+              34,
+              "getfield",
+              "FightC.offGraphics"
+            ],
+            [
+              38,
+              "getfield",
+              "FightC.width"
+            ],
+            [
+              40,
+              "getfield",
+              "FightC.remClipY"
+            ],
+            [
+              43,
+              "getfield",
+              "FightC.offGraphics"
+            ],
+            [
+              47,
+              "getfield",
+              "FightC.offGraphics"
+            ],
+            [
+              51,
+              "getfield",
+              "FightC.width"
+            ],
+            [
+              55,
+              "getfield",
+              "FightC.offGraphics"
+            ],
+            [
+              59,
+              "getfield",
+              "FightC.offGraphics"
+            ],
+            [
+              63,
+              "getfield",
+              "FightC.width"
+            ],
+            [
+              67,
+              "getfield",
+              "FightC.offGraphics"
+            ],
+            [
+              71,
+              "getfield",
+              "FightC.offGraphics"
+            ],
+            [
+              75,
+              "getfield",
+              "FightC.width"
+            ],
+            [
+              79,
+              "getfield",
+              "FightC.offGraphics"
+            ]
+          ]
+        },
+        {
+          "nome": "paintFighters",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 1078,
+          "apis": {
+            "javax/microedition/lcdui/Graphics.fillRect": 5,
+            "javax/microedition/lcdui/Graphics.drawImage": 3,
+            "java/util/Calendar.getInstance": 2,
+            "java/util/Calendar.getTime": 2,
+            "java/util/Date.getTime": 2,
+            "javax/microedition/lcdui/Displayable.removeCommand": 1,
+            "javax/microedition/lcdui/Graphics.clipRect": 2,
+            "javax/microedition/lcdui/Graphics.setClip": 2,
+            "javax/microedition/lcdui/Graphics.setColor": 6,
+            "javax/microedition/lcdui/Graphics.drawRect": 4,
+            "java/lang/StringBuffer.<init>": 3,
+            "java/lang/StringBuffer.append": 6,
+            "java/lang/StringBuffer.toString": 3,
+            "javax/microedition/lcdui/Graphics.drawString": 7,
+            "javax/microedition/lcdui/Font.getFont": 1,
+            "javax/microedition/lcdui/Graphics.setFont": 2
+          },
+          "constantes": [
+            [
+              44,
+              0
+            ],
+            [
+              45,
+              0
+            ],
+            [
+              48,
+              18
+            ],
+            [
+              54,
+              0
+            ],
+            [
+              55,
+              0
+            ],
+            [
+              58,
+              16
+            ],
+            [
+              61,
+              4
+            ],
+            [
+              95,
+              0
+            ],
+            [
+              98,
+              1
+            ],
+            [
+              127,
+              0
+            ],
+            [
+              134,
+              5
+            ],
+            [
+              145,
+              4
+            ],
+            [
+              150,
+              -4
+            ],
+            [
+              153,
+              -4
+            ],
+            [
+              160,
+              1
+            ],
+            [
+              163,
+              0
+            ],
+            [
+              169,
+              1
+            ],
+            [
+              181,
+              4
+            ],
+            [
+              189,
+              27
+            ],
+            [
+              194,
+              27
+            ]
+          ],
+          "chamadas": [
+            [
+              49,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              63,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ],
+            [
+              70,
+              "java/util/Calendar.getInstance"
+            ],
+            [
+              71,
+              "java/util/Calendar.getTime"
+            ],
+            [
+              72,
+              "java/util/Date.getTime"
+            ],
+            [
+              75,
+              "java/util/Calendar.getInstance"
+            ],
+            [
+              76,
+              "java/util/Calendar.getTime"
+            ],
+            [
+              77,
+              "java/util/Date.getTime"
+            ],
+            [
+              90,
+              "javax/microedition/lcdui/Displayable.removeCommand"
+            ],
+            [
+              662,
+              "javax/microedition/lcdui/Graphics.clipRect"
+            ],
+            [
+              686,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ],
+            [
+              695,
+              "javax/microedition/lcdui/Graphics.setClip"
+            ],
+            [
+              703,
+              "javax/microedition/lcdui/Graphics.clipRect"
+            ],
+            [
+              724,
+              "javax/microedition/lcdui/Graphics.drawImage"
+            ],
+            [
+              733,
+              "javax/microedition/lcdui/Graphics.setClip"
+            ],
+            [
+              756,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              766,
+              "javax/microedition/lcdui/Graphics.fillRect"
+            ],
+            [
+              771,
+              "javax/microedition/lcdui/Graphics.setColor"
+            ],
+            [
+              781,
+              "javax/microedition/lcdui/Graphics.drawRect"
+            ],
+            [
+              786,
+              "java/lang/StringBuffer.<init>"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "FightC.executeCommand"
+            ],
+            [
+              4,
+              "getfield",
+              "FightC.rememberCommand"
+            ],
+            [
+              6,
+              "getfield",
+              "FightC.MOVELEFT"
+            ],
+            [
+              9,
+              "getfield",
+              "FightC.rememberCommand"
+            ],
+            [
+              11,
+              "getfield",
+              "FightC.MOVERIGHT"
+            ],
+            [
+              14,
+              "getfield",
+              "FightC.rememberCommand"
+            ],
+            [
+              16,
+              "getfield",
+              "FightC.BLOCK"
+            ],
+            [
+              19,
+              "getfield",
+              "FightC.statePlayer"
+            ],
+            [
+              21,
+              "getfield",
+              "FightC.HITTED"
+            ],
+            [
+              24,
+              "getfield",
+              "FightC.statePlayer"
+            ],
+            [
+              26,
+              "getfield",
+              "FightC.ONFLOOR"
+            ],
+            [
+              29,
+              "getfield",
+              "FightC.commandPlayer"
+            ],
+            [
+              31,
+              "getfield",
+              "FightC.BLOCK"
+            ],
+            [
+              35,
+              "getfield",
+              "FightC.rememberCommand"
+            ],
+            [
+              36,
+              "putfield",
+              "FightC.commandPlayer"
+            ],
+            [
+              38,
+              "getfield",
+              "FightC.gameState"
+            ],
+            [
+              40,
+              "getfield",
+              "FightC.DEMOMODE"
+            ],
+            [
+              43,
+              "getfield",
+              "FightC.offGraphics"
+            ],
+            [
+              47,
+              "getfield",
+              "FightC.width"
+            ],
+            [
+              51,
+              "getfield",
+              "FightC.offGraphics"
+            ]
+          ]
+        },
+        {
+          "nome": "checkForHitFighters",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 406,
+          "apis": {
+            "java/lang/Math.abs": 1,
+            "java/util/Calendar.getInstance": 3,
+            "java/util/Calendar.getTime": 3,
+            "java/util/Date.getTime": 3
+          },
+          "constantes": [
+            [
+              8,
+              30
+            ],
+            [
+              26,
+              1
+            ],
+            [
+              33,
+              1
+            ],
+            [
+              38,
+              1
+            ],
+            [
+              42,
+              1
+            ],
+            [
+              61,
+              1
+            ],
+            [
+              65,
+              1
+            ],
+            [
+              84,
+              0
+            ],
+            [
+              96,
+              1
+            ],
+            [
+              104,
+              1
+            ],
+            [
+              107,
+              1
+            ],
+            [
+              121,
+              1
+            ],
+            [
+              125,
+              1
+            ],
+            [
+              154,
+              0
+            ],
+            [
+              155,
+              10
+            ],
+            [
+              159,
+              4
+            ],
+            [
+              162,
+              0
+            ],
+            [
+              174,
+              1
+            ],
+            [
+              182,
+              1
+            ],
+            [
+              185,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              5,
+              "java/lang/Math.abs"
+            ],
+            [
+              45,
+              "java/util/Calendar.getInstance"
+            ],
+            [
+              46,
+              "java/util/Calendar.getTime"
+            ],
+            [
+              47,
+              "java/util/Date.getTime"
+            ],
+            [
+              226,
+              "java/util/Calendar.getInstance"
+            ],
+            [
+              227,
+              "java/util/Calendar.getTime"
+            ],
+            [
+              228,
+              "java/util/Date.getTime"
+            ],
+            [
+              289,
+              "java/util/Calendar.getInstance"
+            ],
+            [
+              290,
+              "java/util/Calendar.getTime"
+            ],
+            [
+              291,
+              "java/util/Date.getTime"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "FightC.xEnemy"
+            ],
+            [
+              3,
+              "getfield",
+              "FightC.xPlayer"
+            ],
+            [
+              11,
+              "getfield",
+              "FightC.stateEnemy"
+            ],
+            [
+              13,
+              "getfield",
+              "FightC.PUNCH"
+            ],
+            [
+              16,
+              "getfield",
+              "FightC.statePlayer"
+            ],
+            [
+              18,
+              "getfield",
+              "FightC.PUNCH"
+            ],
+            [
+              21,
+              "getfield",
+              "FightC.gameState"
+            ],
+            [
+              23,
+              "getfield",
+              "FightC.DEMOMODE"
+            ],
+            [
+              29,
+              "getfield",
+              "FightC.hpPlayer"
+            ],
+            [
+              32,
+              "getfield",
+              "FightC.roundEnemy"
+            ],
+            [
+              37,
+              "getfield",
+              "FightC.countCont"
+            ],
+            [
+              40,
+              "putfield",
+              "FightC.countCont"
+            ],
+            [
+              43,
+              "putfield",
+              "FightC.continueGame"
+            ],
+            [
+              48,
+              "putfield",
+              "FightC.continueGameStartingTime"
+            ],
+            [
+              51,
+              "getfield",
+              "FightC.ENEMYWIN"
+            ],
+            [
+              52,
+              "putfield",
+              "FightC.gameState"
+            ],
+            [
+              56,
+              "getfield",
+              "FightC.ROUNDWON"
+            ],
+            [
+              57,
+              "putfield",
+              "FightC.gameState"
+            ],
+            [
+              60,
+              "getfield",
+              "FightC.roundEnemy"
+            ],
+            [
+              63,
+              "putfield",
+              "FightC.roundEnemy"
+            ]
+          ]
+        },
+        {
+          "nome": "damageFighter",
+          "desc": "(Z)V",
+          "tipo_ret": "void",
+          "n_instr": 271,
+          "apis": {},
+          "constantes": [
+            [
+              14,
+              0
+            ],
+            [
+              22,
+              0
+            ],
+            [
+              23,
+              100
+            ],
+            [
+              38,
+              8
+            ],
+            [
+              50,
+              5
+            ],
+            [
+              72,
+              0
+            ],
+            [
+              88,
+              8
+            ],
+            [
+              100,
+              5
+            ],
+            [
+              113,
+              0
+            ],
+            [
+              126,
+              0
+            ],
+            [
+              129,
+              10
+            ],
+            [
+              130,
+              10
+            ],
+            [
+              158,
+              0
+            ],
+            [
+              173,
+              0
+            ],
+            [
+              176,
+              0
+            ],
+            [
+              177,
+              100
+            ],
+            [
+              192,
+              8
+            ],
+            [
+              204,
+              5
+            ],
+            [
+              223,
+              0
+            ],
+            [
+              227,
+              80
+            ]
+          ],
+          "chamadas": [],
+          "fields": [
+            [
+              3,
+              "getfield",
+              "FightC.statePlayer"
+            ],
+            [
+              5,
+              "getfield",
+              "FightC.HITTED"
+            ],
+            [
+              8,
+              "getfield",
+              "FightC.statePlayer"
+            ],
+            [
+              10,
+              "getfield",
+              "FightC.ONFLOOR"
+            ],
+            [
+              15,
+              "putfield",
+              "FightC.imagePlayer"
+            ],
+            [
+              17,
+              "getfield",
+              "FightC.gameState"
+            ],
+            [
+              19,
+              "getfield",
+              "FightC.DEMOMODE"
+            ],
+            [
+              28,
+              "getfield",
+              "FightC.blockCounter"
+            ],
+            [
+              31,
+              "getfield",
+              "FightC.stateEnemy"
+            ],
+            [
+              33,
+              "getfield",
+              "FightC.PUNCH"
+            ],
+            [
+              37,
+              "getfield",
+              "FightC.hpPlayer"
+            ],
+            [
+              40,
+              "putfield",
+              "FightC.hpPlayer"
+            ],
+            [
+              43,
+              "getfield",
+              "FightC.stateEnemy"
+            ],
+            [
+              45,
+              "getfield",
+              "FightC.KICK"
+            ],
+            [
+              49,
+              "getfield",
+              "FightC.hpPlayer"
+            ],
+            [
+              52,
+              "putfield",
+              "FightC.hpPlayer"
+            ],
+            [
+              54,
+              "getfield",
+              "FightC.hpPlayer"
+            ],
+            [
+              59,
+              "getfield",
+              "FightC.HITTED"
+            ],
+            [
+              61,
+              "putfield",
+              "FightC.statePlayer"
+            ],
+            [
+              62,
+              "putfield",
+              "FightC.commandPlayer"
+            ]
+          ]
+        },
+        {
+          "nome": "controlCpuFighter",
+          "desc": "(Z)V",
+          "tipo_ret": "void",
+          "n_instr": 296,
+          "apis": {
+            "java/lang/Math.abs": 2
+          },
+          "constantes": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              22,
+              44
+            ],
+            [
+              26,
+              0
+            ],
+            [
+              27,
+              5
+            ],
+            [
+              33,
+              -5
+            ],
+            [
+              34,
+              2
+            ],
+            [
+              40,
+              54
+            ],
+            [
+              44,
+              0
+            ],
+            [
+              45,
+              3
+            ],
+            [
+              51,
+              -4
+            ],
+            [
+              52,
+              5
+            ],
+            [
+              58,
+              64
+            ],
+            [
+              62,
+              -2
+            ],
+            [
+              63,
+              1
+            ],
+            [
+              69,
+              -3
+            ],
+            [
+              70,
+              5
+            ],
+            [
+              77,
+              -10
+            ],
+            [
+              78,
+              1
+            ],
+            [
+              84,
+              -2
+            ]
+          ],
+          "chamadas": [
+            [
+              11,
+              "java/lang/Math.abs"
+            ],
+            [
+              19,
+              "java/lang/Math.abs"
+            ]
+          ],
+          "fields": [
+            [
+              7,
+              "getfield",
+              "FightC.xEnemy"
+            ],
+            [
+              9,
+              "getfield",
+              "FightC.xPlayer"
+            ],
+            [
+              15,
+              "getfield",
+              "FightC.xPlayer"
+            ],
+            [
+              17,
+              "getfield",
+              "FightC.xEnemy"
+            ],
+            [
+              100,
+              "getfield",
+              "FightC.level"
+            ],
+            [
+              111,
+              "getfield",
+              "FightC.stateEnemy"
+            ],
+            [
+              113,
+              "getfield",
+              "FightC.MOVELEFT"
+            ],
+            [
+              116,
+              "getfield",
+              "FightC.stateEnemy"
+            ],
+            [
+              118,
+              "getfield",
+              "FightC.MOVERIGHT"
+            ],
+            [
+              122,
+              "getfield",
+              "FightC.NONE"
+            ],
+            [
+              123,
+              "putfield",
+              "FightC.stateEnemy"
+            ],
+            [
+              125,
+              "getfield",
+              "FightC.commandEnemy"
+            ],
+            [
+              127,
+              "getfield",
+              "FightC.BLOCK"
+            ],
+            [
+              130,
+              "getfield",
+              "FightC.commandPlayer"
+            ],
+            [
+              132,
+              "getfield",
+              "FightC.BLOCK"
+            ],
+            [
+              135,
+              "getfield",
+              "FightC.gameState"
+            ],
+            [
+              137,
+              "getfield",
+              "FightC.DEMOMODE"
+            ],
+            [
+              144,
+              "getfield",
+              "FightC.commandEnemy"
+            ],
+            [
+              146,
+              "getfield",
+              "FightC.BLOCK"
+            ],
+            [
+              150,
+              "getfield",
+              "FightC.NONE"
+            ]
+          ]
+        },
+        {
+          "nome": "rand",
+          "desc": "(II)I",
+          "tipo_ret": "int",
+          "n_instr": 12,
+          "apis": {
+            "java/util/Random.nextInt": 1
+          },
+          "constantes": [
+            [
+              3,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              2,
+              "java/util/Random.nextInt"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "FightC.rand"
+            ]
+          ]
+        },
+        {
+          "nome": "keyPressed",
+          "desc": "(I)V",
+          "tipo_ret": "void",
+          "n_instr": 98,
+          "apis": {
+            "javax/microedition/lcdui/Canvas.getGameAction": 1
+          },
+          "constantes": [
+            [
+              11,
+              53
+            ],
+            [
+              19,
+              2
+            ],
+            [
+              22,
+              52
+            ],
+            [
+              30,
+              5
+            ],
+            [
+              33,
+              54
+            ],
+            [
+              41,
+              1
+            ],
+            [
+              44,
+              50
+            ],
+            [
+              48,
+              60
+            ],
+            [
+              53,
+              10
+            ],
+            [
+              68,
+              6
+            ],
+            [
+              71,
+              56
+            ],
+            [
+              75,
+              60
+            ],
+            [
+              80,
+              10
+            ]
+          ],
+          "chamadas": [
+            [
+              8,
+              "javax/microedition/lcdui/Canvas.getGameAction"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "FightC.gameState"
+            ],
+            [
+              3,
+              "getfield",
+              "FightC.GAME"
+            ],
+            [
+              15,
+              "getfield",
+              "FightC.BLOCK"
+            ],
+            [
+              16,
+              "putfield",
+              "FightC.commandPlayer"
+            ],
+            [
+              26,
+              "getfield",
+              "FightC.MOVELEFT"
+            ],
+            [
+              27,
+              "putfield",
+              "FightC.commandPlayer"
+            ],
+            [
+              37,
+              "getfield",
+              "FightC.MOVERIGHT"
+            ],
+            [
+              38,
+              "putfield",
+              "FightC.commandPlayer"
+            ],
+            [
+              47,
+              "getfield",
+              "FightC.blockCounter"
+            ],
+            [
+              52,
+              "getfield",
+              "FightC.blockCounter"
+            ],
+            [
+              55,
+              "getfield",
+              "FightC.level"
+            ],
+            [
+              58,
+              "getfield",
+              "FightC.lastLevel"
+            ],
+            [
+              61,
+              "putfield",
+              "FightC.blockCounter"
+            ],
+            [
+              64,
+              "getfield",
+              "FightC.PUNCH"
+            ],
+            [
+              65,
+              "putfield",
+              "FightC.commandPlayer"
+            ],
+            [
+              74,
+              "getfield",
+              "FightC.blockCounter"
+            ],
+            [
+              79,
+              "getfield",
+              "FightC.blockCounter"
+            ],
+            [
+              82,
+              "getfield",
+              "FightC.level"
+            ],
+            [
+              85,
+              "getfield",
+              "FightC.lastLevel"
+            ],
+            [
+              88,
+              "putfield",
+              "FightC.blockCounter"
+            ]
+          ]
+        },
+        {
+          "nome": "keyReleased",
+          "desc": "(I)V",
+          "tipo_ret": "void",
+          "n_instr": 47,
+          "apis": {
+            "javax/microedition/lcdui/Canvas.getGameAction": 1
+          },
+          "constantes": [
+            [
+              11,
+              53
+            ],
+            [
+              23,
+              2
+            ],
+            [
+              26,
+              52
+            ],
+            [
+              34,
+              5
+            ],
+            [
+              37,
+              54
+            ],
+            [
+              44,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              8,
+              "javax/microedition/lcdui/Canvas.getGameAction"
+            ]
+          ],
+          "fields": [
+            [
+              1,
+              "getfield",
+              "FightC.gameState"
+            ],
+            [
+              3,
+              "getfield",
+              "FightC.GAME"
+            ],
+            [
+              15,
+              "getfield",
+              "FightC.NONE"
+            ],
+            [
+              16,
+              "putfield",
+              "FightC.rememberCommand"
+            ],
+            [
+              19,
+              "getfield",
+              "FightC.NONE"
+            ],
+            [
+              20,
+              "putfield",
+              "FightC.commandPlayer"
+            ],
+            [
+              30,
+              "getfield",
+              "FightC.NONE"
+            ],
+            [
+              31,
+              "putfield",
+              "FightC.commandPlayer"
+            ],
+            [
+              41,
+              "getfield",
+              "FightC.NONE"
+            ],
+            [
+              42,
+              "putfield",
+              "FightC.commandPlayer"
+            ],
+            [
+              45,
+              "putfield",
+              "FightC.executeCommand"
+            ]
+          ]
+        },
+        {
+          "nome": "startGame",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 84,
+          "apis": {
+            "javax/microedition/lcdui/Displayable.removeCommand": 2
+          },
+          "constantes": [
+            [
+              1,
+              1
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              15,
+              1
+            ],
+            [
+              18,
+              0
+            ],
+            [
+              21,
+              2
+            ],
+            [
+              32,
+              0
+            ],
+            [
+              35,
+              40
+            ],
+            [
+              38,
+              0
+            ],
+            [
+              41,
+              92
+            ],
+            [
+              52,
+              0
+            ],
+            [
+              55,
+              40
+            ],
+            [
+              58,
+              0
+            ],
+            [
+              81,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              72,
+              "javax/microedition/lcdui/Displayable.removeCommand"
+            ],
+            [
+              76,
+              "javax/microedition/lcdui/Displayable.removeCommand"
+            ]
+          ],
+          "fields": [
+            [
+              2,
+              "putfield",
+              "FightC.startParsing"
+            ],
+            [
+              7,
+              "getfield",
+              "FightC.level"
+            ],
+            [
+              10,
+              "getfield",
+              "FightC.lastLevel"
+            ],
+            [
+              13,
+              "putfield",
+              "FightC.blockCounter"
+            ],
+            [
+              16,
+              "putfield",
+              "FightC.logoOffScreen"
+            ],
+            [
+              19,
+              "putfield",
+              "FightC.restartGame"
+            ],
+            [
+              22,
+              "putfield",
+              "FightC.xPlayer"
+            ],
+            [
+              25,
+              "getfield",
+              "FightC.NONE"
+            ],
+            [
+              26,
+              "putfield",
+              "FightC.commandPlayer"
+            ],
+            [
+              29,
+              "getfield",
+              "FightC.NONE"
+            ],
+            [
+              30,
+              "putfield",
+              "FightC.statePlayer"
+            ],
+            [
+              33,
+              "putfield",
+              "FightC.imagePlayer"
+            ],
+            [
+              36,
+              "putfield",
+              "FightC.hpPlayer"
+            ],
+            [
+              39,
+              "putfield",
+              "FightC.roundPlayer"
+            ],
+            [
+              42,
+              "putfield",
+              "FightC.xEnemy"
+            ],
+            [
+              45,
+              "getfield",
+              "FightC.NONE"
+            ],
+            [
+              46,
+              "putfield",
+              "FightC.commandEnemy"
+            ],
+            [
+              49,
+              "getfield",
+              "FightC.NONE"
+            ],
+            [
+              50,
+              "putfield",
+              "FightC.stateEnemy"
+            ],
+            [
+              53,
+              "putfield",
+              "FightC.imageEnemy"
+            ]
+          ]
+        },
+        {
+          "nome": "playGame",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 122,
+          "apis": {
+            "javax/microedition/lcdui/Displayable.removeCommand": 1,
+            "javax/microedition/lcdui/Displayable.addCommand": 3
+          },
+          "constantes": [
+            [
+              1,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              7,
+              10
+            ],
+            [
+              8,
+              10
+            ],
+            [
+              18,
+              2
+            ],
+            [
+              29,
+              0
+            ],
+            [
+              32,
+              40
+            ],
+            [
+              35,
+              92
+            ],
+            [
+              46,
+              0
+            ],
+            [
+              49,
+              40
+            ],
+            [
+              62,
+              0
+            ],
+            [
+              65,
+              0
+            ],
+            [
+              110,
+              0
+            ],
+            [
+              113,
+              0
+            ],
+            [
+              116,
+              0
+            ],
+            [
+              119,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              86,
+              "javax/microedition/lcdui/Displayable.removeCommand"
+            ],
+            [
+              90,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ],
+            [
+              94,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ],
+            [
+              103,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ]
+          ],
+          "fields": [
+            [
+              2,
+              "putfield",
+              "FightC.startParsing"
+            ],
+            [
+              5,
+              "putfield",
+              "FightC.roundDisplay"
+            ],
+            [
+              10,
+              "getfield",
+              "FightC.level"
+            ],
+            [
+              13,
+              "getfield",
+              "FightC.lastLevel"
+            ],
+            [
+              16,
+              "putfield",
+              "FightC.blockCounter"
+            ],
+            [
+              19,
+              "putfield",
+              "FightC.xPlayer"
+            ],
+            [
+              22,
+              "getfield",
+              "FightC.NONE"
+            ],
+            [
+              23,
+              "putfield",
+              "FightC.commandPlayer"
+            ],
+            [
+              26,
+              "getfield",
+              "FightC.NONE"
+            ],
+            [
+              27,
+              "putfield",
+              "FightC.statePlayer"
+            ],
+            [
+              30,
+              "putfield",
+              "FightC.imagePlayer"
+            ],
+            [
+              33,
+              "putfield",
+              "FightC.hpPlayer"
+            ],
+            [
+              36,
+              "putfield",
+              "FightC.xEnemy"
+            ],
+            [
+              39,
+              "getfield",
+              "FightC.NONE"
+            ],
+            [
+              40,
+              "putfield",
+              "FightC.commandEnemy"
+            ],
+            [
+              43,
+              "getfield",
+              "FightC.NONE"
+            ],
+            [
+              44,
+              "putfield",
+              "FightC.stateEnemy"
+            ],
+            [
+              47,
+              "putfield",
+              "FightC.imageEnemy"
+            ],
+            [
+              50,
+              "putfield",
+              "FightC.hpEnemy"
+            ],
+            [
+              52,
+              "getfield",
+              "FightC.gameState"
+            ]
+          ]
+        },
+        {
+          "nome": "skip",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 16,
+          "apis": {
+            "javax/microedition/lcdui/Displayable.removeCommand": 1,
+            "javax/microedition/lcdui/Displayable.addCommand": 1
+          },
+          "constantes": [
+            [
+              13,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              3,
+              "javax/microedition/lcdui/Displayable.removeCommand"
+            ],
+            [
+              7,
+              "javax/microedition/lcdui/Displayable.addCommand"
+            ]
+          ],
+          "fields": [
+            [
+              2,
+              "getfield",
+              "FightC.skipCommand"
+            ],
+            [
+              6,
+              "getfield",
+              "FightC.helpCommand"
+            ],
+            [
+              10,
+              "getfield",
+              "FightC.GAME"
+            ],
+            [
+              11,
+              "putfield",
+              "FightC.gameState"
+            ],
+            [
+              14,
+              "putfield",
+              "FightC.repaintBackground"
+            ]
+          ]
+        }
+      ],
+      "apis": {
+        "javax/microedition/lcdui/Canvas.<init>": 1,
+        "java/util/Random.<init>": 1,
+        "java/util/Calendar.getInstance": 8,
+        "java/util/Calendar.getTime": 8,
+        "java/util/Date.getTime": 8,
+        "javax/microedition/lcdui/Command.<init>": 4,
+        "javax/microedition/lcdui/Canvas.getWidth": 1,
+        "javax/microedition/lcdui/Canvas.getHeight": 1,
+        "java/lang/Thread.<init>": 1,
+        "java/lang/Thread.start": 1,
+        "javax/microedition/lcdui/Image.createImage": 5,
+        "javax/microedition/lcdui/Image.getGraphics": 2,
+        "javax/microedition/lcdui/Graphics.setClip": 5,
+        "javax/microedition/lcdui/Font.getFont": 2,
+        "javax/microedition/lcdui/Graphics.setFont": 6,
+        "java/lang/Thread.sleep": 1,
+        "javax/microedition/lcdui/Canvas.repaint": 2,
+        "javax/microedition/lcdui/Canvas.serviceRepaints": 2,
+        "javax/microedition/lcdui/Graphics.setColor": 37,
+        "javax/microedition/lcdui/Graphics.fillRect": 22,
+        "javax/microedition/lcdui/Graphics.drawImage": 6,
+        "javax/microedition/lcdui/Graphics.drawRect": 6,
+        "javax/microedition/lcdui/Font.stringWidth": 7,
+        "javax/microedition/lcdui/Graphics.drawString": 24,
+        "javax/microedition/lcdui/Graphics.drawLine": 5,
+        "java/lang/StringBuffer.<init>": 12,
+        "java/lang/StringBuffer.append": 25,
+        "java/lang/String.valueOf": 2,
+        "java/lang/StringBuffer.toString": 12,
+        "javax/microedition/lcdui/Displayable.addCommand": 6,
+        "java/io/PrintStream.println": 1,
+        "java/lang/String.length": 2,
+        "java/lang/String.substring": 1,
+        "javax/microedition/lcdui/Graphics.clipRect": 4,
+        "javax/microedition/lcdui/Graphics.drawRoundRect": 8,
+        "javax/microedition/lcdui/Graphics.fillRoundRect": 8,
+        "javax/microedition/lcdui/Displayable.removeCommand": 5,
+        "java/lang/Math.abs": 3,
+        "java/util/Random.nextInt": 1,
+        "javax/microedition/lcdui/Canvas.getGameAction": 2
+      },
+      "padroes": [
+        "CANVAS",
+        "TEM_PAINT",
+        "TEM_INPUT",
+        "TEM_RUN",
+        "USA_IMAGE"
+      ]
+    },
+    {
+      "arquivo": "OEM.class",
+      "nome": "OEM",
+      "super": "Object",
+      "campos": [
+        {
+          "nome": "midletDisplay",
+          "desc": "Ljavax/microedition/lcdui/Display;",
+          "tipo_c": "Display*"
+        },
+        {
+          "nome": "phoneConnected",
+          "desc": "Ljava/lang/String;",
+          "tipo_c": "String*"
+        },
+        {
+          "nome": "sound0NOKIA",
+          "desc": "Lcom/nokia/mid/sound/Sound;",
+          "tipo_c": "Sound*"
+        },
+        {
+          "nome": "sound1NOKIA",
+          "desc": "Lcom/nokia/mid/sound/Sound;",
+          "tipo_c": "Sound*"
+        },
+        {
+          "nome": "sound2NOKIA",
+          "desc": "Lcom/nokia/mid/sound/Sound;",
+          "tipo_c": "Sound*"
+        },
+        {
+          "nome": "sound3NOKIA",
+          "desc": "Lcom/nokia/mid/sound/Sound;",
+          "tipo_c": "Sound*"
+        },
+        {
+          "nome": "sound4NOKIA",
+          "desc": "Lcom/nokia/mid/sound/Sound;",
+          "tipo_c": "Sound*"
+        }
+      ],
+      "metodos": [
+        {
+          "nome": "<init>",
+          "desc": "(Ljavax/microedition/lcdui/Display;)V",
+          "tipo_ret": "void",
+          "n_instr": 44,
+          "apis": {
+            "java/lang/Object.<init>": 1,
+            "com/nokia/mid/sound/Sound.<init>": 5
+          },
+          "constantes": [
+            [
+              11,
+              1568
+            ],
+            [
+              18,
+              2217
+            ],
+            [
+              25,
+              3322
+            ],
+            [
+              32,
+              2093
+            ],
+            [
+              39,
+              3951
+            ]
+          ],
+          "chamadas": [
+            [
+              1,
+              "java/lang/Object.<init>"
+            ],
+            [
+              13,
+              "com/nokia/mid/sound/Sound.<init>"
+            ],
+            [
+              20,
+              "com/nokia/mid/sound/Sound.<init>"
+            ],
+            [
+              27,
+              "com/nokia/mid/sound/Sound.<init>"
+            ],
+            [
+              34,
+              "com/nokia/mid/sound/Sound.<init>"
+            ],
+            [
+              41,
+              "com/nokia/mid/sound/Sound.<init>"
+            ]
+          ],
+          "fields": [
+            [
+              4,
+              "putfield",
+              "OEM.phoneConnected"
+            ],
+            [
+              7,
+              "putfield",
+              "OEM.midletDisplay"
+            ],
+            [
+              14,
+              "putfield",
+              "OEM.sound0NOKIA"
+            ],
+            [
+              21,
+              "putfield",
+              "OEM.sound1NOKIA"
+            ],
+            [
+              28,
+              "putfield",
+              "OEM.sound2NOKIA"
+            ],
+            [
+              35,
+              "putfield",
+              "OEM.sound3NOKIA"
+            ],
+            [
+              42,
+              "putfield",
+              "OEM.sound4NOKIA"
+            ]
+          ]
+        },
+        {
+          "nome": "setLightOn",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 4,
+          "apis": {
+            "com/nokia/mid/ui/DeviceControl.setLights": 1
+          },
+          "constantes": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              100
+            ]
+          ],
+          "chamadas": [
+            [
+              2,
+              "com/nokia/mid/ui/DeviceControl.setLights"
+            ]
+          ],
+          "fields": []
+        },
+        {
+          "nome": "setLightOff",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 4,
+          "apis": {
+            "com/nokia/mid/ui/DeviceControl.setLights": 1
+          },
+          "constantes": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "chamadas": [
+            [
+              2,
+              "com/nokia/mid/ui/DeviceControl.setLights"
+            ]
+          ],
+          "fields": []
+        },
+        {
+          "nome": "vibration",
+          "desc": "()V",
+          "tipo_ret": "void",
+          "n_instr": 4,
+          "apis": {
+            "com/nokia/mid/ui/DeviceControl.startVibra": 1
+          },
+          "constantes": [
+            [
+              0,
+              50
+            ]
+          ],
+          "chamadas": [
+            [
+              2,
+              "com/nokia/mid/ui/DeviceControl.startVibra"
+            ]
+          ],
+          "fields": []
+        },
+        {
+          "nome": "playSound",
+          "desc": "(Ljava/lang/String;)V",
+          "tipo_ret": "void",
+          "n_instr": 48,
+          "apis": {
+            "java/lang/String.toLowerCase": 1,
+            "java/lang/String.equals": 5,
+            "com/nokia/mid/sound/Sound.play": 5
+          },
+          "constantes": [
+            [
+              9,
+              1
+            ],
+            [
+              18,
+              1
+            ],
+            [
+              27,
+              1
+            ],
+            [
+              36,
+              1
+            ],
+            [
+              45,
+              1
+            ]
+          ],
+          "chamadas": [
+            [
+              1,
+              "java/lang/String.toLowerCase"
+            ],
+            [
+              5,
+              "java/lang/String.equals"
+            ],
+            [
+              10,
+              "com/nokia/mid/sound/Sound.play"
+            ],
+            [
+              14,
+              "java/lang/String.equals"
+            ],
+            [
+              19,
+              "com/nokia/mid/sound/Sound.play"
+            ],
+            [
+              23,
+              "java/lang/String.equals"
+            ],
+            [
+              28,
+              "com/nokia/mid/sound/Sound.play"
+            ],
+            [
+              32,
+              "java/lang/String.equals"
+            ],
+            [
+              37,
+              "com/nokia/mid/sound/Sound.play"
+            ],
+            [
+              41,
+              "java/lang/String.equals"
+            ],
+            [
+              46,
+              "com/nokia/mid/sound/Sound.play"
+            ]
+          ],
+          "fields": [
+            [
+              8,
+              "getfield",
+              "OEM.sound0NOKIA"
+            ],
+            [
+              17,
+              "getfield",
+              "OEM.sound1NOKIA"
+            ],
+            [
+              26,
+              "getfield",
+              "OEM.sound2NOKIA"
+            ],
+            [
+              35,
+              "getfield",
+              "OEM.sound3NOKIA"
+            ],
+            [
+              44,
+              "getfield",
+              "OEM.sound4NOKIA"
+            ]
+          ]
+        }
+      ],
+      "apis": {
+        "java/lang/Object.<init>": 1,
+        "com/nokia/mid/sound/Sound.<init>": 5,
+        "com/nokia/mid/ui/DeviceControl.setLights": 2,
+        "com/nokia/mid/ui/DeviceControl.startVibra": 1,
+        "java/lang/String.toLowerCase": 1,
+        "java/lang/String.equals": 5,
+        "com/nokia/mid/sound/Sound.play": 5
+      },
+      "padroes": []
+    }
+  ],
+  "n_classes": 3
+}
